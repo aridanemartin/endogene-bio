@@ -1,0 +1,109 @@
+@use '@sass/colors.scss' as *;
+@use '@sass/fonts.scss' as *;
+
+.hero {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: 'text image';
+
+  height: 100vh;
+
+  animation: fadeZoom 1.4s forwards;
+  animation-duration: 3s;
+  transition: all 0.3s ease-in-out;
+
+  &__text-content {
+    grid-area: text;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: $forum;
+    padding: 2rem;
+
+    h1 {
+      color: $main-green;
+      font-size: 1rem;
+      strong {
+        color: $secondary-green;
+      }
+    }
+
+    h2 {
+      color: $main-green;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #3d3d3d;
+      font-size: 1rem;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    grid-area: image;
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// .heroTemplateWrap:after {
+//   position: absolute;
+//   content: '';
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   background: linear-gradient(transparent, rgba(0, 0, 0, 0.671));
+// }
+
+@media (max-width: 1300px) {
+  .heroTemplateWrap {
+    background-position: 100% 10%;
+  }
+
+  .signWrapper {
+    top: 60vh;
+  }
+}
+
+@media (max-width: 1100px) {
+  .heroTemplateWrap {
+    height: 100vh;
+    background-image: url(../../_assets/pictures/carolinaProfile.jpg);
+    background-position: center;
+  }
+  .heroTemplateWrap:after {
+    height: 100vh;
+  }
+  .signWrapper {
+    display: none;
+  }
+  .signWrapper2 {
+    display: block;
+    top: 43vh;
+  }
+}
