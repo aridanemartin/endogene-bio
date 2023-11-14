@@ -1,4 +1,7 @@
+import Nav from '@components/Nav/Nav'
 import { Forum } from 'next/font/google'
+import '@styles/global.scss'
+import Footer from '@components/Footer/Footer'
 
 export const metadata = {
   title: 'Next.js',
@@ -19,17 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={forum.variable}>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/about">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <main>{children}</main>
+        <Nav />
+        {children}
+        <Footer />
       </body>
     </html>
   )

@@ -1,1 +1,17 @@
 @use '@sass/_index.scss';
+
+body {
+  font-family: var(--font-forum);
+}
+
+.main-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@media (max-width: 1280px) {
+  .main-layout {
+    padding: 0 1rem;
+  }
+}

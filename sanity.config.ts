@@ -1,14 +1,13 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision'
 import schemas from './src/sanity/schemas'
 
-const config = defineConfig({
+export default defineConfig({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
   title: 'Con Nutrición Saludable',
   apiVersion: '2023-03-09',
-  plugins: [deskTool()],
+  plugins: [deskTool(), visionTool()],
   schema: { types: schemas },
 })
-
-export default config

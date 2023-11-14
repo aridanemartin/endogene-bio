@@ -1,0 +1,15 @@
+@use '@sass/colors.scss' as *;
+
+.title {
+  color: $main-green;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    padding: 0 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
