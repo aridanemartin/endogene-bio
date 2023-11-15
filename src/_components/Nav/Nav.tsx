@@ -1,6 +1,7 @@
 'use client'
 
 import './Nav.scss'
+import './Burger.scss'
 
 import Link from 'next/link'
 import Image from 'next/image'

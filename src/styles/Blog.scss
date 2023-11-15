@@ -1,0 +1,63 @@
+.postsContainer {
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  align-items: center;
+}
+
+.postCard {
+  margin: 0;
+  height: auto;
+  width: 40rem;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.postCard h3 {
+  padding-top: 0.5rem;
+  font-family: 'Cormorant';
+  font-size: 1rem;
+  color: #777;
+  margin: 0;
+}
+
+.postCard h2 {
+  font-family: 'Cormorant';
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+}
+
+.postCard p {
+  padding: 1rem 0rem;
+}
+
+.postImage {
+  /*properties OK*/
+
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .postCard {
+    width: 70%;
+    text-align: center;
+  }
+  .postCard p {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .postCard {
+    width: 100%;
+    padding: 1rem;
+  }
+}

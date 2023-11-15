@@ -62,8 +62,14 @@
     margin-top: 2rem;
     padding: 1rem 2rem;
     border-radius: 10rem;
-    background-color: $main-green;
-    // background-color: $secondary-green;
+    // background-color: $main-green;
+    background: rgb(14, 104, 53);
+    background: linear-gradient(
+      90deg,
+      rgba(14, 104, 53, 1) 50%,
+      rgba(136, 189, 48, 1) 100%
+    );
+    cursor: pointer;
     color: $main-green;
     color: white;
     border: 0;
@@ -71,9 +77,10 @@
     font-family: $forum;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
+    background-size: 200% 100%;
 
     &:hover {
-      transform: scale(1.1);
+      background-position: 100% 0;
     }
   }
 }

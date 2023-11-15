@@ -4,6 +4,7 @@ import HeroTemplate from '@components/HeroTemplate/HeroTemplate'
 import { getPosts } from 'src/sanity/utils/sanity-querys'
 import { PostPreview } from '@components/PostPreview/PostPreview'
 import Title from '@components/Title/Title'
+import { SectionsPreview } from '@components/SectionsPreview/SectionsPreview'
 
 interface indexProps {}
 
@@ -15,7 +16,8 @@ export default async function Home({}: indexProps) {
     <>
       <main className="main-layout">
         <HeroTemplate />
-        <Title title="Latest Posts" />
+        <SectionsPreview />
+        <Title title="Últimos Posts" />
         <div className="latestPosts">
           {latestPosts.map((post) => {
             return (
