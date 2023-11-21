@@ -15,7 +15,7 @@ const Blog = async () => {
         {posts.length &&
           posts.map((post) => (
             <div className="postCard" key={post._id}>
-              <PostPreview post={post} link={post.link} />
+              <PostPreview post={post} />
             </div>
           ))}
       </div>
