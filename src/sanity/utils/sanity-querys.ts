@@ -29,7 +29,6 @@ export async function getPosts() {
 }
 
 export async function getPost(slug: string) {
-  console.log('===getPost===', slug)
   return sanityClient.fetch(
     groq`*[_type == "post" && slug.current == '${slug}'][0]{
       _id,
@@ -45,41 +44,18 @@ export async function getPost(slug: string) {
   )
 }
 
-// export async function getProject(slug: string): Promise<Project> {
-//   return createClient(clientConfig).fetch(
-//     groq`*[_type == "project" && slug.current == $slug][0]{
-//       _id,
-//       _createdAt,
-//       name,
-//       "slug": slug.current,
-//       "image": image.asset->url,
-//       url,
-//       content
-//     }`,
-//     { slug },
-//   )
-// }
-
-// export async function getPages(): Promise<Page[]> {
-//   return createClient(clientConfig).fetch(
-//     groq`*[_type == "page"]{
-//       _id,
-//       _createdAt,
-//       title,
-//       "slug": slug.current
-//     }`,
-//   )
-// }
-
-// export async function getPage(slug: string): Promise<Page> {
-//   return createClient(clientConfig).fetch(
-//     groq`*[_type == "page" && slug.current == $slug][0]{
-//       _id,
-//       _createdAt,
-//       title,
-//       "slug": slug.current,
-//       content
-//     }`,
-//     { slug },
-//   )
-// }
+export async function getPrices() {
+  return sanityClient.fetch(
+    groq`*[_type == "price"]{
+      _id,
+      title,
+      price,
+      priceDiscount,
+      description,
+      duration,
+      "icon": icon.asset->url,
+    }`,
+    undefined,
+    { cache: 'no-store' },
+  )
+}

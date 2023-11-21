@@ -9,7 +9,7 @@ export const DoctoraliaIcon = () => {
       height="100%"
       width="100%"
       viewBox="0 0 1260 1200"
-      enable-background="new 0 0 1260 1200"
+      enableBackground="new 0 0 1260 1200"
     >
       <path
         fill="#FFFFFF"

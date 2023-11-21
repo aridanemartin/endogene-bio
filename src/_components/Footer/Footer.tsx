@@ -50,7 +50,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link
-              href="https://www.youtube.com/channel/UCrmSIzPn-xIck68XamblSvA"
+              href="https://www.doctoralia.es/carolina-almeida-ramirez/dietista-nutricionista/las-palmas-de-gran-canaria"
               target="_blank"
               rel="noreferrer"
             >
@@ -59,7 +59,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link
-              href="https://www.instagram.com/juliantamayoendocrino/"
+              href="https://www.instagram.com/conutricionsaludable/"
               target="_blank"
               rel="noreferrer"
             >

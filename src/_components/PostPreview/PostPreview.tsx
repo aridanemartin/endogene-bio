@@ -4,9 +4,7 @@ import './PostPreview.scss'
 import { enhanceAltDescription } from '@utils/enhanceAltDescription'
 import Image from 'next/image'
 
-export const PostPreview = ({ post, link }) => {
-  console.log(post)
-
+export const PostPreview = ({ post }) => {
   return (
     <Link key={post.slug} href={`blog/${post.slug}`}>
       <div className="postPreview" key={post._id}>
@@ -18,10 +16,9 @@ export const PostPreview = ({ post, link }) => {
             fill
           />
         </div>
-
-        <h2 id={post.title} className="postPreview__title">
-          {post.title}
-        </h2>
+        <div className="postPreview__title">
+          <h2 id={post.title}>{post.title}</h2>
+        </div>
         <section
           className="postPreview__description"
           aria-labelledby={post.title}

@@ -14,7 +14,6 @@ type Props = {
 }
 
 export default async function Post({ params }: Props) {
-  console.log('====>', params.slug)
   const { title, description, body, mainImage, author, timeToRead } =
     await getPost(params.slug)
 

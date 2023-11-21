@@ -16,17 +16,12 @@ export default async function Home({}: indexProps) {
     <>
       <main className="main-layout">
         <HeroTemplate />
+        <Title title="Servicios" />
         <SectionsPreview />
         <Title title="Últimos Posts" />
         <div className="latestPosts">
           {latestPosts.map((post) => {
-            return (
-              <PostPreview
-                key={post._id}
-                post={post}
-                link={`blog/${post.slug.current}`}
-              />
-            )
+            return <PostPreview key={post._id} post={post} />
           })}
         </div>
       </main>
