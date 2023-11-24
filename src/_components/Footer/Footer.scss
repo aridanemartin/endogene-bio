@@ -2,7 +2,6 @@
 @use '@sass/variables.scss' as *;
 
 .footer {
-  margin-top: 2rem;
   width: 100%;
   height: fit-content;
   background: $main-green;
@@ -98,39 +97,10 @@
     &__links {
       display: none;
     }
+
+    &__legal {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
-//   .footer {
-//     display: flex;
-//     flex-direction: column;
-//     &__links {
-//       display: none;
-//     }
-
-//     &__content {
-//       grid-template-columns: 100%;
-//     }
-//   }
-
-//   .Button {
-//     margin: 1rem;
-//   }
-
-//   .citaText {
-//     width: 100%;
-//     text-align: center;
-//   }
-
-//   .citaButtons {
-//     transform: scale(0.8);
-//   }
-
-//   .legal {
-//     justify-content: center;
-//     flex-direction: column;
-//     padding-bottom: 2rem;
-//     a {
-//       padding: 0.5rem;
-//     }
-//   }
-// }

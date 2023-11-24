@@ -67,7 +67,10 @@ export default function Nav() {
                 </Link>
               </li>
               <li onClick={toggle}>
-                <Link className="link" href="/contacto">
+                <Link
+                  className="link"
+                  href="mailto:info@conutricionsaludable.com"
+                >
                   Contacto
                 </Link>
               </li>
