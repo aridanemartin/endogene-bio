@@ -1,24 +1,13 @@
 @use '@sass/variables.scss' as *;
 
-.latestPosts {
-  position: relative;
-  // max-width: 1140px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-gap: 2%;
-  margin-bottom: 5rem;
-}
-
-.postPreview {
+.blogPostPreview {
   display: grid;
   cursor: pointer;
   grid-template-areas:
     'picture'
     'title'
-    'description'
-    'author';
-  grid-template-rows: 20rem 4rem 10rem;
+    'description';
+  grid-template-rows: 20rem 3.6rem 10rem;
 
   transition: all 0.3s ease-in-out;
   box-shadow: $card-box-shadow;
@@ -47,6 +36,7 @@
     font-size: 2rem;
     height: 100%;
     text-wrap: balance;
+    padding: 0 1rem;
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -73,13 +63,6 @@
 
 .postImageWrap img {
   object-fit: cover;
-}
-
-.authorData {
-  max-width: 1440px;
-
-  display: flex;
-  justify-content: center;
 }
 
 .dataWrap {
@@ -111,42 +94,14 @@
   padding-bottom: 0.2rem;
 }
 
-.authorImage {
-  grid-area: photo;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.authorImage img {
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  clip-path: circle(50% at 50% 50%);
-  object-fit: cover;
-}
-
 .blogAnchor {
   margin: 0 auto;
   margin-bottom: 2rem;
-  font-family: 'Cormorant';
   font-size: 1.5rem;
-  width: 10rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   padding: 1rem;
-}
-
-@media (max-width: 1175px) {
-  .latestPosts {
-    grid-template-columns: 100%;
-    grid-gap: 2rem;
-  }
-
-  .postPreviewWrapper {
-    grid-template-rows: repeat(4, auto);
-  }
 }

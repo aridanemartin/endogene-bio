@@ -45,6 +45,22 @@ export default async function Post({ params }: Props) {
         <section className="blogArticlePage__header">
           <h2 className="title">{title}</h2>
           <div className="subtitle">
+            <div className="timeToRead">
+              <div className="timeToRead__icon">
+                <Image
+                  src={timeToReadIcon}
+                  alt="Time to read icon"
+                  fill
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                  quality={30}
+                />
+              </div>
+              <p className="time">
+                <em>{timeToRead} min de lectura</em>
+              </p>
+            </div>
             <div className="author">
               <div className="author__text">
                 <p className="name">{author}</p>
@@ -61,23 +77,6 @@ export default async function Post({ params }: Props) {
                   }}
                 />
               </div>
-            </div>
-
-            <div className="timeToRead">
-              <div className="timeToRead__icon">
-                <Image
-                  src={timeToReadIcon}
-                  alt="Time to read icon"
-                  fill
-                  style={{
-                    objectFit: 'cover',
-                  }}
-                  quality={30}
-                />
-              </div>
-              <p className="time">
-                <em>{timeToRead} min de lectura</em>
-              </p>
             </div>
           </div>
         </section>

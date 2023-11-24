@@ -1,15 +1,11 @@
 @use '@sass/colors.scss' as *;
+@use '@sass/variables.scss' as *;
 
 .footer {
   margin-top: 2rem;
   width: 100%;
-  height: auto;
-  background: rgb(14, 104, 53);
-  background: linear-gradient(
-    90deg,
-    rgba(14, 104, 53, 1) 50%,
-    rgba(136, 189, 48, 1) 100%
-  );
+  height: fit-content;
+  background: $main-green;
 
   &__content {
     max-width: 1440px;
@@ -17,151 +13,124 @@
 
     padding: 1rem;
     padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
   }
 
-  &__links {
-    margin: 2rem 0rem;
+  &__socialIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-    li {
-      list-style: none;
-      padding: 0.3rem 0rem;
+    .socialIcon {
+      padding: 0 1rem;
+      transition: all 0.3s ease-in-out;
 
-      a {
+      svg {
+        max-width: 2.3rem;
         transition: all 0.3s ease-in-out;
-        color: white;
+
         &:hover {
-          padding-left: 0.2rem;
+          fill: $secondary-green;
         }
       }
     }
   }
-}
 
-.socialWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &__cita {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-.logoWrap {
-  position: relative;
-  min-width: 17rem;
-  max-width: 20rem;
-  min-height: 10rem;
-}
+    margin: 2rem 0rem;
+    color: white;
 
-.socialContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-.socialIcon {
-  padding: 0 1rem;
-  transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      color: $main-green;
+      text-align: center;
+      width: fit-content;
+      background: white;
+      padding: 1rem;
+      margin: 2rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 15rem;
 
-  svg {
-    max-width: 2.3rem;
-    transition: all 0.3s ease-in-out;
+      a {
+        color: $main-green;
+      }
+
+      &:hover {
+        box-shadow: $card-box-shadow-hover;
+        transform: translate(0, -2px);
+      }
+    }
   }
 
-  &:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+  &__legal {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+    a {
+      color: white;
+      font-size: 0.8rem;
+      padding: 1rem;
+    }
   }
-}
-
-.legal {
-  display: flex;
-  justify-content: flex-end;
-  text-align: center;
-}
-
-.legal a {
-  color: white;
-  font-size: 0.8rem;
-  padding: 1rem;
-}
-
-.citaWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  margin: 2rem 0rem;
-  color: white;
-}
-
-.citaText {
-  width: 35ch;
-  text-align: justify;
-  text-align-last: center;
-}
-
-.citaButtons {
-  display: flex;
-  flex-direction: row;
-}
-
-.Button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: white;
-  text-align: center;
-  width: fit-content;
-  border: 1px solid white;
-  padding: 1rem;
-  margin: 2rem 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 15rem;
-}
-
-.Button:hover {
-  background: white;
-  transform: translateY(-0.2rem);
-  color: $main-green;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 @media (max-width: 1200px) {
   .footer {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     &__links {
       display: none;
     }
-
-    &__content {
-      grid-template-columns: 100%;
-    }
-  }
-
-  .Button {
-    margin: 1rem;
-  }
-
-  .citaText {
-    width: 100%;
-    text-align: center;
-  }
-
-  .citaButtons {
-    transform: scale(0.8);
-  }
-
-  .legal {
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 2rem;
-    a {
-      padding: 0.5rem;
-    }
   }
 }
+//   .footer {
+//     display: flex;
+//     flex-direction: column;
+//     &__links {
+//       display: none;
+//     }
+
+//     &__content {
+//       grid-template-columns: 100%;
+//     }
+//   }
+
+//   .Button {
+//     margin: 1rem;
+//   }
+
+//   .citaText {
+//     width: 100%;
+//     text-align: center;
+//   }
+
+//   .citaButtons {
+//     transform: scale(0.8);
+//   }
+
+//   .legal {
+//     justify-content: center;
+//     flex-direction: column;
+//     padding-bottom: 2rem;
+//     a {
+//       padding: 0.5rem;
+//     }
+//   }
+// }

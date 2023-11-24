@@ -3,7 +3,7 @@
 
 .nav {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 6rem;
   z-index: 1;
 }
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 2rem;
   }
 }
 
@@ -59,22 +60,20 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.1);
+    color: $secondary-green;
   }
 }
 
 .socialIcon {
-  padding: 0 1rem;
-  /* height: 3rem; */
+  padding: 0 0.7rem;
 }
 .nav .socialIcon svg {
   max-width: 2.3rem;
   transition: all 0.3s ease-in-out;
-  filter: invert(28%) sepia(76%) saturate(470%) hue-rotate(93deg)
-    brightness(95%) contrast(96%);
+  fill: $main-green;
 
   &:hover {
-    transform: scale(1.1);
+    fill: $secondary-green;
   }
 }
 
@@ -89,24 +88,23 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 20px);
-    height: calc(100% - 20px);
 
     z-index: 1;
-    transition: fadeIn 1s ease-in-out;
 
     visibility: hidden;
     opacity: 0;
 
     z-index: 2;
+    animation-name: gogo;
+    transition: all 0.3s ease-in-out;
   }
 
   .navOpen {
     visibility: visible;
-
+    width: 100%;
+    height: 100%;
     opacity: 1;
     background: white;
-    border: 10px solid $main-green;
   }
 
   .navContent {
@@ -122,6 +120,10 @@
     &__logo {
       height: 10rem;
       padding-bottom: 4rem;
+    }
+
+    &__social {
+      margin-right: 0;
     }
   }
 

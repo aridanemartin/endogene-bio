@@ -1,4 +1,8 @@
-export const DoctoraliaIcon = () => {
+interface IconProps {
+  color?: string
+}
+
+export const DoctoraliaIcon = ({color}:IconProps) => {
   return (
     <svg
       version="1.1"
@@ -10,9 +14,9 @@ export const DoctoraliaIcon = () => {
       width="100%"
       viewBox="0 0 1260 1200"
       enableBackground="new 0 0 1260 1200"
+      fill={color}
     >
       <path
-        fill="#FFFFFF"
         opacity="1.000000"
         stroke="none"
         d="
@@ -68,7 +72,6 @@ M412.399994,1201.000000
 z"
       />
       <path
-        fill="#FFFFFF"
         opacity="1.000000"
         stroke="none"
         d="
@@ -127,7 +130,6 @@ M752.531372,0.999998
 z"
       />
       <path
-        fill="#FFFFFF"
         opacity="1.000000"
         stroke="none"
         d="

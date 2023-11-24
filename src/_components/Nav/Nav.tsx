@@ -21,7 +21,7 @@ export default function Nav() {
     <>
       <button
         onClick={toggle}
-        className={!isOpen ? 'burger' : 'burger' + ' ' + 'open'}
+        className={`burger ${isOpen ? 'open' : ''}`}
         id="burger"
       >
         <span></span>
@@ -76,7 +76,7 @@ export default function Nav() {
           <div className="navContent__social">
             <div className="socialIcon">
               <Link
-                href="https://www.instagram.com/connutricionsaludable/?hl=es"
+                href="https://www.facebook.com/carolina.almeidaramirez"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -40,12 +40,7 @@ $tabs-container-overflow: 5rem;
     width: 30rem;
     height: auto;
     color: white;
-    background: rgb(14, 104, 53);
-    background: linear-gradient(
-      90deg,
-      rgba(14, 104, 53, 1) 50%,
-      rgba(136, 189, 48, 1) 100%
-    );
+    background: $main-green;
 
     border-radius: 20px;
     padding: 1rem;

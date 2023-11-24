@@ -41,6 +41,8 @@ export async function getPost(slug: string) {
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
     }`,
+    undefined,
+    { cache: 'no-store' },
   )
 }
 

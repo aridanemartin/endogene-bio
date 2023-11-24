@@ -1,0 +1,12 @@
+.about {
+  display: flex;
+  height: 100vh;
+
+  &__text {
+    background: red;
+  }
+
+  &__content {
+    background: blue;
+  }
+}
