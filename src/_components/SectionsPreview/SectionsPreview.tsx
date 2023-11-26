@@ -29,7 +29,7 @@ export const SectionsPreview = () => {
   }
 
   return (
-    <section className="tabs">
+    <section className="tabs" id="servicios">
       <h1 className="tabs__title tabs__title1" onMouseEnter={handleVisible}>
         Nutrición Personalizada
       </h1>

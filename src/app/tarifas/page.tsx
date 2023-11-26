@@ -6,17 +6,23 @@ import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
 import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
 
-interface indexProps {}
-
-export default async function Tarifas({}: indexProps) {
+export default async function Tarifas() {
   const tarifas = await getPrices()
+
+  function sortByPrice(tarifas) {
+    return tarifas.sort(function (a, b) {
+      return a.price - b.price
+    })
+  }
+
+  const sortedTarifas = sortByPrice(tarifas)
 
   return (
     <>
       <Header title="Tarifas" image={heroImage} />
       <main className="main-layout">
         <div className="priceCardContainer">
-          {tarifas.map((tarifa) => (
+          {sortedTarifas.map((tarifa) => (
             <PriceCard
               key={tarifa._id}
               title={tarifa.title}

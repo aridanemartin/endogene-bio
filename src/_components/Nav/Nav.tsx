@@ -57,7 +57,7 @@ export default function Nav() {
                 </Link>
               </li>
               <li onClick={toggle}>
-                <Link className="link" href="/servicios">
+                <Link className="link" href="/#servicios">
                   Servicios
                 </Link>
               </li>
@@ -67,10 +67,7 @@ export default function Nav() {
                 </Link>
               </li>
               <li onClick={toggle}>
-                <Link
-                  className="link"
-                  href="mailto:info@conutricionsaludable.com"
-                >
+                <Link className="link" href="/contacto">
                   Contacto
                 </Link>
               </li>

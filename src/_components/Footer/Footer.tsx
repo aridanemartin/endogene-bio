@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </Link>
           <Link
-            href="https://www.instagram.com/conutricionsaludable/"
+            href="https://api.whatsapp.com/send?phone=34665859643"
             target="_blank"
             rel="noreferrer"
           >
