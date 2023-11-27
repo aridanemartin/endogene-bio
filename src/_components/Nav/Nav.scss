@@ -64,19 +64,6 @@
   }
 }
 
-.socialIcon {
-  padding: 0 0.7rem;
-}
-.nav .socialIcon svg {
-  max-width: 2.3rem;
-  transition: all 0.3s ease-in-out;
-  fill: $main-green;
-
-  &:hover {
-    fill: $secondary-green;
-  }
-}
-
 @media (max-width: 1100px) {
   .link,
   .nav .socialIcon {
@@ -136,9 +123,6 @@
 
   .socialContainer {
     grid-area: social;
-  }
-  .socialIcon {
-    padding: 0.5rem;
   }
 }
 

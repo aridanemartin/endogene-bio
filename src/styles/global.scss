@@ -1,8 +1,11 @@
 @use '@sass/_index.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-forum);
-  scroll-behavior: smooth;
 }
 
 .main-layout {
@@ -12,6 +15,12 @@ body {
 }
 
 @media (max-width: 1280px) {
+  .main-layout {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
   .main-layout {
     padding: 0 1rem;
   }

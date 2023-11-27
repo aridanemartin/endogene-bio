@@ -1,0 +1,27 @@
+@use '@sass/colors.scss' as *;
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  &__icon {
+    padding: 0 0.7rem;
+
+    svg {
+      max-width: 2.3rem;
+      transition: all 0.3s ease-in-out;
+      fill: $main-green;
+
+      &:hover {
+        fill: $secondary-green;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .socialIcons {
+    &__icon {
+      padding: 0.5rem;
+    }
+  }
+}

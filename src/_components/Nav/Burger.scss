@@ -30,7 +30,6 @@
     position: absolute;
     height: 9px;
     width: 100%;
-    background: $main-green;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -41,7 +40,15 @@
     -webkit-transition: 0.25s ease-in-out;
     -moz-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in -out;
+  }
+
+  .burger__span {
+    background: $main-green;
+
+    &-white {
+      background: white;
+    }
   }
 
   /* Icon 3 */
