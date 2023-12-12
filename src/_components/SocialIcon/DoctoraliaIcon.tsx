@@ -2,11 +2,10 @@ interface IconProps {
   color?: string
 }
 
-export const DoctoraliaIcon = ({color}:IconProps) => {
+export const DoctoraliaIcon = ({ color }: IconProps) => {
   return (
     <svg
       version="1.1"
-      id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
@@ -14,6 +13,7 @@ export const DoctoraliaIcon = ({color}:IconProps) => {
       width="100%"
       viewBox="0 0 1260 1200"
       enableBackground="new 0 0 1260 1200"
+      id="biggerSvg"
       fill={color}
     >
       <path

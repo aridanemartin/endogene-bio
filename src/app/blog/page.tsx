@@ -5,6 +5,13 @@ import heroImage from '@assets/pictures/blog3.jpg'
 import Header from '@components/Header/Header'
 import { BlogPostPreview } from '@components/BlogPostPreview/BlogPostPreview'
 import Headline from '@components/Headline/Headline'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog | Carolina Almeida Nutricionista Dietista',
+  description:
+    'Carolina Almeida, Dietista Nutricionista en Las Palmas, colegiada en CODINUISCAN, con más de 15 años de experiencia. Especializada en mejorar hábitos alimenticios, planificación de menús y tratamiento de patologías. ¡Prioriza tu bienestar hoy!',
+}
 
 const Blog = async () => {
   const posts = await getPosts()

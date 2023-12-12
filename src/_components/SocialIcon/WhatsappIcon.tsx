@@ -8,10 +8,8 @@ export const WhatsappIcon = ({ color }: IconProps) => {
       fill={color}
       height="100%"
       width="100%"
-      version="1.1"
-      id="Layer_1"
+      id="biggerSvg"
       viewBox="0 0 308 308"
-      xmlSpace="preserve"
     >
       <g id="XMLID_468_">
         <path

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getPost } from 'src/sanity/utils/sanity-querys'
 import '../../../styles/BlogArticlePage.scss'
 import SanityBlock from '@components/SanityBlock/SanityBlock'
+import type { Metadata, ResolvingMetadata } from 'next'
 
 import CarolinaProfileImage from '@assets/pictures/carolinaProfileSquare.jpg'
 import timeToReadIcon from '@assets/icons/time-to-read.png'
@@ -13,20 +14,24 @@ type Props = {
   params: { slug: string }
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { title, description, mainImage } = await getPost(params.slug)
+
+  return {
+    title: title,
+    description: description,
+    openGraph: {
+      images: [mainImage],
+    },
+  }
+}
+
 export default async function Post({ params }: Props) {
   const { title, description, body, mainImage, author, timeToRead } =
     await getPost(params.slug)
 
-  // console.log(title, description, mainImage, author, timeToRead)
-
   return (
     <>
-      {/* <Meta
-        title={`${data.title} | ${data.author.name}`}
-        desc={`${data.author.description}`}
-        canonical={`https://www.juliantamayo.com/blog/${data.author.slug.current}`}
-        image={mainImageProps?.src}
-      /> */}
       <div className="blogArticlePage">
         <div className="blogArticlePage__hero">
           <Image

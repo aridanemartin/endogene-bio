@@ -14,6 +14,7 @@ import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
 import { SocialIcons } from '@components/SocialIcons/SocialIcons'
+import { WhatsappIcon } from '@components/SocialIcon/WhatsappIcon'
 
 const socialLinks = [
   {
@@ -27,6 +28,10 @@ const socialLinks = [
   {
     href: 'https://www.doctoralia.es/carolina-almeida-ramirez/dietista-nutricionista/las-palmas-de-gran-canaria',
     icon: <DoctoraliaIcon />,
+  },
+  {
+    href: 'https://api.whatsapp.com/send?phone=34665859643',
+    icon: <WhatsappIcon color="#FFFFFF" />,
   },
 ]
 
@@ -115,33 +120,6 @@ export default function Nav() {
           </section>
           <div className="navContent__social">
             <SocialIcons socialLinks={socialLinks} />
-
-            {/* <div className="socialIcon">
-              <Link
-                href="https://www.facebook.com/carolina.almeidaramirez"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FacebookIcon />
-              </Link>
-            </div>
-            <div className="socialIcon">
-              <Link
-                href="https://www.instagram.com/connutricionsaludable/?hl=es"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <InstagramIcon />
-              </Link>
-            </div>
-            <div className="socialIcon">
-              <Link
-                href="https://www.doctoralia.es/carolina-almeida-ramirez/dietista-nutricionista/las-palmas-de-gran-canaria"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <DoctoraliaIcon />
-              </Link> */}
           </div>
         </div>
       </div>

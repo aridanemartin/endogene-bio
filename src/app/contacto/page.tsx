@@ -1,8 +1,15 @@
 import contacto from '@assets/pictures/contacto.jpg'
 import ContactForm from '@components/ContactForm/ContactForm'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 
 import '@styles/Contacto.scss'
+
+export const metadata: Metadata = {
+  title: 'Contacto | Carolina Almeida Nutricionista',
+  description:
+    'Carolina Almeida, Dietista Nutricionista en Las Palmas, colegiada en CODINUISCAN, con más de 15 años de experiencia. Especializada en mejorar hábitos alimenticios, planificación de menús y tratamiento de patologías. ¡Prioriza tu bienestar hoy!',
+}
 
 const Contacto = () => {
   return (

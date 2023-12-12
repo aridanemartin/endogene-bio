@@ -1,7 +1,9 @@
 @use '@sass/colors.scss' as *;
 
 .about {
-  display: flex;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 60% 40%;
   gap: 1rem;
 
   &__background {
@@ -59,6 +61,7 @@
       align-items: center;
 
       padding: 1rem;
+      padding-bottom: 3rem;
       text-align: center;
 
       h1 {
@@ -106,6 +109,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     background-color: white;
     padding: 2rem;
@@ -118,9 +122,19 @@
     }
 
     &-text {
+      padding-bottom: 3rem;
       font-size: 1rem;
-      width: 35ch;
     }
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    height: 3rem;
+    object-fit: contain;
   }
 }
 
@@ -158,6 +172,7 @@
       }
       &-text {
         font-size: 1rem;
+        width: inherit;
       }
     }
   }

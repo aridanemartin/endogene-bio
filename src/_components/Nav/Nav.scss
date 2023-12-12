@@ -75,13 +75,10 @@
     position: fixed;
     top: 0;
     left: 0;
-
-    z-index: 1;
-
     visibility: hidden;
     opacity: 0;
 
-    z-index: 2;
+    z-index: 5;
     animation-name: gogo;
     transition: all 0.3s ease-in-out;
   }
