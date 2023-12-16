@@ -9,6 +9,7 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import CarolinaProfileImage from '@assets/pictures/carolinaProfileSquare.jpg'
 import timeToReadIcon from '@assets/icons/time-to-read.png'
 import Layout from '@components/Layout/Layout'
+import { ShareButton } from '@components/ShareButton/ShareButton'
 
 type Props = {
   params: { slug: string }
@@ -87,13 +88,16 @@ export default async function Post({ params }: Props) {
         </section>
       </div>
       <article className="contentWrapper">
-        <Layout maxWidth="1000px">
+        <Layout maxWidth="1000px" className="blogArticlePage__articleSection">
           {body.map((block) => (
             <>
               <SanityBlock key={block._key} sanityContent={block} />
             </>
           ))}
         </Layout>
+        <div className="blogArticlePage__shareButton">
+          <ShareButton />
+        </div>
       </article>
     </>
   )

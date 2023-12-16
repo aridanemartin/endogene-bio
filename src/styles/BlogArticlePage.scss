@@ -96,18 +96,26 @@
       }
     }
   }
+
+  &__articleSection {
+    padding-bottom: 3rem;
+  }
+
+  &__shareButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contentWrapper {
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .contentWrapper section {
   max-width: 1440px;
   margin: 0 auto;
-
-  padding-bottom: 2rem;
-  margin-bottom: 1rem;
 }
 
 @media (max-width: 1100px) {
