@@ -7,7 +7,8 @@
     "lint": "next lint -- --ignore-path .gitignore",
     "lint:fix": "npm run format && npm run lint -- --fix",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "email": "email dev --dir src/emails"
   },
   "prettier": {
     "semi": false,
@@ -15,13 +16,15 @@
   },
   "dependencies": {
     "@portabletext/react": "3.0.4",
+    "@react-email/components": "^0.0.12",
     "@sanity/client": "6.4.7",
     "@sanity/demo": "1.0.2",
     "@sanity/vision": "3.15.1",
-    "next": "13.4.17",
+    "next": "^14.0.4",
     "next-sanity": "5.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-email": "1.10.0",
     "react-share": "^5.0.3",
     "resend": "^2.0.0",
     "sanity": "3.15.1",
