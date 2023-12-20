@@ -16,12 +16,12 @@ export async function POST(req) {
       html: `<p>${message}</p>`,
     })
 
-    // await resend.emails.send({
-    //   from: 'info@nutricionsaludablelaspalmas.com',
-    //   to: email,
-    //   subject: `Gracias por contactarnos - ${name}`,
-    //   react: GraciasPorContactar({ name }),
-    // })
+    await resend.emails.send({
+      from: 'info@nutricionsaludablelaspalmas.com',
+      to: email,
+      subject: `Gracias por contactarnos - ${name}`,
+      react: GraciasPorContactar({ name }),
+    })
 
     return NextResponse.json({ success: true })
   } catch (error) {
