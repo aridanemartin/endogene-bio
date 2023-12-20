@@ -33,7 +33,7 @@ export const GraciasPorContactarEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${baseUrl}/static/carolinaLogoTransparent.png`}
+              src={`/static/carolinaLogoTransparent.png`}
               width="100"
               height="100"
             />
@@ -104,7 +104,7 @@ export const GraciasPorContactarEmail = ({
           </Section>
 
           <Section style={containerImageFooter}>
-            <Img width={620} src={`${baseUrl}/static/yelp-footer.png`} />
+            <Img width={620} src={`/static/yelp-footer.png`} />
           </Section>
 
           <Text
