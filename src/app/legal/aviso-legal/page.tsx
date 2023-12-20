@@ -35,11 +35,11 @@ export default function AvisoLegal() {
             <li>Razón social: CAROLINA ALMEIDA RAMÍREZ</li>
             <li>NIF/CIF: 45761182-Z</li>
             <li>
-              Dirección: Calle MONTEVIDEO, 14, 3E, CP 35007 LAS PALMAS DE GRAN
-              CANARIA, Las Palmas
+              Dirección: C. Alonso Alvarado, 15, Oficina 4, 35003 Las Palmas de
+              Gran Canaria, Las Palmas
             </li>
-            <li>Correo electrónico: endocrino@juliantamayo.com</li>
-            <li>Teléfono: 645111171</li>
+            <li>Correo electrónico: conutricionsaludable@gmail.com</li>
+            <li>Teléfono: 665859643</li>
           </ul>
           <h2>USUARIAS Y USUARIOS:</h2>
           <p>
@@ -132,8 +132,8 @@ export default function AvisoLegal() {
             derecho legítimo o la legalidad vigente le estaríamos muy
             agradecidos que se pusiera en contacto con nosotros a través de los
             medios que considere oportunos bien a la dirección de correo
-            electrónico endocrino@juliantamayo.com o en el siguiente número de
-            teléfono 645111171 para que podamos tomar las medidas oportunas.
+            electrónico conutricionsaludable@gmail.com o en el siguiente número
+            de teléfono 665859643 para que podamos tomar las medidas oportunas.
           </p>
           <h2>MODIFICACIONES:</h2>
           <p>

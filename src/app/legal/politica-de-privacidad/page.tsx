@@ -6,12 +6,6 @@ import '@styles/Legal.scss'
 export default function PoliticaDePrivacidad() {
   return (
     <>
-      {/* <Meta
-        title="Dr. Julián Tamayo | Política de Privacidad"
-        desc="Política de Privacidad | Julián Tamayo | Endocrino especialista en el cuidado de enfermedades crónicas."
-        canonical="https://www.juliantamayo.com/legal/politica-de-privacidad"
-        image="https://www.juliantamayo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportada4.a9e48235.jpg&w=1920&q=75"
-      /> */}
       <Header title="Política de Privacidad" image={banner} />
       <Layout>
         <div className="legalText">
@@ -52,11 +46,11 @@ export default function PoliticaDePrivacidad() {
             <li>Identidad del responsable: CAROLINA ALMEIDA RAMÍREZ</li>
             <li>NIF/CIF: 45761182-Z</li>
             <li>
-              Dirección: Calle MONTEVIDEO, 14, 3E, CP 35007 LAS PALMAS DE GRAN
-              CANARIA, Las Palmas
+              Dirección: C. Alonso Alvarado, 15, Oficina 4, 35003 Las Palmas de
+              Gran Canaria, Las Palmas
             </li>
-            <li>Correo electrónico: endocrino@juliantamayo.com</li>
-            <li>Teléfono: 645111171</li>
+            <li>Correo electrónico: conutricionsaludable@gmail.com</li>
+            <li>Teléfono: 665859643</li>
           </ul>
           <h2>¿QUÉ DATOS PERSONALES SE RECOGEN EN ESTA WEB?</h2>
           <p>
@@ -201,7 +195,7 @@ export default function PoliticaDePrivacidad() {
             satisfacción en el ejercicio de tus derechos, puedes presentar una
             reclamación ante la Autoridad de Control en materia de Protección de
             Datos. Para ejercitar estos derechos, puedes escribir a
-            endocrino@juliantamayo.com. Los formularios también pueden ser
+            conutricionsaludable@gmail.com. Los formularios también pueden ser
             presentados presencialmente o enviados por carta a las direcciones
             de contacto del responsable indicadas anteriormente. En caso de que
             se actúe a través de representación legal deberás aportar, además,
@@ -289,9 +283,9 @@ export default function PoliticaDePrivacidad() {
           <h2>INFORMACIÓN ADICIONAL SOBRE PROTECCIÓN DE DATOS</h2>
           <p>
             Si necesita información adicional sobre protección de datos, puede
-            enviarnos un correo electrónico a endocrino@juliantamayo.com o una
-            comunicación dirigida a Calle MONTEVIDEO, 14, 3E, CP 35007 LAS
-            PALMAS DE GRAN CANARIA, Las Palmas y, en función del tipo de
+            enviarnos un correo electrónico a conutricionsaludable@gmail.com o
+            una comunicación dirigida a C. Alonso Alvarado, 15, Oficina 4, 35003
+            Las Palmas de Gran Canaria, Las Palmas y, en función del tipo de
             relación que tenga con nuestra entidad y el tratamiento de datos
             personales que realicemos, le facilitaremos la información adicional
             que corresponda.

@@ -9,7 +9,7 @@ export async function POST(req) {
   console.log('Sending email:', { name, email, message })
   try {
     await resend.emails.send({
-      from: email,
+      from: 'https://www.nutricionsaludablelaspalmas.com',
       to: ['connutricionsaludable@gmail.com'],
       subject: `Consulta Web - ${name}`,
       html: `<p>${message}</p>`,
