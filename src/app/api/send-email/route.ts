@@ -9,19 +9,19 @@ export async function POST(req) {
   const { name, email, message } = res
   console.log('Sending email:', { name, email, message })
   try {
-    // await resend.emails.send({
-    //   from: 'info@nutricionsaludablelaspalmas.com',
-    //   to: ['connutricionsaludable@gmail.com'],
-    //   subject: `Consulta Web - ${name}`,
-    //   html: `<p>${message}</p>`,
-    // })
-
     await resend.emails.send({
       from: 'info@nutricionsaludablelaspalmas.com',
-      to: email,
-      subject: `Gracias por contactarnos - ${name}`,
-      react: GraciasPorContactar({ name }),
+      to: ['connutricionsaludable@gmail.com'],
+      subject: `Consulta Web - ${name}`,
+      html: `<p>${message}</p>`,
     })
+
+    // await resend.emails.send({
+    //   from: 'info@nutricionsaludablelaspalmas.com',
+    //   to: email,
+    //   subject: `Gracias por contactarnos - ${name}`,
+    //   react: GraciasPorContactar({ name }),
+    // })
 
     return NextResponse.json({ success: true })
   } catch (error) {
