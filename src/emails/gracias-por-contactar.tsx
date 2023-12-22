@@ -25,15 +25,17 @@ const baseUrl = process.env.VERCEL_URL
 export const GraciasPorContactarEmail = ({
   name,
 }: graciasPorContactarProps) => {
+  const year = new Date().getFullYear()
+
   return (
     <Html>
       <Head />
-      <Preview>Yelp recent login</Preview>
+      <Preview>Gracias por contactarnos</Preview>
       <Body style={main}>
         <Container>
           <Section style={logo}>
             <Img
-              src={`public/static/carolinaLogoTransparent.png`}
+              src="https://www.nutricionsaludablelaspalmas.com/static/carolinaLogoTransparent.png"
               width="100"
               height="100"
             />
@@ -77,23 +79,11 @@ export const GraciasPorContactarEmail = ({
                   nuestros servicios y estamos ansiosos por ayudarte en tu viaje
                   hacia una mejor salud y nutrición. Atentamente,
                 </Text>
-                <Text
-                  style={{
-                    color: 'rgb(0,0,0, 0.5)',
-                    fontSize: 14,
-                    marginTop: -5,
-                  }}
-                >
-                  *Approximate geographic location based on IP address:
-                </Text>
-
-                <Text style={paragraph}>
-                  If this was you, there's nothing else you need to do.
-                </Text>
-                <Text style={{ ...paragraph, marginTop: -5 }}>
-                  If this wasn't you or if you have additional questions, please
-                  see our support page.
-                </Text>
+                <Img
+                  src="https://www.nutricionsaludablelaspalmas.com/static/mapaOficina.png"
+                  width="100"
+                  height="100"
+                />
               </Column>
             </Row>
             <Row style={{ ...boxInfos, paddingTop: '0' }}>
@@ -103,9 +93,9 @@ export const GraciasPorContactarEmail = ({
             </Row>
           </Section>
 
-          <Section style={containerImageFooter}>
+          {/* <Section style={containerImageFooter}>
             <Img width={620} src={`public/static/yelp-footer.png`} />
-          </Section>
+          </Section> */}
 
           <Text
             style={{
@@ -114,8 +104,9 @@ export const GraciasPorContactarEmail = ({
               color: 'rgb(0,0,0, 0.7)',
             }}
           >
-            © 2022 | Yelp Inc., 350 Mission Street, San Francisco, CA 94105,
-            U.S.A. | www.yelp.com
+            © {`${year}`} | Carolina Almeida, C. Alonso Alvarado, 15, Oficina
+            4, 35003 Las Palmas de Gran Canaria, Las Palmas |
+            www.nutricionsaludablelaspalmas.com
           </Text>
         </Container>
       </Body>
@@ -171,7 +162,8 @@ const containerImageFooter = {
 }
 
 const image = {
-  backgroundImage: `url(${baseUrl}/static/contacto.jpg)`,
+  backgroundImage:
+    'url(https://www.nutricionsaludablelaspalmas.com/static/contacto.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
