@@ -1,13 +1,13 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
-import GraciasPorContactar from 'src/emails/gracias-por-contactar'
+import GraciasPorContactar from 'src/_emails/gracias-por-contactar'
 
 const resend = new Resend(process.env.NEXT_RESEND_API_KEY)
 
 export async function POST(req) {
   const res = await req.json()
   const { name, email, message } = res
-  console.log('Sending email:', { name, email, message })
+
   try {
     await resend.emails.send({
       from: 'info@nutricionsaludablelaspalmas.com',
@@ -20,7 +20,9 @@ export async function POST(req) {
       from: 'info@nutricionsaludablelaspalmas.com',
       to: email,
       subject: `Gracias por contactarnos - ${name}`,
-      react: GraciasPorContactar({ name }),
+      react: GraciasPorContactar({
+        name,
+      }),
     })
 
     return NextResponse.json({ success: true })

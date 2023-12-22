@@ -8,7 +8,7 @@
     "lint:fix": "npm run format && npm run lint -- --fix",
     "start": "next start",
     "type-check": "tsc --noEmit",
-    "email": "email dev --dir src/emails"
+    "email": "email dev --dir src/_emails"
   },
   "prettier": {
     "semi": false,

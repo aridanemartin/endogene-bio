@@ -18,14 +18,21 @@ interface graciasPorContactarProps {
   name?: string
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : ''
+const domainUrl = 'https://www.nutricionsaludablelaspalmas.com'
 
 export const GraciasPorContactarEmail = ({
   name,
 }: graciasPorContactarProps) => {
   const year = new Date().getFullYear()
+  const getName = (name: string) => {
+    if (!name) return
+    const nameSplitted = name.split(' ')
+    if (nameSplitted.length > 3) {
+      return `${nameSplitted[0]} ${nameSplitted[1]}`
+    } else {
+      return nameSplitted[0]
+    }
+  }
 
   return (
     <Html>
@@ -35,14 +42,14 @@ export const GraciasPorContactarEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src="https://www.nutricionsaludablelaspalmas.com/static/carolinaLogoTransparent.png"
+              src={`${domainUrl}/static/carolinaLogoTransparent.png`}
               width="100"
               height="100"
             />
           </Section>
 
           <Section style={content}>
-            <Row style={image}>{null}</Row>
+            <Row style={headerBackground}>{null}</Row>
             <Row style={{ ...boxInfos, paddingBottom: '0' }}>
               <Column>
                 <Heading
@@ -50,9 +57,10 @@ export const GraciasPorContactarEmail = ({
                     fontSize: 32,
                     textAlign: 'center',
                     marginBottom: '0',
+                    color: '#0e6835',
                   }}
                 >
-                  Estimado/a <b>Pepe{name}</b>,
+                  Estimado/a <b>{getName(name)}</b>,
                 </Heading>
                 <Heading
                   as="h2"
@@ -60,6 +68,7 @@ export const GraciasPorContactarEmail = ({
                     fontSize: 26,
                     textAlign: 'center',
                     margin: 0,
+                    color: '#0e6835',
                     marginBottom: '2rem',
                   }}
                 >
@@ -71,7 +80,9 @@ export const GraciasPorContactarEmail = ({
                   interés en cuidar de tu salud y bienestar, y estamos
                   comprometidos a brindarte el mejor servicio posible.
                 </Text>
-                <Text style={{ ...paragraph, marginTop: -5 }}>
+                <Text
+                  style={{ ...paragraph, marginTop: -5, marginBottom: '3rem' }}
+                >
                   Si necesitas realizar alguna modificación o tienes alguna
                   pregunta adicional, no dudes en ponerte en contacto con
                   nosotros a través de este correo electrónico o llamando a
@@ -79,24 +90,17 @@ export const GraciasPorContactarEmail = ({
                   nuestros servicios y estamos ansiosos por ayudarte en tu viaje
                   hacia una mejor salud y nutrición. Atentamente,
                 </Text>
-                <Img
-                  src="https://www.nutricionsaludablelaspalmas.com/static/mapaOficina.png"
-                  width="100"
-                  height="100"
-                />
+                <Row style={mapaOficina}>{null}</Row>
               </Column>
             </Row>
             <Row style={{ ...boxInfos, paddingTop: '0' }}>
               <Column style={containerButton} colSpan={2}>
-                <Button style={button}>Learn More</Button>
+                <Button style={button} href={domainUrl}>
+                  Volver a la web
+                </Button>
               </Column>
             </Row>
           </Section>
-
-          {/* <Section style={containerImageFooter}>
-            <Img width={620} src={`public/static/yelp-footer.png`} />
-          </Section> */}
-
           <Text
             style={{
               textAlign: 'center',
@@ -105,8 +109,7 @@ export const GraciasPorContactarEmail = ({
             }}
           >
             © {`${year}`} | Carolina Almeida, C. Alonso Alvarado, 15, Oficina
-            4, 35003 Las Palmas de Gran Canaria, Las Palmas |
-            www.nutricionsaludablelaspalmas.com
+            4, 35003 Las Palmas de Gran Canaria, Las Palmas |{`${domainUrl}`}
           </Text>
         </Container>
       </Body>
@@ -118,8 +121,7 @@ export default GraciasPorContactarEmail
 
 const main = {
   backgroundColor: '#fff',
-  fontFamily:
-    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  fontFamily: 'forum',
 }
 
 const paragraph = {
@@ -138,7 +140,7 @@ const containerButton = {
 }
 
 const button = {
-  backgroundColor: '#e00707',
+  backgroundColor: '#0e6835',
   padding: '12px 30px',
   borderRadius: 3,
   color: '#FFF',
@@ -157,15 +159,19 @@ const boxInfos = {
   padding: '20px 40px',
 }
 
-const containerImageFooter = {
-  padding: '45px 0 0 0',
-}
-
-const image = {
-  backgroundImage:
-    'url(https://www.nutricionsaludablelaspalmas.com/static/contacto.jpg)',
+const headerBackground = {
+  backgroundImage: `url(${domainUrl}/static/contacto.jpg)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   height: '200px',
+}
+
+const mapaOficina = {
+  backgroundImage: `url(${domainUrl}/static/mapaOficina.png)`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  height: '200px',
+  marginBottom: '2rem',
 }
