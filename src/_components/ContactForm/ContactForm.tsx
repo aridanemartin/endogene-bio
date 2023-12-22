@@ -2,13 +2,17 @@
 
 import React, { useState } from 'react'
 import './ContactForm.scss'
+import Input from '@components/Input/Input'
+import Textarea from '@components/Textarea/Textarea'
 
 const ContactForm = () => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [isEmailSent, setIsEmailSent] = useState(false)
+  const [isFatalError, setIsFatalError] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-    domainUrl: process.env.NEXT_PUBLIC_DOMAIN_URL,
   })
 
   const [formErrors, setFormErrors] = useState({
@@ -16,7 +20,8 @@ const ContactForm = () => {
     email: '',
     message: '',
   })
-  console.log('===errors===>', formErrors)
+
+  console.log('====> ', formErrors)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -53,7 +58,7 @@ const ContactForm = () => {
     if (!validateForm()) {
       return
     }
-
+    setIsLoading(true)
     try {
       await fetch('/api/send-email', {
         method: 'POST',
@@ -62,57 +67,54 @@ const ContactForm = () => {
         },
         body: JSON.stringify(formData),
       })
-
+      setIsEmailSent(true)
       console.log('Email sent successfully')
     } catch (error) {
       console.error('Error sending email:', error)
+      setIsFatalError(true)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  const renderButton = () => {
+    if (isLoading) {
+      return <button type="submit">Enviando...</button>
+    } else if (isEmailSent) {
+      return <button type="submit">Enviado</button>
+    } else if (isFatalError) {
+      return <button type="submit">Error</button>
+    } else {
+      return <button type="submit">Enviar</button>
     }
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <div className="contact-form__input">
-        <input
-          type="text"
-          name="name"
-          onChange={handleChange}
-          required
-          placeholder="Nombre y Apellidos"
-        />
-        {formErrors.name && (
-          <p className="contact-form__error" style={{ color: 'red' }}>
-            {formErrors.name}
-          </p>
-        )}
-      </div>
-      <div className="contact-form__input">
-        <input
-          type="email"
-          name="email"
-          onChange={handleChange}
-          required
-          placeholder="email@ejemplo.com"
-        />
-        {formErrors.email && (
-          <p className="contact-form__error" style={{ color: 'red' }}>
-            {formErrors.email}
-          </p>
-        )}
-      </div>
-      <div className="contact-form__input">
-        <textarea
-          name="message"
-          onChange={handleChange}
-          required
-          placeholder="Escribe aquí tu mensaje"
-        />
-        {formErrors.message && (
-          <p className="contact-form__error" style={{ color: 'red' }}>
-            {formErrors.message}
-          </p>
-        )}
-      </div>
-      <button type="submit">Enviar</button>
+    <form onSubmit={handleSubmit} className="contact-form" noValidate>
+      <Input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Nombre y Apellidos"
+        error={formErrors.name}
+      />
+      <Input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="email@ejemplo.com"
+        error={formErrors.email}
+      />
+      <Textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Escribe aquí tu mensaje"
+        error={formErrors.message}
+      />
+      {renderButton()}
     </form>
   )
 }
