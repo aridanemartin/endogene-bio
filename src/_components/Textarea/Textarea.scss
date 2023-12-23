@@ -1,5 +1,5 @@
 .textarea {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   &:has(+ p) {
     margin-bottom: 0;
@@ -7,6 +7,6 @@
 
   &__error {
     margin: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }

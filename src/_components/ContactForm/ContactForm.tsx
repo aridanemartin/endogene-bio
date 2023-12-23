@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import './ContactForm.scss'
 import Input from '@components/Input/Input'
 import Textarea from '@components/Textarea/Textarea'
+import checkMark from '@assets/icons/check.png'
+import Image from 'next/image'
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -20,8 +22,6 @@ const ContactForm = () => {
     email: '',
     message: '',
   })
-
-  console.log('====> ', formErrors)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -41,11 +41,12 @@ const ContactForm = () => {
     // Check if each field is filled
     Object.keys(formData).forEach((field) => {
       if (formData[field].trim() === '') {
+        console.log(field)
         newErrors[
           field
         ] = `Por favor introduzca su ${fieldSpanishNames[field]}.`
+        valid = false
       }
-      valid = false
     })
 
     setFormErrors(newErrors)
@@ -58,19 +59,28 @@ const ContactForm = () => {
     if (!validateForm()) {
       return
     }
+
     setIsLoading(true)
     try {
-      await fetch('/api/send-email', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       })
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
+
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      })
       setIsEmailSent(true)
-      console.log('Email sent successfully')
     } catch (error) {
-      console.error('Error sending email:', error)
       setIsFatalError(true)
     } finally {
       setIsLoading(false)
@@ -79,11 +89,27 @@ const ContactForm = () => {
 
   const renderButton = () => {
     if (isLoading) {
-      return <button type="submit">Enviando...</button>
+      return (
+        <button disabled>
+          <span className="contact-form__button-loader"></span>
+        </button>
+      )
     } else if (isEmailSent) {
-      return <button type="submit">Enviado</button>
+      return (
+        <button className="contact-form__button-email-sent" disabled>
+          Enviado
+          <span className="check">
+            <Image src={checkMark} alt="check" width={25} height={25} />
+          </span>
+        </button>
+      )
     } else if (isFatalError) {
-      return <button type="submit">Error</button>
+      return (
+        <p className="contact-form__email-error">
+          El servicio de envío de emails no está disponible en este momento.
+          Recuerde que puede contactarnos por teléfono o whatsapp.
+        </p>
+      )
     } else {
       return <button type="submit">Enviar</button>
     }
