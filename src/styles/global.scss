@@ -1,8 +1,25 @@
 @use '@sass/_index.scss';
+@use '@sass/colors.scss' as *;
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  /* scroll bar */
+  &::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid #cacaca;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 128, 0, 0.283);
+    border: 1px solid #cacaca;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #094322;
+  }
 }
 
 body {

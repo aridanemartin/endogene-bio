@@ -26,17 +26,23 @@
   &:hover {
     box-shadow: $card-box-shadow-hover;
     transform: translate(0, -2px);
+
+    > .postPreview__image img {
+      transform: scale(1.05);
+    }
   }
 
   &__image {
     position: relative;
     margin-bottom: 1rem;
+    overflow: hidden;
 
     &-img {
       height: 20rem;
       width: 100%;
       position: relative;
       object-fit: cover;
+      transition: all 0.3s ease-in-out;
     }
   }
 
