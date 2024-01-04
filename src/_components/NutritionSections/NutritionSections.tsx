@@ -11,7 +11,7 @@ export const NutritionSections = () => {
     if (isMobile) {
       return (
         <Link href={href}>
-          <h1 className="sections__title">{title}</h1>
+          <h2 className="sections__title">{title}</h2>
         </Link>
       )
     } else {
@@ -25,7 +25,7 @@ export const NutritionSections = () => {
         {renderTitle('Nutrición Personalizada', '/nutricion-personalizada')}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h2>Nutrición Personalizada</h2>
+            <h3>Nutrición Personalizada</h3>
             <p>
               Asesoramiento Nutricional para todas las etapas de la vida:
               Infancia, adolescencia, embarazo, edad adulta, menopausia, edad
@@ -49,7 +49,7 @@ export const NutritionSections = () => {
         )}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h2>Nutrición de Colectividades</h2>
+            <h3>Nutrición de Colectividades</h3>
             <p>
               Elaboración de menús para comedores escolares, centros
               sociosanitarios y geriátricos de acuerdo a la legislación vigente.
