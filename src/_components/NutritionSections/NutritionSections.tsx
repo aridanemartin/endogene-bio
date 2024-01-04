@@ -1,12 +1,12 @@
 'use client'
 
+import useIsMobile from 'src/_hooks/useIsMobile'
 import './NutritionSections.scss'
 import Link from 'next/link'
-import { useIsMobile } from 'src/_hooks/useIsMobile'
 
 export const NutritionSections = () => {
   const renderTitle = (title: string, href: string) => {
-    const isMobile = useIsMobile()
+    const isMobile = useIsMobile(768)
 
     if (isMobile) {
       return (
