@@ -23,6 +23,7 @@ export const NutritionSections = () => {
               alteraciones tiroideas, renales digestivas, hepáticas, alergias e
               intolerancias y otros.
             </p>
+            <button>Saber más</button>
           </div>
         </div>
       </div>
@@ -39,6 +40,7 @@ export const NutritionSections = () => {
               Asesoramiento en Seguridad Alimentaria: control higiénico
               sanitario de las instalaciones.
             </p>
+            <button>Saber más</button>
           </div>
         </div>
       </div>
