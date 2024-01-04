@@ -7,11 +7,13 @@ export function useIsMobile() {
     setWidth(window.innerWidth)
   }
   useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange)
-    return () => {
-      window.removeEventListener('resize', handleWindowSizeChange)
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleWindowSizeChange)
+      return () => {
+        window.removeEventListener('resize', handleWindowSizeChange)
+      }
     }
-  }, [])
+  }, [window])
 
   const isMobile = width <= 768
 
