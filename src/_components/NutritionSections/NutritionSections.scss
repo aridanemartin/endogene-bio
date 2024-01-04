@@ -22,7 +22,7 @@ $tabs-container-overflow: 5rem;
     transition: all 0.5s ease-in-out;
 
     &1 {
-      background: url('../../_assets/pictures/nutricion-personalizada.jpg');
+      background: url('../../_assets/pictures/menu.jpg');
       background-position: center;
       background-size: 100%;
     }
@@ -136,14 +136,19 @@ $tabs-container-overflow: 5rem;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 768px) {
   .sections {
     &__box {
-      &1 {
-        background-size: 250%;
+      animation: none;
+      &:hover {
+        background-size: 100%;
 
-        &:hover {
-          background-size: 270%;
+        h1 {
+          color: white;
+        }
+
+        > .sections__content {
+          top: 100%;
         }
       }
     }

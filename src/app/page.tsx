@@ -1,10 +1,8 @@
-import React from 'react'
 import HeroTemplate from '@components/HeroTemplate/HeroTemplate'
 
 import { getPosts } from 'src/sanity/utils/sanity-querys'
 import { PostPreview } from '@components/PostPreview/PostPreview'
 import Headline from '@components/Headline/Headline'
-import { SectionsPreview } from '@components/SectionsPreview/SectionsPreview'
 import { NutritionSections } from '@components/NutritionSections/NutritionSections'
 
 interface indexProps {}

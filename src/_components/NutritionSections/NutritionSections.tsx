@@ -1,15 +1,28 @@
 'use client'
 
 import './NutritionSections.scss'
-import Image from 'next/image'
-import nutricionPersonalizada from '@assets/pictures/nutricion-personalizada.jpg'
-import nutricionColectividades from '@assets/pictures/nutricion-colectividades.jpg'
+import Link from 'next/link'
+import { useIsMobile } from 'src/_hooks/useIsMobile'
 
 export const NutritionSections = () => {
+  const renderTitle = (title: string, href: string) => {
+    const isMobile = useIsMobile()
+
+    if (isMobile) {
+      return (
+        <Link href={href}>
+          <h1 className="sections__title">{title}</h1>
+        </Link>
+      )
+    } else {
+      return <h2>{title}</h2>
+    }
+  }
+
   return (
     <section className="sections" id="servicios">
       <div className="sections__box sections__box1">
-        <h1 className="sections__title">Nutrición Personalizada</h1>
+        {renderTitle('Nutrición Personalizada', '/nutricion-personalizada')}
         <div className="sections__content">
           <div className="sections__content-description">
             <h2>Nutrición Personalizada</h2>
@@ -23,12 +36,17 @@ export const NutritionSections = () => {
               alteraciones tiroideas, renales digestivas, hepáticas, alergias e
               intolerancias y otros.
             </p>
-            <button>Saber más</button>
+            <Link href="/nutricion-personalizada">
+              <button>Saber más</button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="sections__box sections__box2">
-        <h1 className="sections__title">Nutrición de Colectividades</h1>
+        {renderTitle(
+          'Nutrición de Colectividades',
+          '/nutricion-de-colectividades',
+        )}
         <div className="sections__content">
           <div className="sections__content-description">
             <h2>Nutrición de Colectividades</h2>
@@ -40,7 +58,9 @@ export const NutritionSections = () => {
               Asesoramiento en Seguridad Alimentaria: control higiénico
               sanitario de las instalaciones.
             </p>
-            <button>Saber más</button>
+            <Link href="/nutricion-de-colectividades">
+              <button>Saber más</button>
+            </Link>
           </div>
         </div>
       </div>
