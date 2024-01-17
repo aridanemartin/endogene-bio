@@ -1,0 +1,19 @@
+@use '@sass/colors.scss' as *;
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  &__title {
+    color: $main-green;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
