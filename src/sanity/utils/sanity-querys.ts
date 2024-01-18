@@ -54,7 +54,6 @@ export async function getPrices() {
       price,
       priceDiscount,
       description,
-      duration,
       "icon": icon.asset->url,
     }`,
     undefined,

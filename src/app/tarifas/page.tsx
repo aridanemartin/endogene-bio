@@ -36,7 +36,6 @@ export default async function Tarifas() {
               description={tarifa.description}
               price={tarifa.price}
               priceDiscount={tarifa.priceDiscount}
-              duration={tarifa.duration}
               icon={tarifa.icon}
             />
           ))}
