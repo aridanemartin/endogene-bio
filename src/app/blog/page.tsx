@@ -1,7 +1,7 @@
 import { getPosts } from 'src/sanity/utils/sanity-querys'
 
 import '@styles/Blog.scss'
-import heroImage from '@assets/pictures/blog3.jpg'
+import heroImage from '@assets/pictures/blog3.webp'
 import Header from '@components/Header/Header'
 import { BlogPostPreview } from '@components/BlogPostPreview/BlogPostPreview'
 import Headline from '@components/Headline/Headline'
