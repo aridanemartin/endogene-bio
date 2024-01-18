@@ -160,7 +160,7 @@ const boxInfos = {
 }
 
 const headerBackground = {
-  backgroundImage: `url(${domainUrl}/static/contacto.jpg)`,
+  backgroundImage: `url(${domainUrl}/static/contacto.webp)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',

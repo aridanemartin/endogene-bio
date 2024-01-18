@@ -56,7 +56,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="footer__cita-button">
-            <Link href="/equipo" className="Button">
+            <Link href="/contacto" className="Button">
               Concertar cita
             </Link>
           </div>

@@ -11,7 +11,7 @@
   box-shadow: $card-box-shadow;
   padding: 1rem;
 
-  height: 40rem;
+  height: 30rem;
 
   &__image {
     display: flex;
@@ -87,6 +87,7 @@
   }
 
   &__discountBadge {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;

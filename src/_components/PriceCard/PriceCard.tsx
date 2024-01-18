@@ -7,7 +7,7 @@ interface PriceCardProps {
   description: any
   price: number
   priceDiscount: number
-  duration: number
+
   icon: string
 }
 
@@ -16,7 +16,7 @@ export const PriceCard = ({
   description,
   price,
   priceDiscount,
-  duration,
+
   icon,
 }: PriceCardProps) => {
   const renderDiscountBadge = () => {
@@ -61,9 +61,9 @@ export const PriceCard = ({
       </div>
       <h2 className="priceCard__title">{title}</h2>
       <div className="priceCard__price">{renderPrice()}</div>
-      <p className="priceCard__duration">
+      {/* <p className="priceCard__duration">
         <strong>{duration}</strong> min.
-      </p>
+      </p> */}
       <div className="priceCard__description">
         {description.map((block) => {
           return <SanityBlock key={block._key} sanityContent={block} />

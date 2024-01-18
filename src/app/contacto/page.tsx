@@ -1,4 +1,4 @@
-import contacto from '@assets/pictures/contacto.jpg'
+import contacto from '@assets/pictures/contacto.webp'
 import ContactForm from '@components/ContactForm/ContactForm'
 import Image from 'next/image'
 import type { Metadata } from 'next'

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import heroImage from '@assets/pictures/carolinaProfileSquare.jpg'
 
 import './HeroTemplate.scss'
+import Link from 'next/link'
 
 export default function HeroTemplate() {
   return (
@@ -23,7 +24,9 @@ export default function HeroTemplate() {
         <p>
           Haz clic ahora para empezar tu viaje hacia una vida más saludable.
         </p>
-        <button className="hero__button">Concertar cita</button>
+        <Link href="/contacto" className="Button">
+          <button className="hero__button">Concertar cita</button>
+        </Link>
       </div>
     </div>
   )
