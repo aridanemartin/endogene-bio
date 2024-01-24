@@ -19,7 +19,7 @@ export async function POST(req) {
     await resend.emails.send({
       from: 'info@nutricionsaludablelaspalmas.com',
       to: email,
-      subject: `Gracias por contactarnos - ${name}`,
+      subject: `${name}, gracias por contactarnos`,
       react: GraciasPorContactar({
         name,
       }),

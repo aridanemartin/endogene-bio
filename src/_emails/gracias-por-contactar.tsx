@@ -37,7 +37,10 @@ export const GraciasPorContactarEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>Gracias por contactarnos</Preview>
+      <Preview>
+        Apreciamos tu interés en cuidar de tu salud y bienestar, y estamos
+        comprometidos a brindarte el mejor servicio posible.
+      </Preview>
       <Body style={main}>
         <Container>
           <Section style={logo}>
