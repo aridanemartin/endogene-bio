@@ -2,6 +2,7 @@ import Nav from '@components/Nav/Nav'
 import { Forum } from 'next/font/google'
 import '@styles/global.scss'
 import Footer from '@components/Footer/Footer'
+import AriSignature from '@components/AriSignature/AriSignature'
 
 export const metadata = {
   title: 'Con Nutrición Saludable | Carolina Almeida',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <AriSignature />
       </body>
     </html>
   )

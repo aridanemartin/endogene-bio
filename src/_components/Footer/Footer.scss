@@ -99,15 +99,24 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 0rem;
     }
 
     &__links {
       display: none;
     }
 
+    &__cita {
+      margin-bottom: 0rem;
+    }
+
     &__legal {
       flex-direction: column;
       justify-content: center;
+
+      a:last-child {
+        padding-bottom: 3rem;
+      }
     }
   }
 }

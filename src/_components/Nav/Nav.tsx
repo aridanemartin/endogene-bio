@@ -73,14 +73,14 @@ export default function Nav() {
       <div className={isOpen ? 'nav' + ' ' + 'navOpen' : 'nav'}>
         <div className="navContent">
           <section className="navContent__leftSection">
-            <div className="navContent__logo">
+            <Link href="/" className="navContent__logo">
               <Image
                 src={navLogo}
                 alt="Con Nutricion Saludable - Logo"
                 fill
                 objectFit="contain"
               />
-            </div>
+            </Link>
             <ul className="linksWrapper">
               <li>
                 <Link className="link" href="/" onClick={toggle}>
