@@ -28,6 +28,10 @@
   }
 
   &__text {
+    .textBlock {
+      padding: 0 1rem;
+    }
+
     p {
       margin-bottom: 1rem;
     }
@@ -41,5 +45,9 @@
     grid-template-rows: 20rem 1fr;
 
     margin-bottom: 0;
+
+    &__picture-wrapper {
+      margin-bottom: 2rem;
+    }
   }
 }

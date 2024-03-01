@@ -4,6 +4,7 @@ import { getPosts } from 'src/sanity/utils/sanity-querys'
 import { PostPreview } from '@components/PostPreview/PostPreview'
 import Headline from '@components/Headline/Headline'
 import { NutritionSections } from '@components/NutritionSections/NutritionSections'
+import HeroBanner from '@components/HeroBanner/HeroBanner'
 
 interface indexProps {}
 
@@ -13,11 +14,16 @@ export default async function Home({}: indexProps) {
 
   return (
     <>
+      <HeroBanner
+        description="Diestista-Nutricionista en Las Palmas de Gran Canaria"
+        buttonComponent="hola"
+      />
       <main className="main-layout">
         <HeroTemplate />
         <Headline
           title="Servicios"
           subtitle="Descubre cómo la Nutrición Personalizada puede transformar tu bienestar en cada etapa de la vida. Complementa esto con nuestra Nutrición Clínica, que aborda condiciones como obesidad, diabetes y alergias con un enfoque integral."
+          id="servicios"
         />
         <NutritionSections />
         <Headline

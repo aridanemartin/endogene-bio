@@ -22,44 +22,6 @@ export default function NutricionDeColectividadesPage() {
       />
       <main className="main-layout">
         <PictureSection
-          pictureSrc={etapasImage}
-          picturePosition="left"
-          text={
-            <TextBlock
-              title="Nutrición para todas las etapas de la vida"
-              children={
-                <>
-                  <ol>
-                    <li>
-                      Elaboración y validación de menús equilibrados basados en
-                      productos de temporada adaptados a cada etapa.
-                    </li>
-                    <li>Fichas técnicas.</li>
-                    <li>
-                      Valoración nutricional (calorías, proteínas, lípidos,
-                      hidratos de carbono).
-                    </li>
-                    <li>
-                      Recomendaciones de cenas y propuesta de desayunos y
-                      meriendas saludables.
-                    </li>
-                    <li>
-                      Derivaciones de menús para necesidades especiales:
-                      alergias, intolerancias alimentarias y patologías
-                      infantiles.
-                    </li>
-                    <li>
-                      Plan de menús adaptados según alternativas alimentarias:
-                      menús vegetarianos, veganos...
-                    </li>
-                    <li>Formación.</li>
-                  </ol>
-                </>
-              }
-            />
-          }
-        />
-        <PictureSection
           pictureSrc={controlHigienicoSanitarioImage}
           picturePosition="right"
           text={

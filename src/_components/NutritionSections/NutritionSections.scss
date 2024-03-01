@@ -22,20 +22,29 @@ $tabs-container-overflow: 5rem;
     transition: all 0.5s ease-in-out;
 
     &1 {
-      background: url('../../_assets/pictures/menu.jpg');
-      background-position: center;
-      background-size: 100%;
+      background: url('../../_assets/pictures/nutricion-a-domicilio.jpg');
+      background-size: 110%;
     }
 
     &2 {
+      background: url('../../_assets/pictures/etapas.webp');
+      background-size: 160%;
+    }
+
+    &3 {
+      background: url('../../_assets/pictures/menu.jpg');
+      background-size: 100%;
+    }
+
+    &4 {
       background: url('../../_assets/pictures/nutricion-colectividades.jpg');
-      background-position: center;
       background-size: 100%;
     }
 
     &:hover {
       cursor: pointer;
-      background-size: 120%;
+      background-size: 170%;
+
       h2 {
         color: transparent;
       }
@@ -72,6 +81,7 @@ $tabs-container-overflow: 5rem;
       z-index: 2;
       transition: all 0.5s ease-in-out;
       padding: 0rem 2rem;
+      text-wrap: balance;
     }
   }
 
@@ -104,6 +114,7 @@ $tabs-container-overflow: 5rem;
       font-size: 1.2rem;
       padding-bottom: 1rem;
       font-weight: bold;
+      text-wrap: balance;
     }
 
     p {
@@ -163,7 +174,7 @@ $tabs-container-overflow: 5rem;
 
     &__box {
       width: 100%;
-      height: 20rem;
+      height: 10rem;
       background-size: cover;
     }
 
