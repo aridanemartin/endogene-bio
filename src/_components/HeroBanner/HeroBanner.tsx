@@ -21,7 +21,11 @@ const HeroBanner = ({ description, buttonComponent }: HeroBannerProps) => {
             quality={50}
           />
         </div>
-        <p className="heroBanner__description">{description}</p>
+        {/* <p className="heroBanner__description">{description}</p> */}
+        <p className="heroBanner__description">
+          Diestista-Nutricionista
+          <br /> en Las Palmas de Gran Canaria
+        </p>
         {/* {buttonComponent} */}
       </div>
     </div>

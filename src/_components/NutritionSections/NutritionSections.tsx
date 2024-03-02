@@ -22,18 +22,20 @@ export const NutritionSections = () => {
   return (
     <section className="sections">
       <div className="sections__box sections__box1">
-        {renderTitle('Nutrición a Domicilio', '/nutricion-de-colectividades')}
+        {renderTitle(
+          'Nutrición a Domicilio',
+          'servicios/nutricion-a-domicilio',
+        )}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h3>Nutrición a Domicilio</h3>
-            <p>
-              Elaboración de menús para comedores escolares, centros
-              sociosanitarios y geriátricos de acuerdo a la legislación vigente.
-              <br />
-              <br />
-              Asesoramiento en Seguridad Alimentaria: control higiénico
-              sanitario de las instalaciones.
-            </p>
+            <div className="sections__content-text">
+              <h3>Nutrición a Domicilio</h3>
+              <p>
+                El servicio de nutrición a domicilio ofrece asesoramiento
+                personalizado, evaluación de la composición corporal y
+                planificación de objetivos saludables en el entorno del cliente.
+              </p>
+            </div>
             <Link href="servicios/nutricion-a-domicilio">
               <button>Saber más</button>
             </Link>
@@ -47,15 +49,15 @@ export const NutritionSections = () => {
         )}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h3>Nutrición en las diferentes etapas de la vida</h3>
-            <p>
-              Elaboración de menús para comedores escolares, centros
-              sociosanitarios y geriátricos de acuerdo a la legislación vigente.
-              <br />
-              <br />
-              Asesoramiento en Seguridad Alimentaria: control higiénico
-              sanitario de las instalaciones.
-            </p>
+            <div className="sections__content-text">
+              <h3>Nutrición en las diferentes etapas de la vida</h3>
+              <p>
+                Este servicio abarca todas las etapas de la vida, desde la
+                alimentación infantil hasta la edad avanzada, adaptándose a las
+                necesidades específicas de cada fase y previniendo enfermedades
+                futuras.
+              </p>
+            </div>
             <Link href="servicios/nutricion-etapas-de-la-vida">
               <button>Saber más</button>
             </Link>
@@ -69,17 +71,15 @@ export const NutritionSections = () => {
         )}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h3>Nutrición y Alteraciones Metabólicas</h3>
-            <p>
-              Asesoramiento Nutricional para todas las etapas de la vida:
-              Infancia, adolescencia, embarazo, edad adulta, menopausia, edad
-              avanzada.
-              <br />
-              <br />
-              Nutrición Clínica para obesidad, diabetes, hipertensión,
-              alteraciones tiroideas, renales digestivas, hepáticas, alergias e
-              intolerancias y otros.
-            </p>
+            <div className="sections__content-text">
+              <h3>Nutrición y Alteraciones Metabólicas</h3>
+              <p>
+                El servicio aborda el síndrome metabólico, relacionado con
+                obesidad, diabetes y enfermedad cardiovascular, destacando cinco
+                características clave, y enfatiza la importancia de la
+                alimentación consciente para mantener la salud.
+              </p>
+            </div>
             <Link href="servicios/nutricion-y-alteraciones-metabolicas">
               <button>Saber más</button>
             </Link>
@@ -93,15 +93,15 @@ export const NutritionSections = () => {
         )}
         <div className="sections__content">
           <div className="sections__content-description">
-            <h3>Nutrición de Colectividades</h3>
-            <p>
-              Elaboración de menús para comedores escolares, centros
-              sociosanitarios y geriátricos de acuerdo a la legislación vigente.
-              <br />
-              <br />
-              Asesoramiento en Seguridad Alimentaria: control higiénico
-              sanitario de las instalaciones.
-            </p>
+            <div className="sections__content-text">
+              <h3>Nutrición de Colectividades</h3>
+              <p>
+                Cumpliendo la Ley 17/2011: Menús equilibrados, fichas técnicas,
+                valoración nutricional, recomendaciones para cenas, desayunos y
+                meriendas. Incluye menús adaptados (alergias, intolerancias,
+                patologías, vegetarianos/veganos) y formación.
+              </p>
+            </div>
             <Link href="servicios/nutricion-de-colectividades">
               <button>Saber más</button>
             </Link>

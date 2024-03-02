@@ -3,7 +3,8 @@ import type { Metadata } from 'next'
 import TextBlock from '@components/TextBlock/TextBlock'
 import PictureSection from '@components/PictureSection/PictureSection'
 import nutricionADomicilioHero from '@assets/pictures/nutricion-a-domicilio.jpg'
-import nutricionADomicilioSectionImage from '@assets/pictures/healthyJar.webp'
+import nutricionADomicilioSectionImage2 from '@assets/pictures/healthyJar.webp'
+import nutricionADomicilioSectionImage from '@assets/pictures/nutricion-personalizada-hero.webp'
 
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
@@ -33,8 +34,10 @@ export default function NutricionADomicilio() {
                     como foco central el peso.
                   </p>
                   <p>
-                    ¿Qué conseguirás teniendo el servicio de nutrición en tu
-                    propio domicilio o tu entorno habitual?
+                    <b>
+                      ¿Qué conseguirás teniendo el servicio de nutrición en tu
+                      propio domicilio o tu entorno habitual?
+                    </b>
                   </p>
 
                   <p>
@@ -54,7 +57,19 @@ export default function NutricionADomicilio() {
                     componentes, marcaremos juntos unos objetivos y trazaremos
                     un plan de acción para alcanzarlos.
                   </p>
-                  <p>¿ Sobre qué objetivos trabajaremos?</p>
+                </>
+              }
+            />
+          }
+        />
+        <PictureSection
+          pictureSrc={nutricionADomicilioSectionImage2}
+          picturePosition="left"
+          text={
+            <TextBlock
+              title="¿Sobre qué objetivos trabajaremos?"
+              children={
+                <>
                   <ol>
                     <li>
                       Sobre una dieta variada, equilibrada siguiendo los

@@ -23,7 +23,7 @@ $tabs-container-overflow: 5rem;
 
     &1 {
       background: url('../../_assets/pictures/nutricion-a-domicilio.jpg');
-      background-size: 110%;
+      background-size: 130%;
     }
 
     &2 {
@@ -33,12 +33,12 @@ $tabs-container-overflow: 5rem;
 
     &3 {
       background: url('../../_assets/pictures/menu.jpg');
-      background-size: 100%;
+      background-size: 130%;
     }
 
     &4 {
       background: url('../../_assets/pictures/nutricion-colectividades.jpg');
-      background-size: 100%;
+      background-size: 130%;
     }
 
     &:hover {
@@ -87,8 +87,8 @@ $tabs-container-overflow: 5rem;
 
   &__content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -104,10 +104,11 @@ $tabs-container-overflow: 5rem;
 
     &-description {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-start;
       flex-direction: column;
-      padding: 1rem;
+      padding: 2rem 1rem;
+      height: 100%;
     }
 
     h3 {
@@ -150,8 +151,14 @@ $tabs-container-overflow: 5rem;
 
 @media (max-width: 768px) {
   .sections {
+    flex-direction: column;
     &__box {
       animation: none;
+      width: 100%;
+      height: 10rem;
+      background-size: cover;
+      background-position: center;
+
       &:hover {
         background-size: 100%;
 
@@ -164,22 +171,20 @@ $tabs-container-overflow: 5rem;
         }
       }
     }
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .sections {
-    flex-direction: column;
-
-    &__box {
-      width: 100%;
-      height: 10rem;
-      background-size: cover;
-    }
 
     p {
       margin-bottom: 2rem;
     }
   }
 }
+
+// /* Mobile */
+// @media (max-width: 480px) {
+//   .sections {
+
+//     &__box {
+
+//     }
+
+//   }
+// }

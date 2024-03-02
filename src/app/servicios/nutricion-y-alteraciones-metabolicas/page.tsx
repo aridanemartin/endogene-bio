@@ -1,6 +1,6 @@
 import Header from '@components/Header/Header'
 import heroImage from '@assets/pictures/menu.jpg'
-import etapasImage from '@assets/pictures/etapas.webp'
+import alteracionesMetabolicasImage from '@assets/pictures/nutrition-yellow.jpg'
 import type { Metadata } from 'next'
 import PictureSection from '@components/PictureSection/PictureSection'
 import TextBlock from '@components/TextBlock/TextBlock'
@@ -18,7 +18,7 @@ export default function NutricionYAlteracionesMetabolicas() {
       <Header title="Nutrición y Alteraciones Metabólicas" image={heroImage} />
       <main className="main-layout">
         <PictureSection
-          pictureSrc={etapasImage}
+          pictureSrc={alteracionesMetabolicasImage}
           picturePosition="left"
           text={
             <TextBlock

@@ -31,16 +31,16 @@
   }
 }
 
-@media (max-width: 1100px) {
-  .postImageHero {
-    margin: 0;
-  }
-}
+// @media (max-width: 1100px) {
+//   .postImageHero {
+//     margin: 0;
+//   }
+// }
 
 @media (max-width: 768px) {
   .postImageHero {
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 
     &__title {
       padding: 1rem;

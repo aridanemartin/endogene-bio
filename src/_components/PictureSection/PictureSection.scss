@@ -29,7 +29,7 @@
 
   &__text {
     .textBlock {
-      padding: 0 1rem;
+      padding: 1rem 2rem;
     }
 
     p {
@@ -48,6 +48,12 @@
 
     &__picture-wrapper {
       margin-bottom: 2rem;
+    }
+
+    &__text {
+      .textBlock {
+        padding: 0rem;
+      }
     }
   }
 }

@@ -1,12 +1,10 @@
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
 import type { Metadata } from 'next'
 import TextBlock from '@components/TextBlock/TextBlock'
 import PictureSection from '@components/PictureSection/PictureSection'
-import nutricionColectividadesHeroImage from '@assets/pictures/healthy-buffet.webp'
-import etapasImage from '@assets/pictures/healthy-buffet-2.webp'
-import controlHigienicoSanitarioImage from '@assets/pictures/healthyJar.webp'
-
+import nutricionColectividadesHeroImage from '@assets/pictures/blog3.webp'
+import controlHigienicoSanitarioImage from '@assets/pictures/nutricion-colectividades.jpg'
+// @assets/pictures/nutricion-colectividades.jpg
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
   description:
@@ -26,25 +24,38 @@ export default function NutricionDeColectividadesPage() {
           picturePosition="right"
           text={
             <TextBlock
-              title="Control Higiénico-Sanitario"
+              title="Nutrición De Colectividades"
               children={
                 <>
                   <p>
-                    Ofrecemos un servicio integral de control
-                    higiénico-sanitario que abarca diversos aspectos para
-                    garantizar la seguridad alimentaria y la calidad en la
-                    manipulación de alimentos. Algunos de nuestros servicios
-                    incluyen:
+                    De acuerdo con la legislación vigente Ley 17/2011, de 5 de
+                    julio, de seguridad alimentaria y nutrición, se llevará a
+                    cabo
                   </p>
 
                   <ol>
-                    <li>Control higiénico-sanitario en cocinas.</li>
                     <li>
-                      Implantación de APPCC (Análisis de Peligros y Puntos
-                      Críticos de Control).
+                      Elaboración y validación de menús equilibrados basados en
+                      productos de temporada adaptados a cada etapa.
                     </li>
-                    <li>Auditorías.</li>
-                    <li>Manual de Buenas Prácticas de Manipulación.</li>
+                    <li>Fichas técnicas.</li>
+                    <li>
+                      Valoración nutricional (calorías, proteínas, lípidos,
+                      hidratos de carbono).
+                    </li>
+                    <li>
+                      Recomendaciones de cenas y propuesta de desayunos y
+                      meriendas saludables.
+                    </li>
+                    <li>
+                      Derivaciones de menús para necesidades especiales:
+                      alergias, intolerancias alimentarias y patologías
+                      infantiles.
+                    </li>
+                    <li>
+                      Plan de menús adaptados según alternativas alimentarias:
+                      menús vegetarianos, veganos...
+                    </li>
                     <li>Formación.</li>
                   </ol>
                 </>
