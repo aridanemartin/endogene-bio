@@ -6,6 +6,7 @@ import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
 import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Tarifas() {
-  const tarifas = await getPrices('nutricionAlteracionesMetabolicasPrices')
+  const tarifas = await getPrices('nutricionDeColectividadesPrices')
 
   function sortByPrice(tarifas) {
     return tarifas.sort(function (a, b) {
@@ -28,18 +29,32 @@ export default async function Tarifas() {
     <>
       <Header title="Tarifas" image={heroImage} />
       <main className="main-layout">
-        <div className="priceCardContainer">
-          {sortedTarifas.map((tarifa) => (
-            <PriceCard
-              key={tarifa._id}
-              title={tarifa.title}
-              description={tarifa.description}
-              price={tarifa.price}
-              priceDiscount={tarifa.priceDiscount}
-              icon={tarifa.icon}
-            />
-          ))}
-        </div>
+        {sortedTarifas.length ? (
+          <div className="priceCardContainer">
+            {sortedTarifas.map((tarifa) => (
+              <PriceCard
+                key={tarifa._id}
+                title={tarifa.title}
+                description={tarifa.description}
+                price={tarifa.price}
+                priceDiscount={tarifa.priceDiscount}
+                icon={tarifa.icon}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="noTarifas">
+            <p>
+              Para solicitar tarifas del servicio de Nutrición de Colectividades
+              por favor utilice el formulario de contacto
+            </p>
+            <div className="noTarifas__button">
+              <Link href="/contacto" className="Button">
+                Concertar cita
+              </Link>
+            </div>
+          </div>
+        )}
       </main>
     </>
   )

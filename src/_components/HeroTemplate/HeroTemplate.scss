@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 
     font-family: $forum;
 
@@ -28,15 +29,25 @@
       padding-bottom: 2rem;
     }
 
-    h2 {
-      color: $main-green;
-      font-size: 2rem;
-      padding-bottom: 2rem;
-    }
-
     p {
       color: #3d3d3d;
       font-size: 1.2rem;
+    }
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    color: $main-green;
+
+    h2 {
+      font-size: 2rem;
+      text-wrap: balance;
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
     }
   }
 
@@ -53,9 +64,17 @@
     }
   }
 
+  &__button-container {
+    margin-top: 2rem;
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
   &__button {
     width: fit-content;
-    margin-top: 2rem;
+
     padding: 1rem 2rem;
     border-radius: 10rem;
     background: rgb(14, 104, 53);

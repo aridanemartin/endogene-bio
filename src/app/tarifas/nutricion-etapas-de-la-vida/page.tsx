@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Tarifas() {
-  const tarifas = await getPrices('nutricionAlteracionesMetabolicasPrices')
+  const tarifas = await getPrices('nutricionEtapasDeLaVidaPrices')
 
   function sortByPrice(tarifas) {
     return tarifas.sort(function (a, b) {

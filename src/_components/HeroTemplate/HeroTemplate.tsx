@@ -16,17 +16,21 @@ export default function HeroTemplate() {
           Bienvenido a <br />
           <strong>Con Nutrición Saludable</strong>
         </h1>
-        <h2>
-          ¡Bienvenidos al mundo de la nutrición consciente! Te invitamos a
-          descubrir cómo nuestras soluciones personalizadas pueden mejorar tu
-          salud y bienestar.
-        </h2>
-        <p>
-          Haz clic ahora para empezar tu viaje hacia una vida más saludable.
-        </p>
-        <Link href="/contacto" className="Button">
-          <button className="hero__button">Concertar cita</button>
-        </Link>
+        <div className="hero__quote">
+          <h2>
+            “Qué tu medicina sea tu alimento, y el alimento tu medicina”
+            <br />
+          </h2>
+          <i>Hipócrates</i>
+        </div>
+        <div className='hero__button-container'>
+          <p>
+            Haz clic ahora para empezar tu viaje hacia una vida más saludable.
+          </p>
+          <Link href="/contacto" className="Button">
+            <button className="hero__button">Concertar cita</button>
+          </Link>
+        </div>
       </div>
     </div>
   )

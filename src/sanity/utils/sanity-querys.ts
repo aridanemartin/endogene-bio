@@ -46,9 +46,9 @@ export async function getPost(slug: string) {
   )
 }
 
-export async function getPrices() {
+export async function getPrices(tarifa) {
   return sanityClient.fetch(
-    groq`*[_type == "price"]{
+    groq`*[_type == "${tarifa}"]{
       _id,
       title,
       price,

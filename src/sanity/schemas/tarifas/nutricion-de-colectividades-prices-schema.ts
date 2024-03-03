@@ -1,6 +1,6 @@
 const price = {
-  name: 'price',
-  title: 'Tarifas',
+  name: 'nutricionDeColectividadesPrices',
+  title: 'Tarifa - Nutrición de Colectividades',
   type: 'document',
   fields: [
     {
@@ -31,14 +31,6 @@ const price = {
         },
       ],
     },
-    // {
-    //   name: 'duration',
-    //   title: 'Tiempo de la consulta',
-    //   description:
-    //     'Inserta el tiempo en minutos que dura la consulta SOLO EN NÚMERO Ejemplo ===> 30',
-    //   type: 'number',
-    //   required: true,
-    // },
     {
       name: 'price',
       title: 'Precio de la tarifa',
