@@ -40,10 +40,11 @@ export default function Nav() {
   const toggle = () => setIsOpen(!isOpen)
   const pathname = usePathname()
   const isBurgerIconWhite =
-    (pathname.includes('/blog') ||
+    pathname === '/' ||
+    ((pathname.includes('/blog') ||
       pathname.includes('/tarifas') ||
       pathname.includes('/servicios')) &&
-    !isOpen
+      !isOpen)
 
   return (
     <>

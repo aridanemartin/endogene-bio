@@ -4,7 +4,8 @@
 .priceCardContainer {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
 
   padding: 3rem 0;
 }
@@ -46,8 +47,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (width < 768px) {
   .priceCardContainer {
+    grid-template-columns: 1fr;
     grid-gap: 3rem;
   }
 }

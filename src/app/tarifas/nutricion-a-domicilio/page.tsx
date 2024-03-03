@@ -4,8 +4,9 @@ import '@styles/Tarifas.scss'
 
 import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
+import heroImage from '@assets/pictures/nutricion-a-domicilio.jpg'
 import type { Metadata } from 'next'
+import Headline from '@components/Headline/Headline'
 
 export const metadata: Metadata = {
   title: 'Tarifas - Nutrición a Domicilio | Carolina Almeida Nutricionista',
@@ -26,8 +27,12 @@ export default async function Tarifas() {
 
   return (
     <>
-      <Header title="Tarifas" image={heroImage} />
+      <Header title="Tarifas: Nutrición a domicilio" image={heroImage} />
       <main className="main-layout">
+        <Headline
+          title="Nutrición a Domicilio"
+          subtitle="El servicio de nutrición a domicilio ofrece una experiencia personalizada, analizando el entorno alimentario del cliente para trabajar en objetivos de dieta variada, hábitos saludables y conocimiento nutricional"
+        />
         <div className="priceCardContainer">
           {sortedTarifas.map((tarifa) => (
             <PriceCard

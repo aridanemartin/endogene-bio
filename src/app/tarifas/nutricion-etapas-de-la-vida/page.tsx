@@ -4,8 +4,9 @@ import '@styles/Tarifas.scss'
 
 import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
+import heroImage from '@assets/pictures/etapas2.jpg'
 import type { Metadata } from 'next'
+import Headline from '@components/Headline/Headline'
 
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
@@ -26,8 +27,15 @@ export default async function Tarifas() {
 
   return (
     <>
-      <Header title="Tarifas" image={heroImage} />
+      <Header
+        title="Tarifas: Nutrición en las etapas de la vida"
+        image={heroImage}
+      />
       <main className="main-layout">
+        <Headline
+          title="Nutrición en las Etapas de la Vida"
+          subtitle="La alimentación a lo largo de la vida es crucial, desde la infancia hasta la edad avanzada, influyendo en la salud a través de la prevención de enfermedades y adaptándose a las necesidades específicas de cada etapa, como el crecimiento en la adolescencia, los cambios durante la gestación y lactancia, la menopausia y los requerimientos nutricionales en la edad avanzada."
+        />
         <div className="priceCardContainer">
           {sortedTarifas.map((tarifa) => (
             <PriceCard

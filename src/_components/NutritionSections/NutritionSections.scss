@@ -45,7 +45,7 @@ $tabs-container-overflow: 5rem;
       background-position: center;
     }
 
-    &:hover {
+    &:not(.disable-hover):hover {
       cursor: pointer;
       background-size: 200%;
 

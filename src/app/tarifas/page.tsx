@@ -6,6 +6,8 @@ import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
 import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
 import type { Metadata } from 'next'
+import { NutritionSections } from '@components/NutritionSections/NutritionSections'
+import Headline from '@components/Headline/Headline'
 
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
@@ -28,18 +30,12 @@ export default async function Tarifas() {
     <>
       <Header title="Tarifas" image={heroImage} />
       <main className="main-layout">
-        <div className="priceCardContainer">
-          {sortedTarifas.map((tarifa) => (
-            <PriceCard
-              key={tarifa._id}
-              title={tarifa.title}
-              description={tarifa.description}
-              price={tarifa.price}
-              priceDiscount={tarifa.priceDiscount}
-              icon={tarifa.icon}
-            />
-          ))}
-        </div>
+        <Headline
+          title="Tarifas"
+          subtitle="Haz clic en cualquiera de nuestros servicios y accede a las diferentes tarifas y bonos de sesiones. Si tienes alguna duda, no dudes en hacerlo a través de nuestro formulario de contacto."
+          id="servicios"
+        />
+        <NutritionSections isTarifas />
       </main>
     </>
   )
