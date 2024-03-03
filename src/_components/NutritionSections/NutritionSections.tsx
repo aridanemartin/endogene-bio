@@ -6,33 +6,19 @@ import Link from 'next/link'
 
 export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
   const serviciosOTarifas = isTarifas ? '/tarifas' : '/servicios'
-  const renderTitle = (title: string, href: string) => {
-    const isMobile = useIsMobile(768)
-
-    if (isMobile) {
-      return (
-        <Link href={href}>
-          <h2 className="sections__title">{title}</h2>
-        </Link>
-      )
-    } else {
-      return <h2>{title}</h2>
-    }
-  }
+  const isMobile = useIsMobile(768)
+  const shouldDisplayContent = !isTarifas && !isMobile
 
   return (
     <section className="sections">
       <Link
         href={`${serviciosOTarifas}/nutricion-a-domicilio`}
         className={`sections__box sections__box1 ${
-          isTarifas ? 'disable-hover' : ''
+          isTarifas || isMobile ? 'disable-hover' : ''
         }`}
       >
-        {renderTitle(
-          'Nutrición a Domicilio',
-          `${serviciosOTarifas}/nutricion-a-domicilio`,
-        )}
-        {!isTarifas && (
+        <h2>Nutrición a Domicilio</h2>
+        {shouldDisplayContent && (
           <div className="sections__content">
             <div className="sections__content-description">
               <div className="sections__content-text">
@@ -44,9 +30,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
                   cliente.
                 </p>
               </div>
-              <Link href={`${serviciosOTarifas}/nutricion-a-domicilio`}>
-                <button>Saber más</button>
-              </Link>
+
+              <button>Saber más</button>
             </div>
           </div>
         )}
@@ -57,11 +42,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
           isTarifas ? 'disable-hover' : ''
         }`}
       >
-        {renderTitle(
-          'Nutrición en las diferentes etapas de la vida',
-          `${serviciosOTarifas}/nutricion-etapas-de-la-vida`,
-        )}
-        {!isTarifas && (
+        <h2>Nutrición en las diferentes etapas de la vida</h2>{' '}
+        {shouldDisplayContent && (
           <div className="sections__content">
             <div className="sections__content-description">
               <div className="sections__content-text">
@@ -73,9 +55,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
                   enfermedades futuras.
                 </p>
               </div>
-              <Link href={`${serviciosOTarifas}/nutricion-etapas-de-la-vida`}>
-                <button>Saber más</button>
-              </Link>
+
+              <button>Saber más</button>
             </div>
           </div>
         )}
@@ -86,11 +67,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
           isTarifas ? 'disable-hover' : ''
         }`}
       >
-        {renderTitle(
-          'Nutrición y Alteraciones Metabólicas',
-          `${serviciosOTarifas}/nutricion-y-alteraciones-metabolicas`,
-        )}
-        {!isTarifas && (
+        <h2>Nutrición y Alteraciones Metabólicas</h2>
+        {shouldDisplayContent && (
           <div className="sections__content">
             <div className="sections__content-description">
               <div className="sections__content-text">
@@ -102,11 +80,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
                   alimentación consciente para mantener la salud.
                 </p>
               </div>
-              <Link
-                href={`${serviciosOTarifas}/nutricion-y-alteraciones-metabolicas`}
-              >
-                <button>Saber más</button>
-              </Link>
+
+              <button>Saber más</button>
             </div>
           </div>
         )}
@@ -117,11 +92,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
           isTarifas ? 'disable-hover' : ''
         }`}
       >
-        {renderTitle(
-          'Nutrición de Colectividades',
-          `${serviciosOTarifas}/nutricion-de-colectividades`,
-        )}
-        {!isTarifas && (
+        <h2>Nutrición de Colectividades</h2>
+        {shouldDisplayContent && (
           <div className="sections__content">
             <div className="sections__content-description">
               <div className="sections__content-text">
@@ -133,9 +105,8 @@ export const NutritionSections = ({ isTarifas }: { isTarifas?: boolean }) => {
                   intolerancias, patologías, vegetarianos/veganos) y formación.
                 </p>
               </div>
-              <Link href={`${serviciosOTarifas}/nutricion-de-colectividades`}>
-                <button>Saber más</button>
-              </Link>
+
+              <button>Saber más</button>
             </div>
           </div>
         )}

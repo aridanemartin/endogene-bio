@@ -44,7 +44,12 @@ export default function About() {
       <div className="about">
         <section className="about__profile">
           <div className="about__profile-image">
-            <Image src={heroImage} alt="hero" fill objectFit="cover" />
+            <Image
+              src={heroImage}
+              alt="hero"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className="about__profile-text">
             <h1>Carolina Almeida</h1>

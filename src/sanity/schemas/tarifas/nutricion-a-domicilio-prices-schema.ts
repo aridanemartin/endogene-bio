@@ -46,6 +46,13 @@ const price = {
         'Inserta el descuento en euros que se hará sobre la tarifa SOLO EN NÚMERO Ejemplo ===> 10',
       type: 'number',
     },
+    {
+      name: 'order',
+      title: 'Orden de aparición',
+      description:
+        'Inserta el orden en el que te gustaría que apareciera la tarifa en la página de tarifas. Ejemplo: 1, 2, 3...',
+      type: 'number',
+    },
   ],
 
   preview: {

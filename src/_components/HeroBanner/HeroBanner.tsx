@@ -17,7 +17,7 @@ const HeroBanner = ({ description, buttonComponent }: HeroBannerProps) => {
             src={firma}
             alt="Carolina Almeida - Nutricionista / Dietista en Las Palmas - Firma"
             layout="fill"
-            objectFit="contain"
+            style={{ objectFit: 'contain' }}
             quality={50}
           />
         </div>

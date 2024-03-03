@@ -82,7 +82,7 @@ export default function Nav() {
                 src={navLogo}
                 alt="Con Nutricion Saludable - Logo"
                 fill
-                objectFit="contain"
+                style={{ objectFit: 'contain' }}
               />
             </Link>
             <ul className="linksWrapper">

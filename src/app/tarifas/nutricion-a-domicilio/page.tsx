@@ -19,7 +19,7 @@ export default async function Tarifas() {
 
   function sortByPrice(tarifas) {
     return tarifas.sort(function (a, b) {
-      return a.price - b.price
+      return a.order - b.order
     })
   }
 

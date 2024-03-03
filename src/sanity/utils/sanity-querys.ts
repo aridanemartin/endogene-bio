@@ -54,6 +54,7 @@ export async function getPrices(tarifa) {
       price,
       priceDiscount,
       description,
+      order,
       "icon": icon.asset->url,
     }`,
     undefined,

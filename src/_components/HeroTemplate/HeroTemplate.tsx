@@ -9,7 +9,7 @@ export default function HeroTemplate() {
   return (
     <div className="hero">
       <div className="hero__image">
-        <Image src={heroImage} alt="hero" fill objectFit="cover" />
+        <Image src={heroImage} alt="hero" fill style={{ objectFit: 'cover' }} />
       </div>
       <div className="hero__text-content">
         <h1>
@@ -23,7 +23,7 @@ export default function HeroTemplate() {
           </h2>
           <i>Hipócrates</i>
         </div>
-        <div className='hero__button-container'>
+        <div className="hero__button-container">
           <p>
             Haz clic ahora para empezar tu viaje hacia una vida más saludable.
           </p>
