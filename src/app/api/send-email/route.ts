@@ -11,7 +11,7 @@ export async function POST(req) {
   try {
     await resend.emails.send({
       from: 'info@nutricionsaludablelaspalmas.com',
-      to: ['connutricionsaludable@gmail.com'],
+      to: 'connutricionsaludable@gmail.com',
       subject: `Consulta Web - ${name}`,
       html: `<p>${message}</p>`,
     })
