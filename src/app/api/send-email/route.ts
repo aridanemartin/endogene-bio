@@ -1,6 +1,7 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 import GraciasPorContactar from 'src/_emails/gracias-por-contactar'
+import MensajeCarolinaEmail from 'src/_emails/mensaje-carolina'
 
 const resend = new Resend(process.env.NEXT_RESEND_API_KEY)
 
@@ -13,7 +14,11 @@ export async function POST(req) {
       from: 'info@nutricionsaludablelaspalmas.com',
       to: 'connutricionsaludable@gmail.com',
       subject: `Consulta Web - ${name}`,
-      html: `<p>${message}</p>`,
+      react: MensajeCarolinaEmail({
+        name,
+        message,
+        email,
+      }),
     })
 
     await resend.emails.send({
