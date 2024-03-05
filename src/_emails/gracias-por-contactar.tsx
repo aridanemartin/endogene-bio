@@ -45,7 +45,7 @@ export const GraciasPorContactarEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/carolinaLogoTransparent.webp`}
+              src={`${domainUrl}/static/carolinaLogoTransparent.png`}
               width="100"
               height="100"
             />
@@ -89,9 +89,10 @@ export const GraciasPorContactarEmail = ({
                   Si necesitas realizar alguna modificación o tienes alguna
                   pregunta adicional, no dudes en ponerte en contacto con
                   nosotros a través de este correo electrónico o llamando a
-                  nuestro número de teléfono. Agradecemos tu confianza en
-                  nuestros servicios y estamos ansiosos por ayudarte en tu viaje
-                  hacia una mejor salud y nutrición. Atentamente,
+                  nuestro número de teléfono (665859643). Agradecemos tu
+                  confianza en nuestros servicios y estamos ansiosos por
+                  ayudarte en tu viaje hacia una mejor salud y nutrición.
+                  Atentamente,
                 </Text>
                 <Row style={mapaOficina}>{null}</Row>
               </Column>

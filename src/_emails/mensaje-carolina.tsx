@@ -49,7 +49,7 @@ export const MensajeCarolinaEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/carolinaLogoTransparent.webp`}
+              src={`${domainUrl}/static/carolinaLogoTransparent.png`}
               width="100"
               height="100"
             />
@@ -72,7 +72,7 @@ export const MensajeCarolinaEmail = ({
                 <Heading
                   as="h2"
                   style={{
-                    fontSize: 24,
+                    fontSize: 18,
                     textAlign: 'center',
                     margin: 0,
                     color: '#0e6835',

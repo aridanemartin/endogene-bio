@@ -12,7 +12,7 @@ export async function POST(req) {
   try {
     await resend.emails.send({
       from: 'info@nutricionsaludablelaspalmas.com',
-      to: 'connutricionsaludable@gmail.com',
+      to: 'conutricionsaludable@gmail.com',
       subject: `Consulta Web - ${name}`,
       react: MensajeCarolinaEmail({
         name,
