@@ -2,7 +2,7 @@ import Header from '@components/Header/Header'
 import type { Metadata } from 'next'
 import TextBlock from '@components/TextBlock/TextBlock'
 import PictureSection from '@components/PictureSection/PictureSection'
-import nutricionADomicilioHero from '@assets/pictures/nutricion-a-domicilio.jpg'
+import nutricionADomicilioHero from '@assets/pictures/nutricion-a-domicilio.webp'
 import nutricionADomicilioSectionImage2 from '@assets/pictures/healthyJar.webp'
 import nutricionADomicilioSectionImage from '@assets/pictures/nutricion-personalizada-hero.webp'
 

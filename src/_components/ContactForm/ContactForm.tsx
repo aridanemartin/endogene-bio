@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import './ContactForm.scss'
 import Input from '@components/Input/Input'
 import Textarea from '@components/Textarea/Textarea'
-import checkMark from '@assets/icons/check.png'
+import checkMark from '@assets/icons/check.webp'
 import Image from 'next/image'
 
 const ContactForm = () => {

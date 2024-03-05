@@ -52,7 +52,10 @@ export default function Footer() {
         <div className="footer__cita">
           <div className="footer__cita-text">
             <p>
-              Pide tu cita hoy mismo y empieza a cuidarte. <br />
+              Pide tu cita en el teléfono{' '}
+              <a href="tel:+34665859643">665859643</a> o pulsa en 'Concertar
+              Cita' para contáctarme a través del formulario y empieza a
+              cuidarte. <br />
             </p>
           </div>
           <div className="footer__cita-button">

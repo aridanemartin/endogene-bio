@@ -4,7 +4,7 @@ import '@styles/Tarifas.scss'
 
 import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/nutricion-a-domicilio.jpg'
+import heroImage from '@assets/pictures/nutricion-a-domicilio.webp'
 import type { Metadata } from 'next'
 import Headline from '@components/Headline/Headline'
 

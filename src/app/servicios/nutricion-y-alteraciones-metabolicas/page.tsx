@@ -1,6 +1,6 @@
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/menu.jpg'
-import alteracionesMetabolicasImage from '@assets/pictures/nutrition-yellow.jpg'
+import heroImage from '@assets/pictures/menu.webp'
+import alteracionesMetabolicasImage from '@assets/pictures/nutrition-yellow.webp'
 import type { Metadata } from 'next'
 import PictureSection from '@components/PictureSection/PictureSection'
 import TextBlock from '@components/TextBlock/TextBlock'

@@ -1,13 +1,12 @@
 import { enhanceAltDescription } from '@utils/enhanceAltDescription'
 import Image from 'next/image'
-import Link from 'next/link'
 import { getPost } from 'src/sanity/utils/sanity-querys'
 import '../../../styles/BlogArticlePage.scss'
 import SanityBlock from '@components/SanityBlock/SanityBlock'
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 
-import CarolinaProfileImage from '@assets/pictures/carolinaProfileSquare.jpg'
-import timeToReadIcon from '@assets/icons/time-to-read.png'
+import CarolinaProfileImage from '@assets/pictures/carolinaProfileSquare.webp'
+import timeToReadIcon from '@assets/icons/time-to-read.webp'
 import Layout from '@components/Layout/Layout'
 import { ShareButton } from '@components/ShareButton/ShareButton'
 
@@ -28,8 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Post({ params }: Props) {
-  const { title, description, body, mainImage, author, timeToRead } =
-    await getPost(params.slug)
+  const { title, body, mainImage, author, timeToRead } = await getPost(
+    params.slug,
+  )
 
   return (
     <>

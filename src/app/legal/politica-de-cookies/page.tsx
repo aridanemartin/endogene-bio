@@ -1,6 +1,6 @@
 import Header from '@components/Header/Header'
 import Layout from '@components/Layout/Layout'
-import banner from '@assets/pictures/legal.jpg'
+import banner from '@assets/pictures/legal.webp'
 import '@styles/Legal.scss'
 
 export default function PoliticaDeCookies() {
@@ -10,7 +10,7 @@ export default function PoliticaDeCookies() {
         title="Dr. Julián Tamayo | Política de Cookies"
         desc="Política de Cookies | Julián Tamayo | Endocrino especialista en el cuidado de enfermedades crónicas."
         canonical="https://www.juliantamayo.com/legal/politica-de-cookies"
-        image="https://www.juliantamayo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportada4.a9e48235.jpg&w=1920&q=75"
+        image="https://www.juliantamayo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportada4.a9e48235.webp&w=1920&q=75"
       /> */}
       <Header title="Política de Cookies" image={banner} />
       <Layout>

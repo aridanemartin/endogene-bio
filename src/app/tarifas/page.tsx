@@ -4,7 +4,7 @@ import '@styles/Tarifas.scss'
 
 import { getPrices } from 'src/sanity/utils/sanity-querys'
 import Header from '@components/Header/Header'
-import heroImage from '@assets/pictures/nutricion-colectividades.jpg'
+import heroImage from '@assets/pictures/nutricion-colectividades.webp'
 import type { Metadata } from 'next'
 import { NutritionSections } from '@components/NutritionSections/NutritionSections'
 import Headline from '@components/Headline/Headline'
@@ -20,7 +20,7 @@ export default async function Tarifas() {
 
   function sortByPrice(tarifas) {
     return tarifas.sort(function (a, b) {
-      return a.price - b.price
+      return a.order - b.order
     })
   }
 

@@ -45,7 +45,7 @@ export const GraciasPorContactarEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/carolinaLogoTransparent.png`}
+              src={`${domainUrl}/static/carolinaLogoTransparent.webp`}
               width="100"
               height="100"
             />
@@ -171,7 +171,7 @@ const headerBackground = {
 }
 
 const mapaOficina = {
-  backgroundImage: `url(${domainUrl}/static/mapaOficina.png)`,
+  backgroundImage: `url(${domainUrl}/static/mapaOficina.webp)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',

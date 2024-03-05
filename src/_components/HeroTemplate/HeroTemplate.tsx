@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import heroImage from '@assets/pictures/carolinaProfileSquare.jpg'
+import heroImage from '@assets/pictures/carolinaProfileSquare.webp'
 
 import './HeroTemplate.scss'
 import Link from 'next/link'

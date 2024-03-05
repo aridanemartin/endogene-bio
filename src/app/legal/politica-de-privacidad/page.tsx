@@ -1,6 +1,6 @@
 import Header from '@components/Header/Header'
 import Layout from '@components/Layout/Layout'
-import banner from '@assets/pictures/legal.jpg'
+import banner from '@assets/pictures/legal.webp'
 import '@styles/Legal.scss'
 
 export default function PoliticaDePrivacidad() {

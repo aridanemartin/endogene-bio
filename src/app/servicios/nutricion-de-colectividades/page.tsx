@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import TextBlock from '@components/TextBlock/TextBlock'
 import PictureSection from '@components/PictureSection/PictureSection'
 import nutricionColectividadesHeroImage from '@assets/pictures/blog3.webp'
-import controlHigienicoSanitarioImage from '@assets/pictures/nutricion-colectividades.jpg'
-// @assets/pictures/nutricion-colectividades.jpg
+import controlHigienicoSanitarioImage from '@assets/pictures/nutricion-colectividades.webp'
+// @assets/pictures/nutricion-colectividades.webp
 export const metadata: Metadata = {
   title: 'Tarifas | Carolina Almeida Nutricionista',
   description:

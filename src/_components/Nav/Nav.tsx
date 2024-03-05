@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 // images
-import navLogo from '@assets/logos/carolinaLogoTransparent.png'
+import navLogo from '@assets/logos/carolinaLogoTransparent.webp'
 import { DoctoraliaIcon } from '@components/SocialIcon/DoctoraliaIcon'
 import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
@@ -40,11 +40,11 @@ export default function Nav() {
   const toggle = () => setIsOpen(!isOpen)
   const pathname = usePathname()
   const isBurgerIconWhite =
-    pathname === '/' ||
-    ((pathname.includes('/blog') ||
+    (pathname.includes('/blog') ||
       pathname.includes('/tarifas') ||
-      pathname.includes('/servicios')) &&
-      !isOpen)
+      pathname.includes('/servicios') ||
+      pathname === '/') &&
+    !isOpen
 
   return (
     <>
