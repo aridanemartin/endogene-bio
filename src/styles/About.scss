@@ -14,7 +14,7 @@
         rgba(136, 189, 48, 0.9) 100%
       ),
       url('../_assets/pictures/nutricion-colectividades.webp');
-    background-color: $main-green;
+    background-color: $main-purple;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,13 +65,13 @@
       text-align: center;
 
       h1 {
-        color: $main-green;
+        color: $main-purple;
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
       }
 
       h2 {
-        color: $secondary-green;
+        color: $main-purple-hover;
         font-size: 1.5rem;
         margin-bottom: 2rem;
       }
@@ -116,7 +116,7 @@
     border-radius: 1rem;
 
     &-title {
-      color: $main-green;
+      color: $main-purple;
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }

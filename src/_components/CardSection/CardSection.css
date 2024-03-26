@@ -1,0 +1,107 @@
+.cardSection {
+  display: grid;
+  grid-template-areas:
+    'card1 card2'
+    'card3 card2';
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 12rem 12rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  .text-content {
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+
+    h2 {
+      color: white;
+      font-size: 3rem;
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      opacity: 0;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      max-width: 30rem;
+    }
+  }
+
+  .card {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card1 {
+    grid-area: card1;
+
+    padding: 1rem;
+
+    border-radius: 32px;
+    background: url(../../_assets//pictures/womenScienceExample.jpg);
+    background-size: cover;
+    background-position: 0 15%;
+    box-shadow:
+      rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .card2 {
+    grid-area: card2;
+    padding: 1rem;
+
+    border-radius: 32px;
+    background: url(../../_assets//pictures/laboratoryExample.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    box-shadow:
+      rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .card3 {
+    position: relative;
+    grid-area: card3;
+
+    padding: 1rem;
+
+    border-radius: 32px;
+    background: url(../../_assets//pictures/educationExample.jpg);
+    background-position: 0 70%;
+    background-size: cover;
+    box-shadow:
+      rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .card3::before,
+  .card2::before,
+  .card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+    z-index: 1;
+
+    filter: brightness(0.5);
+  }
+}
+
+.cardSection:hover .card:not(:hover) {
+  filter: brightness(0.6);
+}
+
+.cardSection:hover .card:hover {
+  cursor: pointer;
+
+  p {
+    opacity: 1;
+  }
+}

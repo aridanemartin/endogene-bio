@@ -104,7 +104,7 @@ $tabs-container-overflow: 5rem;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 3;
     transition: all 0.5s ease-in-out;
-    color: $main-green;
+    color: $main-purple;
 
     &-description {
       display: flex;
@@ -138,7 +138,7 @@ $tabs-container-overflow: 5rem;
       color: white;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      background-color: $main-green;
+      background-color: $main-purple;
       background: linear-gradient(
         90deg,
         rgba(14, 104, 53, 1) 50%,

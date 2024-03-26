@@ -4,7 +4,7 @@
 .footer {
   width: 100%;
   height: fit-content;
-  background: $main-green;
+  background: $main-purple;
 
   &__content {
     max-width: 1440px;
@@ -29,7 +29,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          fill: $secondary-green;
+          fill: $main-purple-hover;
         }
       }
     }
@@ -70,7 +70,7 @@
       align-items: center;
 
       text-decoration: none;
-      color: $main-green;
+      color: $main-purple;
       text-align: center;
       width: fit-content;
       background: white;
@@ -83,7 +83,7 @@
       border-radius: 15rem;
 
       a {
-        color: $main-green;
+        color: $main-purple;
       }
 
       &:hover {

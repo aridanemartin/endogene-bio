@@ -7,7 +7,7 @@
 
   h1 {
     font-size: 3rem;
-    color: $main-green;
+    color: $main-purple;
     padding: 2rem 0;
   }
 
@@ -23,7 +23,7 @@
       display: inline-block;
       font-family: $forum;
       font-size: 1.1rem;
-      color: $main-green;
+      color: $main-purple;
       border: none;
       width: 90%;
       background-color: #e7f2d6;
@@ -48,7 +48,7 @@
       color: white;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      background-color: $main-green;
+      background-color: $main-purple;
       background: linear-gradient(
         90deg,
         rgba(14, 104, 53, 1) 50%,

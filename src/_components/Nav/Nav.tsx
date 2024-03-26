@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 // images
-import navLogo from '@assets/logos/carolinaLogoTransparent.webp'
+import navLogo from '@assets/logos/endogeneLogo.png'
 import { DoctoraliaIcon } from '@components/SocialIcon/DoctoraliaIcon'
 import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
@@ -76,55 +76,49 @@ export default function Nav() {
       </button>
       <div className={isOpen ? 'nav' + ' ' + 'navOpen' : 'nav'}>
         <div className="navContent">
-          <section className="navContent__leftSection">
-            <Link href="/" className="navContent__logo">
-              <Image
-                src={navLogo}
-                alt="Con Nutricion Saludable - Logo"
-                fill
-                style={{ objectFit: 'contain' }}
-              />
-            </Link>
-            <ul className="linksWrapper">
-              <li>
-                <Link className="link" href="/" onClick={toggle}>
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="link"
-                  href="/carolina-almeida-nutricionista"
-                  onClick={toggle}
-                >
-                  Conóceme
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/blog" onClick={toggle}>
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/#servicios" onClick={toggle}>
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/tarifas" onClick={toggle}>
-                  Tarifas
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/contacto" onClick={toggle}>
-                  Contacto
-                </Link>
-              </li>
-            </ul>
-          </section>
-          <div className="navContent__social">
+          <Link href="/" className="navContent__logo">
+            <Image
+              src={navLogo}
+              alt="Con Nutricion Saludable - Logo"
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </Link>
+          <ul className="linksWrapper">
+            <li>
+              <Link
+                className="link"
+                href="/carolina-almeida-nutricionista"
+                onClick={toggle}
+              >
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link className="link" href="/blog" onClick={toggle}>
+                News
+              </Link>
+            </li>
+            <li>
+              <Link className="link" href="/#servicios" onClick={toggle}>
+                Science
+              </Link>
+            </li>
+            <li>
+              <Link className="link" href="/tarifas" onClick={toggle}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link className="link" href="/contacto" onClick={toggle}>
+                About Us
+              </Link>
+            </li>
+          </ul>
+
+          {/* <div className="navContent__social">
             <SocialIcons socialLinks={socialLinks} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

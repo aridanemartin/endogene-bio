@@ -8,7 +8,10 @@ interface LayoutProps {
 
 const Layout = ({ maxWidth, children, className }: LayoutProps) => {
   return (
-    <section className={className} style={{ maxWidth: maxWidth }}>
+    <section
+      className={className}
+      style={{ maxWidth: maxWidth, margin: '0 auto' }}
+    >
       {children}
     </section>
   )
