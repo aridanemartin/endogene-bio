@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import './Footer.scss'
 
-import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
+import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
+import { TwitterIcon } from '@components/SocialIcon/TwitterIcon'
 import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
-import { DoctoraliaIcon } from '@components/SocialIcon/DoctoraliaIcon'
-import { WhatsappIcon } from '@components/SocialIcon/WhatsappIcon'
 
 export default function Footer() {
   return (
@@ -12,39 +11,31 @@ export default function Footer() {
       <div className="footer__content">
         <div className="footer__socialIcons">
           <Link
-            href="https://www.facebook.com/carolina.almeidaramirez"
+            href="https://twitter.com/EndoGene_Bio"
             target="_blank"
             rel="noreferrer"
           >
             <div className="socialIcon">
-              <FacebookIcon color="#FFFFFF" />
+              <TwitterIcon color="#FFFFFF" />
             </div>
           </Link>
           <Link
-            href="https://www.doctoralia.es/carolina-almeida-ramirez/dietista-nutricionista/las-palmas-de-gran-canaria"
+            href="https://twitter.com/EndoGene_Bio"
             target="_blank"
             rel="noreferrer"
           >
             <div className="socialIcon">
-              <DoctoraliaIcon color="#FFFFFF" />
+              <LinkedinIcon color="#FFFFFF" secondaryColor="#5e1e3c" />
             </div>
           </Link>
+
           <Link
-            href="https://www.instagram.com/conutricionsaludable/"
+            href="https://www.instagram.com/endogenebio/"
             target="_blank"
             rel="noreferrer"
           >
             <div className="socialIcon">
               <InstagramIcon color="#FFFFFF" />
-            </div>
-          </Link>
-          <Link
-            href="https://api.whatsapp.com/send?phone=34665859643"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="socialIcon">
-              <WhatsappIcon color="#FFFFFF" />
             </div>
           </Link>
         </div>

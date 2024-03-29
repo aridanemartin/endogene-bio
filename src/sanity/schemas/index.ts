@@ -1,4 +1,5 @@
 import post from './post-schema'
+import team from './team-schema'
 import nutricionADomicilioPrices from './tarifas/nutricion-a-domicilio-prices-schema'
 import NutricionDeColectividadesPrices from './tarifas/nutricion-de-colectividades-prices-schema'
 import NutricionDeAlteracionesMetabolicasPrices from './tarifas/nutricion-y-alteraciones-metabolicas-prices-schema'
@@ -6,6 +7,7 @@ import NutricionDeEtapasDeLaVidaPrices from './tarifas/nutricion-etapas-de-la-vi
 
 const schemas = [
   post,
+  team,
   nutricionADomicilioPrices,
   NutricionDeColectividadesPrices,
   NutricionDeAlteracionesMetabolicasPrices,

@@ -18,20 +18,8 @@ import { WhatsappIcon } from '@components/SocialIcon/WhatsappIcon'
 
 const socialLinks = [
   {
-    href: 'https://www.facebook.com/carolina.almeidaramirez',
+    href: 'https://www.linkedin.com/company/endogene-bio/',
     icon: <FacebookIcon />,
-  },
-  {
-    href: 'https://www.instagram.com/conutricionsaludable/',
-    icon: <InstagramIcon />,
-  },
-  {
-    href: 'https://www.doctoralia.es/carolina-almeida-ramirez/dietista-nutricionista/las-palmas-de-gran-canaria',
-    icon: <DoctoraliaIcon />,
-  },
-  {
-    href: 'https://api.whatsapp.com/send?phone=34665859643',
-    icon: <WhatsappIcon color="#FFFFFF" />,
   },
 ]
 
@@ -39,12 +27,13 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
   const pathname = usePathname()
-  const isBurgerIconWhite =
-    (pathname.includes('/blog') ||
-      pathname.includes('/tarifas') ||
-      pathname.includes('/servicios') ||
-      pathname === '/') &&
-    !isOpen
+  // const isBurgerIconWhite =
+  //   (pathname.includes('/blog') ||
+  //     pathname.includes('/tarifas') ||
+  //     pathname.includes('/servicios') ||
+  //     pathname === '/') &&
+  //   !isOpen
+  const isBurgerIconWhite = false
 
   return (
     <>
@@ -86,11 +75,12 @@ export default function Nav() {
           </Link>
           <ul className="linksWrapper">
             <li>
-              <Link
-                className="link"
-                href="/carolina-almeida-nutricionista"
-                onClick={toggle}
-              >
+              <Link className="link" href="/technology" onClick={toggle}>
+                Technology
+              </Link>
+            </li>
+            <li>
+              <Link className="link" href="/team" onClick={toggle}>
                 Team
               </Link>
             </li>
@@ -99,19 +89,15 @@ export default function Nav() {
                 News
               </Link>
             </li>
+
             <li>
-              <Link className="link" href="/#servicios" onClick={toggle}>
-                Science
-              </Link>
-            </li>
-            <li>
-              <Link className="link" href="/tarifas" onClick={toggle}>
+              <Link className="link" href="/contact" onClick={toggle}>
                 Contact
               </Link>
             </li>
             <li>
-              <Link className="link" href="/contacto" onClick={toggle}>
-                About Us
+              <Link className="link joinUs" href="/join-us" onClick={toggle}>
+                Join Us
               </Link>
             </li>
           </ul>

@@ -8,6 +8,8 @@ import HeroBanner from '@components/HeroBanner/HeroBanner'
 import Hero from '@components/Hero/Hero'
 import { CardSection } from '@components/CardSection/CardSection'
 import Layout from '@components/Layout/Layout'
+import PictureSection from '@components/PictureSection/PictureSection'
+import HeroBannerImage from '../_assets/pictures/endogenePrize.jpg'
 
 interface indexProps {}
 
@@ -21,6 +23,13 @@ export default async function Home({}: indexProps) {
       <Layout maxWidth="1100px">
         <Headline title="Our core values" />
         <CardSection />
+        <Headline title="Partners" />
+
+        <PictureSection
+          picturePosition="right"
+          pictureSrc={HeroBannerImage}
+          text={<p>hola</p>}
+        />
       </Layout>
     </>
   )

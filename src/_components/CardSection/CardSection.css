@@ -105,3 +105,21 @@
     opacity: 1;
   }
 }
+
+@media (width < 1200px) {
+  .cardSection {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 20rem);
+    grid-template-areas: 'card1' 'card2' 'card3';
+
+    .text-content {
+      p {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card {
+    margin: 1rem;
+  }
+}

@@ -1,6 +1,6 @@
 const post = {
   name: 'post',
-  title: 'Post',
+  title: 'Posts',
   type: 'document',
   initialValue: () => ({
     publishedAt: new Date().toISOString(),
