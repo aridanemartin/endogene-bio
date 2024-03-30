@@ -15,6 +15,7 @@ import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
 import { SocialIcons } from '@components/SocialIcons/SocialIcons'
 import { WhatsappIcon } from '@components/SocialIcon/WhatsappIcon'
+import { useTranslation } from 'src/app/i18n/client'
 
 const socialLinks = [
   {
@@ -23,7 +24,8 @@ const socialLinks = [
   },
 ]
 
-export default function Nav() {
+export default function Nav({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng)
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
   const pathname = usePathname()
@@ -65,7 +67,7 @@ export default function Nav() {
       </button>
       <div className={isOpen ? 'nav' + ' ' + 'navOpen' : 'nav'}>
         <div className="navContent">
-          <Link href="/" className="navContent__logo">
+          <Link href={`/${lng}`} className="navContent__logo">
             <Image
               src={navLogo}
               alt="Con Nutricion Saludable - Logo"
@@ -75,28 +77,36 @@ export default function Nav() {
           </Link>
           <ul className="linksWrapper">
             <li>
-              <Link className="link" href="/technology" onClick={toggle}>
-                Technology
+              <Link
+                className="link"
+                href={`/${lng}/technology`}
+                onClick={toggle}
+              >
+                {t('NAV.technology')}
               </Link>
             </li>
             <li>
-              <Link className="link" href="/team" onClick={toggle}>
+              <Link className="link" href={`/${lng}/team`} onClick={toggle}>
                 Team
               </Link>
             </li>
             <li>
-              <Link className="link" href="/blog" onClick={toggle}>
+              <Link className="link" href={`/${lng}/blog`} onClick={toggle}>
                 News
               </Link>
             </li>
 
             <li>
-              <Link className="link" href="/contact" onClick={toggle}>
+              <Link className="link" href={`/${lng}/contact`} onClick={toggle}>
                 Contact
               </Link>
             </li>
             <li>
-              <Link className="link joinUs" href="/join-us" onClick={toggle}>
+              <Link
+                className="link joinUs"
+                href={`/${lng}/join-us`}
+                onClick={toggle}
+              >
                 Join Us
               </Link>
             </li>

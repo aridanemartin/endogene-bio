@@ -38,7 +38,7 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets//pictures/womenScienceExample.jpg);
+    background: url(../../_assets/pictures/womenScienceExample.jpg);
     background-size: cover;
     background-position: 0 15%;
     box-shadow:
@@ -52,7 +52,7 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets//pictures/laboratoryExample.jpg);
+    background: url(../../_assets/pictures/laboratoryExample.jpg);
     background-size: cover;
     background-position: 50% 0;
     box-shadow:
@@ -68,7 +68,7 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets//pictures/educationExample.jpg);
+    background: url(../../_assets/pictures/educationExample.jpg);
     background-position: 0 70%;
     background-size: cover;
     box-shadow:

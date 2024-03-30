@@ -1,0 +1,13 @@
+{
+  "NAV": {
+    "technology": "Technology",
+    "team": "Team",
+    "news": "News",
+    "contact": "Contact",
+    "join-us": "Join Us"
+  },
+  "HOME": {
+    "slogan": "Building a legacy in <strong>female health</strong>",
+    "core-values": "Our Core Values"
+  }
+}

@@ -1,4 +1,4 @@
-import HeroBannerImage from '../../_assets/pictures/teamStock.jpg'
+import HeroBannerImage from '../../../_assets/pictures/teamStock.jpg'
 import Header from '@components/Header/Header'
 
 const TechnologyPage = () => {

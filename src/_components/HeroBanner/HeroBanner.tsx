@@ -1,6 +1,6 @@
 import React from 'react'
 import './HeroBanner.scss'
-import firma from '../../_assets/logos/firmaCarolina2.webp'
+import firma from '../../../_assets/logos/firmaCarolina2.webp'
 import Image from 'next/image'
 
 interface HeroBannerProps {
