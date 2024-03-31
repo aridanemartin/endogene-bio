@@ -21,26 +21,29 @@ export const TeamSection = ({ teamMembers }) => {
               }}
             />
           </div>
-          <div className="hover-image">
-            <Image
-              src={member.profileHoverImage}
-              alt={member.name + 'hover'}
-              fill
-              style={{
-                objectFit: 'cover',
-              }}
-            />
-          </div>
+          {member.profileHoverImage && (
+            <div className="hover-image">
+              <Image
+                src={member.profileHoverImage}
+                alt={member.name + 'hover'}
+                fill
+                style={{
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
+          )}
           <div className="text-content">
             <h2>{member.name}</h2>
             <h3>{member.position}</h3>
-            {member.bio.map((block) => (
-              <div className="description" key={block._key}>
-                <SanityBlock sanityContent={block} />
-              </div>
-            ))}
+            {member.bio &&
+              member.bio.map((block) => (
+                <div className="description" key={block._key}>
+                  <SanityBlock sanityContent={block} />
+                </div>
+              ))}
 
-            <a href={member.linkedin}>
+            <a href={member.linkedin} target="_blank" rel="noreferrer">
               <LinkedinIcon />
             </a>
           </div>

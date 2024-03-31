@@ -17,11 +17,6 @@
       color: white;
       padding: 1rem;
       transition: all 0.3s ease-in-out;
-      background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 100%,
-        transparent 100%
-      );
 
       h2 {
         font-size: 1.8rem;
@@ -29,7 +24,7 @@
 
       h3 {
         font-size: 1.5rem;
-        /* color: var(--main-purple-hover); */
+        color: var(--main-purple-hover);
         color: #ccc;
         transition: all 1s ease-in-out;
       }
@@ -59,6 +54,22 @@
       -webkit-box-orient: vertical;
       margin-bottom: 1rem;
     }
+  }
+
+  .profile-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75) 20%,
+      transparent 50%
+    );
+
+    opacity: 0.7;
   }
 
   .team-member-card:hover .text-content {

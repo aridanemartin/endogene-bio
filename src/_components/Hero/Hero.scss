@@ -68,7 +68,7 @@
     h1 {
       color: $main-purple;
       font-size: clamp(3rem, 5vw, 7rem);
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
 
     h2 {
@@ -87,10 +87,17 @@
 
 @media (width < 700px) {
   .hero {
-    height: 75vh;
+    height: 65vh;
+
+    &__text-content {
+      h1 {
+        padding-bottom: 0.5rem;
+      }
+    }
     &__content {
-      top: 45%;
+      top: 55%;
       width: 90%;
+
       img {
         -webkit-mask-image: linear-gradient(
           to bottom,

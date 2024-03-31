@@ -6,15 +6,12 @@ import './Burger.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 // images
 import navLogo from '@assets/logos/endogeneLogo.png'
-import { DoctoraliaIcon } from '@components/SocialIcon/DoctoraliaIcon'
-import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
-import { SocialIcons } from '@components/SocialIcons/SocialIcons'
-import { WhatsappIcon } from '@components/SocialIcon/WhatsappIcon'
 import { useTranslation } from 'src/app/i18n/client'
 
 const socialLinks = [
@@ -28,6 +25,7 @@ export default function Nav({ lng }: { lng: string }) {
   const { t } = useTranslation(lng)
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
+  const isDesktop = window.innerWidth > 1100
   const pathname = usePathname()
   // const isBurgerIconWhite =
   //   (pathname.includes('/blog') ||
@@ -36,6 +34,32 @@ export default function Nav({ lng }: { lng: string }) {
   //     pathname === '/') &&
   //   !isOpen
   const isBurgerIconWhite = false
+
+  const linkAnimation = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        y: { stiffness: 1000, velocity: -100 },
+      },
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+      transition: {
+        y: { stiffness: 1000 },
+      },
+    },
+  }
+
+  const variants = {
+    open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  }
 
   return (
     <>
@@ -75,8 +99,13 @@ export default function Nav({ lng }: { lng: string }) {
               style={{ objectFit: 'contain' }}
             />
           </Link>
-          <ul className="linksWrapper">
-            <li>
+          <motion.ul
+            className="linksWrapper"
+            initial={false}
+            animate={isOpen || isDesktop ? 'open' : 'closed'}
+            variants={variants}
+          >
+            <motion.li variants={linkAnimation}>
               <Link
                 className="link"
                 href={`/${lng}/technology`}
@@ -84,24 +113,24 @@ export default function Nav({ lng }: { lng: string }) {
               >
                 {t('NAV.technology')}
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/team`} onClick={toggle}>
                 Team
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/blog`} onClick={toggle}>
                 News
               </Link>
-            </li>
+            </motion.li>
 
-            <li>
+            <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/contact`} onClick={toggle}>
                 Contact
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkAnimation}>
               <Link
                 className="link joinUs"
                 href={`/${lng}/join-us`}
@@ -109,8 +138,8 @@ export default function Nav({ lng }: { lng: string }) {
               >
                 Join Us
               </Link>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
 
           {/* <div className="navContent__social">
             <SocialIcons socialLinks={socialLinks} />

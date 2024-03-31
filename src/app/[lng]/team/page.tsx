@@ -11,8 +11,8 @@ const TeamPage = async ({ params: { lng } }) => {
   return (
     <div>
       <Header title="Team" image={HeroBannerImage} />
-      <Headline title="Team" />
       <Layout maxWidth="1100px">
+        <Headline title="Team" />
         <TeamSection teamMembers={team} />
       </Layout>
     </div>
