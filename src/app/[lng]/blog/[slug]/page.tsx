@@ -1,7 +1,7 @@
 import { enhanceAltDescription } from '@utils/enhanceAltDescription'
 import Image from 'next/image'
 import { getPost } from 'src/sanity/utils/sanity-querys'
-import '../../../styles/BlogArticlePage.scss'
+import '../../../../styles/BlogArticlePage.scss'
 import SanityBlock from '@components/SanityBlock/SanityBlock'
 import type { Metadata } from 'next'
 
