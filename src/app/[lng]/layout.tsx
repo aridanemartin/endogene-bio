@@ -5,6 +5,7 @@ import '@styles/global.scss'
 import Footer from '@components/Footer/Footer'
 import AriSignature from '@components/AriSignature/AriSignature'
 import { languages } from '../i18n/settings'
+import '../../styles/globals.css'
 
 export const metadata = {
   title: 'Con Nutrición Saludable | Carolina Almeida',

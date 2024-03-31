@@ -63,13 +63,18 @@ export async function getPrices(tarifa) {
 }
 
 export async function getTeamMembers() {
-  return sanityClient.fetch(groq`*[_type == "team"]{
+  return sanityClient.fetch(
+    groq`*[_type == "team"]{
       _id,
       name,
+      position,
       bio,
       email,
       linkedin,
       "profileImage": profileImage.asset->url,
       "profileHoverImage": profileHoverImage.asset->url,
-    }`)
+    }`,
+    undefined,
+    { cache: 'no-store' },
+  )
 }

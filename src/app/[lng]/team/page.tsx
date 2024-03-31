@@ -7,7 +7,6 @@ import Layout from '@components/Layout/Layout'
 
 const TeamPage = async ({ params: { lng } }) => {
   const team = await getTeamMembers()
-  console.log('===', lng)
 
   return (
     <div>

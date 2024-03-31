@@ -6,7 +6,8 @@
   grid-template-columns: 60% 40%;
   grid-template-rows: 12rem 12rem;
   gap: 1rem;
-  margin-bottom: 3rem;
+  width: calc(100% - 1rem);
+  margin-bottom: 4rem;
 
   .text-content {
     position: absolute;
@@ -119,7 +120,7 @@
     }
   }
 
-  .card {
+  /* .card {
     margin: 1rem;
-  }
+  } */
 }

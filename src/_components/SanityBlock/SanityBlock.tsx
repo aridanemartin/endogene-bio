@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { getYoutubeVideoId } from '@utils/youtubeHelpers'
 import { sanityClient } from 'src/sanity/utils/sanity-querys'
 
-function SanityBlock({ sanityContent, key }) {
+function SanityBlock({ sanityContent }) {
   const builder = imageUrlBuilder(sanityClient)
   function imageUrlFor(source) {
     return builder.image(source)

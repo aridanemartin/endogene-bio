@@ -1,0 +1,14 @@
+.partnerText {
+  text-align: center;
+  color: var(--main-purple);
+  margin-bottom: 1rem;
+}
+
+.partnerLogos {
+  display: flex;
+  flex-flow: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

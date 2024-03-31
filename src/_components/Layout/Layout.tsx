@@ -10,7 +10,7 @@ const Layout = ({ maxWidth, children, className }: LayoutProps) => {
   return (
     <section
       className={className}
-      style={{ maxWidth: maxWidth, margin: '0 auto' }}
+      style={{ maxWidth: maxWidth, margin: '0 auto', padding: '1rem' }}
     >
       {children}
     </section>
