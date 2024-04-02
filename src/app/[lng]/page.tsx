@@ -6,9 +6,9 @@ import Layout from '@components/Layout/Layout'
 import PictureSection from '@components/PictureSection/PictureSection'
 import HeroBannerImage from '../../_assets/pictures/endogenePrize.jpg'
 import { useTranslation } from '../i18n'
-import { Trans } from 'react-i18next'
 import { PartnerLogos } from '@components/PartnerLogos/PartnerLogos'
 import type { Metadata } from 'next'
+import { Counter } from '@components/Counter/Counter'
 
 export const metadata: Metadata = {
   title: 'Blog | Carolina Almeida Nutricionista Dietista',
@@ -35,6 +35,8 @@ export default async function Home({ params: { lng } }) {
         <PartnerLogos />
         <Headline title={t('HOME.core-values')} />
         <CardSection />
+        <Headline title={t('HOME.in-numbers')} />
+        <Counter />
       </Layout>
     </>
   )
