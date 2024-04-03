@@ -11,7 +11,7 @@ import type { Metadata } from 'next'
 import { Counter } from '@components/Counter/Counter'
 
 export const metadata: Metadata = {
-  title: 'Blog | Carolina Almeida Nutricionista Dietista',
+  title: 'Blog | Endogene.Bio',
   description:
     'Carolina Almeida, Dietista Nutricionista en Las Palmas, colegiada en CODINUISCAN, con más de 15 años de experiencia. Especializada en mejorar hábitos alimenticios, planificación de menús y tratamiento de patologías. ¡Prioriza tu bienestar hoy!',
 }
@@ -33,8 +33,8 @@ export default async function Home({ params: { lng } }) {
           lng={lng}
         />
         <PartnerLogos />
-        <Headline title={t('HOME.core-values')} />
-        <CardSection />
+        <Headline title={t('HOME.core-values.title')} />
+        <CardSection t={t} />
         <Headline title={t('HOME.in-numbers')} />
         <Counter />
       </Layout>

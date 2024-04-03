@@ -8,7 +8,7 @@ import { languages } from '../i18n/settings'
 import '../../styles/globals.css'
 
 export const metadata = {
-  title: 'Con Nutrición Saludable | Carolina Almeida',
+  title: 'Home | Endogene.Bio',
   description:
     '¡Bienvenidos al mundo de la nutrición consciente! Te invitamos a descubrir cómo nuestras soluciones personalizadas pueden mejorar tu salud y bienestar.',
 }
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className={forum.variable}>
         <Nav lng={lng} />
         {children}
-        <Footer />
+        <Footer lng={lng} />
         <AriSignature />
       </body>
     </html>

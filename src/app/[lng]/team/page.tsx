@@ -1,6 +1,6 @@
 import Header from '@components/Header/Header'
 import Headline from '@components/Headline/Headline'
-import HeroBannerImage from '@assets/pictures/teamStock.jpg'
+import HeroBannerImage from '@assets/pictures/endogeneTeam3.jpg'
 import { getTeamMembers } from 'src/sanity/utils/sanity-querys'
 import { TeamSection } from '@components/TeamSection/TeamSection'
 import Layout from '@components/Layout/Layout'

@@ -1,17 +1,15 @@
-@use '@sass/colors.scss' as *;
-@use '@sass/fonts.scss' as *;
-
 .contacto {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-top: 6rem;
 
   h1 {
     font-size: 3rem;
-    color: $main-purple;
+    color: var(--main-purple);
     padding: 2rem 0;
   }
 
-  &__form-section {
+  .form-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,13 +18,13 @@
 
     input,
     textarea {
+      font-family: var(--font-forum);
       display: inline-block;
-      font-family: $forum;
       font-size: 1.1rem;
-      color: $main-purple;
+      color: var(--main-purple);
       border: none;
       width: 90%;
-      background-color: #e7f2d6;
+      background-color: var(--main-purple-light);
       display: inline-block;
       border-radius: 1rem;
       padding: 1rem;
@@ -40,7 +38,6 @@
 
     button {
       height: 3rem;
-      font-family: $forum;
       width: 50%;
       font-size: 1.2rem;
       border-radius: 10rem;
@@ -48,11 +45,11 @@
       color: white;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      background-color: $main-purple;
+      background-color: var(--main-purple);
       background: linear-gradient(
         90deg,
-        rgba(14, 104, 53, 1) 50%,
-        rgba(136, 189, 48, 1) 100%
+        var(--main-purple) 50%,
+        var(--main-purple-hover) 100%
       );
       background-size: 200% 100%;
 
@@ -62,12 +59,12 @@
     }
   }
 
-  &__image-section {
+  .image-section {
     position: relative;
     height: 50rem;
   }
 
-  &__image {
+  .image {
     position: relative;
 
     grid-area: image;
@@ -87,7 +84,7 @@
     display: flex;
     flex-direction: column-reverse;
 
-    &__form-section {
+    .form-section {
       width: 100vw;
       height: 100%;
       overflow: hidden;
@@ -103,7 +100,7 @@
       }
     }
 
-    &__image-section {
+    .image-section {
       height: 10rem;
       width: 100%;
     }

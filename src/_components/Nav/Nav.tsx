@@ -94,7 +94,7 @@ export default function Nav({ lng }: { lng: string }) {
           <Link href={`/${lng}`} className="navContent__logo">
             <Image
               src={navLogo}
-              alt="Con Nutricion Saludable - Logo"
+              alt="Endogene.Bio - Logo"
               fill
               style={{ objectFit: 'contain' }}
             />

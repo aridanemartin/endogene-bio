@@ -109,15 +109,42 @@
 
 @media (width < 1200px) {
   .cardSection {
+    width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 20rem);
     grid-template-areas: 'card1' 'card2' 'card3';
 
     .text-content {
+      h2 {
+        font-size: 2rem;
+      }
       p {
         opacity: 1;
       }
     }
+
+    .card1,
+    .card2,
+    .card3 {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .card1 {
+      background-position: right;
+    }
+
+    .card2 {
+      background-position: 0 50%;
+    }
+
+    .card3 {
+      background-position: bottom;
+    }
+  }
+
+  .cardSection:hover .card:not(:hover) {
+    filter: brightness(1);
   }
 
   /* .card {

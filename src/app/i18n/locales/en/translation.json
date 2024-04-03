@@ -9,7 +9,15 @@
   "HOME": {
     "slogan": "Building a legacy in <strong>female health</strong>",
     "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
-    "core-values": "Our Core Values",
-    "in-numbers": "Endogene.bio In Numbers"
+    "core-values": {
+      "title": "Our core values",
+      "education-title": "Education",
+      "education-text": "EndoGene.Bio prioritizes education in female health research, utilizing cutting-edge molecular biology to explore epigenetic markers in menstrual blood. Our mission focuses on developing non-invasive solutions for enhanced endometriosis diagnosis and management, driving innovation to improve women's health globally.",
+      "made-for-women-title": "Made For Women",
+      "made-for-women-text": "EndoGene.Bio is founded on the principle of being \"Made for Women,\" addressing their unique healthcare needs with tailored solutions. From molecular research to non-invasive diagnostics, we empower women in their health journey with compassionate care and innovative approaches.",
+      "investigation-title": "Investigation",
+      "investigation-text": "Investigation drives EndoGene.Bio's relentless pursuit of understanding in female health. With curiosity and rigor, we delve into menstrual blood complexities to uncover insights into endometriosis diagnosis and management. Through meticulous inquiry, we advance knowledge and enhance women's health outcomes."
+    },
+    "in-numbers": "Endogene.bio in numbers"
   }
 }

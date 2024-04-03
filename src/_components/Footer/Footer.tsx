@@ -4,11 +4,21 @@ import './Footer.scss'
 import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
 import { TwitterIcon } from '@components/SocialIcon/TwitterIcon'
 import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
+import footerLogo from '@assets/logos/endogeneLogoWhite.webp'
+import Image from 'next/image'
 
-export default function Footer() {
+export default function Footer({ lng }) {
   return (
     <div className="footer">
       <div className="footer__content">
+        <Link href={`/${lng}`} className="footer__logo">
+          <Image
+            src={footerLogo}
+            alt="Endogene.Bio - Logo"
+            fill
+            style={{ objectFit: 'contain' }}
+          />
+        </Link>
         <div className="footer__socialIcons">
           <Link
             href="https://twitter.com/EndoGene_Bio"
@@ -39,27 +49,9 @@ export default function Footer() {
             </div>
           </Link>
         </div>
-
-        <div className="footer__cita">
-          <div className="footer__cita-text">
-            <p>
-              Pide tu cita en el teléfono{' '}
-              <a href="tel:+34665859643">665859643</a> o pulsa en 'Concertar
-              Cita' para contáctarme a través del formulario y empieza a
-              cuidarte. <br />
-            </p>
-          </div>
-          <div className="footer__cita-button">
-            <Link href="/contacto" className="Button">
-              Concertar cita
-            </Link>
-          </div>
-        </div>
       </div>
       <div className="footer__legal">
-        <Link href="/legal/politica-de-cookies">Política de Cookies</Link>
-        <Link href="/legal/politica-de-privacidad">Política de Privacidad</Link>
-        <Link href="/legal/aviso-legal">Aviso Legal</Link>
+        <Link href="/terms-of-use">Terms of use</Link>
       </div>
     </div>
   )

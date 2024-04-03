@@ -1,9 +1,9 @@
-import contacto from '@assets/pictures/contacto.webp'
+import contacto from '@assets/pictures/sophieribeiro.webp'
 import ContactForm from '@components/ContactForm/ContactForm'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 
-import '@styles/Contacto.scss'
+import '@styles/Contacto.css'
 
 export const metadata: Metadata = {
   title: 'Contacto | Carolina Almeida Nutricionista',
@@ -15,13 +15,13 @@ const Contacto = () => {
   return (
     <main className="main-layout">
       <div className="contacto">
-        <section className="contacto__form-section">
+        <section className="form-section">
           <h1>Contacto</h1>
           <ContactForm />
         </section>
-        <section className="contacto__image-section">
+        <section className="image-section">
           <Image
-            className="contacto__image"
+            className="image"
             src={contacto}
             alt="Con Nutrición Saludable - Contacto"
             fill
