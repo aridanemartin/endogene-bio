@@ -11,6 +11,18 @@ export const metadata = {
   title: 'Home | Endogene.Bio',
   description:
     '¡Bienvenidos al mundo de la nutrición consciente! Te invitamos a descubrir cómo nuestras soluciones personalizadas pueden mejorar tu salud y bienestar.',
+  icons: {
+    icon: [
+      {
+        url: '/endogeneLogoPurple.ico',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/endogeneLogoWhite.ico',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+  },
 }
 
 const forum = Forum({

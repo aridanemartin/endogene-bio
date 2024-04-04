@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 import '@styles/Contacto.css'
 
 export const metadata: Metadata = {
-  title: 'Contacto | Carolina Almeida Nutricionista',
+  title: 'Contacto | Endogene.bio',
   description:
     'Carolina Almeida, Dietista Nutricionista en Las Palmas, colegiada en CODINUISCAN, con más de 15 años de experiencia. Especializada en mejorar hábitos alimenticios, planificación de menús y tratamiento de patologías. ¡Prioriza tu bienestar hoy!',
 }
