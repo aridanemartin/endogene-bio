@@ -12,8 +12,7 @@ import { Counter } from '@components/Counter/Counter'
 
 export const metadata: Metadata = {
   title: 'Blog | Endogene.Bio',
-  description:
-    'Carolina Almeida, Dietista Nutricionista en Las Palmas, colegiada en CODINUISCAN, con más de 15 años de experiencia. Especializada en mejorar hábitos alimenticios, planificación de menús y tratamiento de patologías. ¡Prioriza tu bienestar hoy!',
+  description: '',
 }
 
 export default async function Home({ params: { lng } }) {

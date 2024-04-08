@@ -2,11 +2,24 @@
 
 .headline {
   margin-bottom: 3rem;
+  text-wrap: balance;
 
   &__title {
     color: $main-purple;
-    font-size: 4rem;
+
     margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
   }
 
   &__subtitle {
@@ -18,8 +31,16 @@
   .headline {
     margin-bottom: 1rem;
 
-    &__title {
+    h2 {
       font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
     }
   }
 }

@@ -78,3 +78,17 @@ export async function getTeamMembers() {
     { cache: 'no-store' },
   )
 }
+
+export async function getPositions() {
+  return sanityClient.fetch(
+    groq`*[_type == "positions"]{
+      _id,
+      positionName,
+      positionLocation,
+      positionType,
+      positionDescription,
+    }`,
+    undefined,
+    { cache: 'no-store' },
+  )
+}

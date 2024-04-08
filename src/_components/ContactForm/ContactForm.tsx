@@ -6,8 +6,10 @@ import Input from '@components/Input/Input'
 import Textarea from '@components/Textarea/Textarea'
 import checkMark from '@assets/icons/check.webp'
 import Image from 'next/image'
+import { useTranslation } from 'src/app/i18n/client'
 
-const ContactForm = () => {
+const ContactForm = ({ lng }) => {
+  const { t } = useTranslation(lng)
   const [isLoading, setIsLoading] = useState(false)
   const [isEmailSent, setIsEmailSent] = useState(false)
   const [isFatalError, setIsFatalError] = useState(false)
@@ -97,7 +99,7 @@ const ContactForm = () => {
     } else if (isEmailSent) {
       return (
         <button className="contact-form__button-email-sent" disabled>
-          Enviado
+          {t('CONTACT.form.success')}
           <span className="check">
             <Image src={checkMark} alt="check" width={25} height={25} />
           </span>
@@ -106,12 +108,11 @@ const ContactForm = () => {
     } else if (isFatalError) {
       return (
         <p className="contact-form__email-error">
-          El servicio de envío de emails no está disponible en este momento.
-          Recuerde que puede contactarnos por teléfono o whatsapp.
+          {t('CONTACT.form.no-service')}
         </p>
       )
     } else {
-      return <button type="submit">Enviar</button>
+      return <button type="submit">{t('CONTACT.form.send')}</button>
     }
   }
 
@@ -122,7 +123,7 @@ const ContactForm = () => {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        placeholder="Nombre y Apellidos"
+        placeholder={t('CONTACT.form.name')}
         error={formErrors.name}
       />
       <Input
@@ -130,14 +131,14 @@ const ContactForm = () => {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        placeholder="email@ejemplo.com"
+        placeholder={t('CONTACT.form.email')}
         error={formErrors.email}
       />
       <Textarea
         name="message"
         value={formData.message}
         onChange={handleChange}
-        placeholder="Escribe aquí tu mensaje"
+        placeholder={t('CONTACT.form.message')}
         error={formErrors.message}
       />
       {renderButton()}

@@ -8,9 +8,9 @@ import { languages } from '../i18n/settings'
 import '../../styles/globals.css'
 
 export const metadata = {
-  title: 'Home | Endogene.Bio',
+  title: 'Endogene.Bio | Building a legacy in female health',
   description:
-    '¡Bienvenidos al mundo de la nutrición consciente! Te invitamos a descubrir cómo nuestras soluciones personalizadas pueden mejorar tu salud y bienestar.',
+    'EndoGene.Bio is dedicated to molecular biomarker discovery in female health. We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomarkers for better endometriosis diagnosis and management. ',
   icons: {
     icon: [
       {

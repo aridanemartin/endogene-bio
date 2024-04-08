@@ -19,5 +19,17 @@
       "investigation-text": "Investigation drives EndoGene.Bio's relentless pursuit of understanding in female health. With curiosity and rigor, we delve into menstrual blood complexities to uncover insights into endometriosis diagnosis and management. Through meticulous inquiry, we advance knowledge and enhance women's health outcomes."
     },
     "in-numbers": "Endogene.bio in numbers"
+  },
+  "CONTACT": {
+    "title": "Contact us",
+    "form": {
+      "name": "Name",
+      "email": "example@gmail.com",
+      "message": "Write your message here.",
+      "send": "Send",
+      "sent": "Message sent!",
+      "no-service": "The service of sending emails is not available at the moment.",
+      "success": "Message sent successfully!"
+    }
   }
 }

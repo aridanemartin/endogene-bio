@@ -1,17 +1,7 @@
 import post from './post-schema'
 import team from './team-schema'
-import nutricionADomicilioPrices from './tarifas/nutricion-a-domicilio-prices-schema'
-import NutricionDeColectividadesPrices from './tarifas/nutricion-de-colectividades-prices-schema'
-import NutricionDeAlteracionesMetabolicasPrices from './tarifas/nutricion-y-alteraciones-metabolicas-prices-schema'
-import NutricionDeEtapasDeLaVidaPrices from './tarifas/nutricion-etapas-de-la-vida-prices-schema'
+import positions from './positions-schema'
 
-const schemas = [
-  post,
-  team,
-  nutricionADomicilioPrices,
-  NutricionDeColectividadesPrices,
-  NutricionDeAlteracionesMetabolicasPrices,
-  NutricionDeEtapasDeLaVidaPrices,
-]
+const schemas = [post, team, positions]
 
 export default schemas

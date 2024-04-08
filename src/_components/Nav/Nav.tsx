@@ -5,7 +5,7 @@ import './Burger.scss'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { use, useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 // images
@@ -13,6 +13,8 @@ import navLogo from '@assets/logos/endogeneLogo.png'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'src/app/i18n/client'
+import { set } from 'sanity'
+import { useMediaQuery } from 'src/_hooks/useMediaQuery'
 
 const socialLinks = [
   {
@@ -24,9 +26,8 @@ const socialLinks = [
 export default function Nav({ lng }: { lng: string }) {
   const { t } = useTranslation(lng)
   const [isOpen, setIsOpen] = useState(false)
+  const isDesktop = useMediaQuery(1100)
   const toggle = () => setIsOpen(!isOpen)
-  const isDesktop = window.innerWidth > 1100
-  const pathname = usePathname()
   // const isBurgerIconWhite =
   //   (pathname.includes('/blog') ||
   //     pathname.includes('/tarifas') ||

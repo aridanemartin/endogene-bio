@@ -10,7 +10,7 @@ export const PartnerLogos = () => {
   return (
     <section>
       <p className="partnerText">Trusted by companies like</p>
-      <div className="partnerLogos">
+      <article className="partnerLogos">
         <Image
           src={genopoleLogo}
           alt="Partner Logos"
@@ -36,7 +36,7 @@ export const PartnerLogos = () => {
           width={100}
           height={100}
         />
-      </div>
+      </article>
     </section>
   )
 }
