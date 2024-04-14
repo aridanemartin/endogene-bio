@@ -43,7 +43,6 @@ const ContactForm = ({ lng }) => {
     // Check if each field is filled
     Object.keys(formData).forEach((field) => {
       if (formData[field].trim() === '') {
-        console.log(field)
         newErrors[
           field
         ] = `Por favor introduzca su ${fieldSpanishNames[field]}.`

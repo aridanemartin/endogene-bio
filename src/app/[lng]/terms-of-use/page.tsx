@@ -14,21 +14,21 @@ export default function termsOfUse() {
           <p>
             The website www.endogene.bio (hereinafter referred to “the Website”)
             is owned and operated by endogene (hereinafter referred to as
-            “Endogene.bio”) registered with the RCS under number 953 195 583,
-            whose head office is located at 4 Rue Pierre Fontaine, 91058
-            Évry-Courcouronnes Cedex, France. To contact us, email:
-            Info@endogene.bio. The use of this Website and services on this
-            Website are subject to the following terms of use (hereinafter
-            “Terms"). These Terms shall govern the use of all pages on this
-            Website and any services provided by or on this Website
-            ("Services"). The host of the Website is the company Vercel.
-            Endogene.bio reserves the right to change, modify, add or remove
-            portions of these Terms, at any time. It is your sole responsibility
-            to check these Terms periodically for changes.By using this Website,
-            you indicate that you have read and understand these Terms and agree
-            to abide by them at all times. If you have any objection to any of
-            these Terms, you must not use this Website.The content of the pages
-            of this Website is for your general information and use only.
+            “Endogene.bio”) registered with the RCS under number 910 384 999
+            R.C.S. Paris, whose head office is located at 3 BD DE SEBASTOPOL,
+            75001 PARIS 1. To contact us, email: Info@endogene.bio. The use of
+            this Website and services on this Website are subject to the
+            following terms of use (hereinafter “Terms"). These Terms shall
+            govern the use of all pages on this Website and any services
+            provided by or on this Website ("Services"). The host of the Website
+            is the company Vercel. Endogene.bio reserves the right to change,
+            modify, add or remove portions of these Terms, at any time. It is
+            your sole responsibility to check these Terms periodically for
+            changes.By using this Website, you indicate that you have read and
+            understand these Terms and agree to abide by them at all times. If
+            you have any objection to any of these Terms, you must not use this
+            Website.The content of the pages of this Website is for your general
+            information and use only.
           </p>
           <h2>Applicable law & jurisdiction</h2>
           <p>

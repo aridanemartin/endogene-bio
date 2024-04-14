@@ -5,8 +5,6 @@ import Image from 'next/image'
 import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
 
 export const TeamSection = ({ teamMembers }) => {
-  console.log('===team==>', teamMembers)
-
   return (
     <section className="team-cards-section">
       {teamMembers.map((member) => (

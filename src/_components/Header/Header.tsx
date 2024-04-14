@@ -4,9 +4,7 @@ import { enhanceAltDescription } from '@utils/enhanceAltDescription'
 import './Header.scss'
 
 export default function Header({ title, image }) {
-  const altDescription = enhanceAltDescription(
-    'Dr. Julián Tamayo | Endocrino' + title,
-  )
+  const altDescription = enhanceAltDescription('Endogene.bio | ' + title)
 
   return (
     <div className="postImageHero">

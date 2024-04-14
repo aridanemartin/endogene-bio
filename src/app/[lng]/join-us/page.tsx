@@ -5,16 +5,16 @@ import { PositionsList } from '@components/PositionsList/PositionsList'
 import React from 'react'
 import { getPositions } from 'src/sanity/utils/sanity-querys'
 
-const Page = async () => {
+const Page = async ({ params: { lng } }) => {
   const positions = await getPositions()
-  console.log('===positions==>', positions)
 
   return (
     <>
       <PageHeader />
       <Layout maxWidth="1100px">
         <Headline
-          title="Our team is growing. We need passionate people who want to make an impact on the future of food. Check out our vacancies and apply now."
+          lng={lng}
+          titleKey="JOIN-US.intro"
           headlineType="h4"
           styles={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}
         />

@@ -117,18 +117,18 @@ export default function Nav({ lng }: { lng: string }) {
             </motion.li>
             <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/team`} onClick={toggle}>
-                Team
+                {t('NAV.team')}
               </Link>
             </motion.li>
             <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/blog`} onClick={toggle}>
-                News
+                {t('NAV.news')}
               </Link>
             </motion.li>
 
             <motion.li variants={linkAnimation}>
               <Link className="link" href={`/${lng}/contact`} onClick={toggle}>
-                Contact
+                {t('NAV.contact')}
               </Link>
             </motion.li>
             <motion.li variants={linkAnimation}>
@@ -137,7 +137,7 @@ export default function Nav({ lng }: { lng: string }) {
                 href={`/${lng}/join-us`}
                 onClick={toggle}
               >
-                Join Us
+                {t('NAV.join-us')}
               </Link>
             </motion.li>
           </motion.ul>

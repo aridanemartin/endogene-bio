@@ -24,7 +24,7 @@ export default async function Home({ params: { lng } }) {
     <>
       <Hero lng={lng} />
       <Layout maxWidth="1100px">
-        <Headline title="About Us" />
+        <Headline titleKey="HOME.about-us" lng={lng} />
         <PictureSection
           picturePosition="right"
           pictureSrc={HeroBannerImage}
@@ -32,9 +32,9 @@ export default async function Home({ params: { lng } }) {
           lng={lng}
         />
         <PartnerLogos />
-        <Headline title={t('HOME.core-values.title')} />
+        <Headline titleKey="HOME.core-values.titleKey" lng={lng} />
         <CardSection t={t} />
-        <Headline title={t('HOME.in-numbers')} />
+        <Headline titleKey="HOME.in-numbers" lng={lng} />
         <Counter />
       </Layout>
     </>

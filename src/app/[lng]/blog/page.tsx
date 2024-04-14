@@ -19,10 +19,10 @@ const Blog = async () => {
     <>
       <Header title="Blog" image={heroImage} />
       <div className="postsContainer">
-        <Headline
-          title="Artículos"
-          subtitle="Te damos la bienvenida a nuestro blog, donde podrás obtener inspiración, consejos prácticos y la información más reciente sobre cómo mejorar tu bienestar a través de una alimentación saludable."
-        />
+        {/* <Headline
+          titleKey="Artículos"
+          subtitleKey="Te damos la bienvenida a nuestro blog, donde podrás obtener inspiración, consejos prácticos y la información más reciente sobre cómo mejorar tu bienestar a través de una alimentación saludable."
+        /> */}
         {posts.length && posts.map((post) => <BlogPostPreview post={post} />)}
       </div>
     </>

@@ -1,22 +1,31 @@
+'use client'
+
+import { useTranslation } from 'src/app/i18n/client'
 import './Headline.scss'
 
 interface HeadlineProps {
-  title: string
-  subtitle?: string
+  titleKey: string
+  subtitleKey?: string
   id?: string
   headlineType?: HeadlineType
   styles?: any
+  lng: string
 }
 
 type HeadlineType = 'h1' | 'h2' | 'h3' | 'h4'
 
 const Headline = ({
-  title,
-  subtitle,
+  titleKey,
+  subtitleKey,
   id,
   headlineType = 'h2',
   styles,
+  lng,
 }: HeadlineProps) => {
+  const { t } = useTranslation(lng)
+  const title = t(titleKey)
+  const subtitle = subtitleKey ? t(subtitleKey) : null
+
   const renderHeadline = (headlineType: HeadlineType) => {
     switch (headlineType) {
       case 'h1':
@@ -35,7 +44,7 @@ const Headline = ({
   return (
     <div className="headline" id={id} style={styles}>
       {renderHeadline(headlineType)}
-      {subtitle && <p className="headline__subtitle">{subtitle}</p>}
+      {subtitleKey && <p className="headline__subtitle">{subtitle}</p>}
     </div>
   )
 }
