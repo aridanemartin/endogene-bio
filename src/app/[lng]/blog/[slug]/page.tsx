@@ -5,7 +5,7 @@ import '../../../../styles/BlogArticlePage.scss'
 import SanityBlock from '@components/SanityBlock/SanityBlock'
 import type { Metadata } from 'next'
 
-import CarolinaProfileImage from '@assets/pictures/carolinaProfileSquare.webp'
+import CarolinaProfileImage from '@assets/pictures/educationExample.jpg'
 import timeToReadIcon from '@assets/icons/time-to-read.webp'
 import Layout from '@components/Layout/Layout'
 import { ShareButton } from '@components/ShareButton/ShareButton'
