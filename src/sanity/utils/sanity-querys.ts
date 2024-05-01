@@ -15,17 +15,22 @@ const config = {
 
 export const sanityClient = createClient(config)
 
-export async function getPosts() {
-  return sanityClient.fetch(groq`*[_type == "post"]{
+export async function getPosts(lng: string) {
+  return sanityClient.fetch(
+    groq`*[_type == "post"]{
       _id,
       _createdAt,
-      title,
-      description,
+      "title": title.${lng},
+      "description": description.${lng},
       author,
       timeToRead,
+      "body": body_${lng},
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-    }`)
+    }`,
+    undefined,
+    { cache: 'no-store' },
+  )
 }
 
 export async function getPost(slug: string) {

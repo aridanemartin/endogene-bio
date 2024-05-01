@@ -32,7 +32,7 @@ export default async function Home({ params: { lng } }) {
           lng={lng}
         />
         <PartnerLogos />
-        <Headline titleKey="HOME.core-values.titleKey" lng={lng} />
+        <Headline titleKey="HOME.core-values.title" lng={lng} />
         <CardSection t={t} />
         <Headline titleKey="HOME.in-numbers" lng={lng} />
         <Counter />

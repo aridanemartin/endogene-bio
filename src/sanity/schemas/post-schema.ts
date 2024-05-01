@@ -1,3 +1,7 @@
+import { body_en } from '../localizedBlocks/body-en'
+import { body_es } from '../localizedBlocks/body-es'
+import { body_fr } from '../localizedBlocks/body-fr'
+
 const post = {
   name: 'post',
   title: 'Posts',
@@ -7,9 +11,17 @@ const post = {
   }),
   fields: [
     {
+      name: 'refTitle',
+      title: 'Título de la url',
+      type: 'string',
+      description:
+        'Este campo no se mostrará en la página principal ni en la sección de blog sirve como referencia para generar la url (Debe estar en inglés)',
+      required: true,
+    },
+    {
       name: 'title',
       title: 'Título del post',
-      type: 'string',
+      type: 'i18n.string',
       required: true,
     },
     {
@@ -18,7 +30,7 @@ const post = {
         'Descripción (Resumen que se mostrará en la página principal y sección de blog)',
       description:
         'haz una breve descripción de no más de dos líneas del artículo o utiliza las dos primeras líneas seguidas de 3 puntos',
-      type: 'text',
+      type: 'i18n.text',
       required: true,
     },
     {
@@ -29,89 +41,16 @@ const post = {
       type: 'string',
       required: true,
     },
-    {
-      name: 'body',
-      title: 'POST',
-      description:
-        'Aquí puedes insertar tanto imágenes como texto. Recuerda que las imágenes deberán estar en modo HORIZONTAL y deben contener una descripción de aprox 125 carácteres',
-      type: 'array',
-      required: true,
-      of: [
-        {
-          type: 'block',
-        },
-        {
-          name: 'enrichedImage',
-          title: 'Imagen Horizontal',
-          type: 'object',
-          fields: [
-            {
-              name: 'image',
-              type: 'image',
-              title: 'Añadir imagen',
-              options: {
-                hotspot: true,
-              },
-            },
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Texto alternativo',
-              description:
-                'Describe el contenido de la imagen para ayudar a mejorar la accesibilidad.',
-            },
-          ],
-        },
-        {
-          name: 'enrichedImageVertical',
-          title: 'Imagen Vertical',
-          type: 'object',
-          fields: [
-            {
-              name: 'image',
-              type: 'image',
-              title: 'Añadir imagen',
-              options: {
-                hotspot: true,
-              },
-            },
-            {
-              name: 'alt',
-              type: 'string',
-              title: 'Texto alternativo',
-              description:
-                'Describe el contenido de la imagen para ayudar a mejorar la accesibilidad.',
-            },
-          ],
-        },
-        {
-          name: 'youtubeVideo',
-          type: 'object',
-          title: 'YouTube Video',
-          fields: [
-            {
-              name: 'url',
-              type: 'url',
-              title: 'YouTube Video URL',
-              validation: (Rule) =>
-                Rule.uri({
-                  scheme: ['https'],
-                  allowRelative: false,
-                  message:
-                    'Por favor introduce una URL que empiece por https://www...',
-                }),
-            },
-          ],
-        },
-      ],
-    },
+    body_en,
+    body_es,
+    body_fr,
     {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
       required: true,
       options: {
-        source: 'title',
+        source: 'refTitle',
         maxLength: 96,
       },
     },
@@ -140,7 +79,7 @@ const post = {
 
   preview: {
     select: {
-      title: 'title',
+      title: 'refTitle',
       author: 'author.name',
       media: 'mainImage',
     },

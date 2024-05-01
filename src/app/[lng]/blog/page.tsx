@@ -12,8 +12,10 @@ export const metadata: Metadata = {
   description: '',
 }
 
-const Blog = async () => {
-  const posts = await getPosts()
+const Blog = async ({ params }) => {
+  console.log('===params==>', params)
+  const posts = await getPosts(params.lng)
+  console.log('===posts==>', posts)
 
   return (
     <>

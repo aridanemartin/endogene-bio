@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 import './BlogPostPreview.scss'
 import { enhanceAltDescription } from '@utils/enhanceAltDescription'
 import Image from 'next/image'
