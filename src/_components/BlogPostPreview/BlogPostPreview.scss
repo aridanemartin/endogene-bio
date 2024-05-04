@@ -34,7 +34,7 @@
     text-align: center;
     color: #333;
     font-size: 2rem;
-    height: 100%;
+    height: fit-content;
     text-wrap: balance;
     padding: 0 1rem;
 
@@ -52,7 +52,7 @@
     &-text {
       color: #566;
       font-size: 1.2rem;
-      text-wrap: balance;
+      text-wrap: pretty;
       display: -webkit-box;
       -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;

@@ -1,7 +1,7 @@
 import { getPosts } from 'src/sanity/utils/sanity-querys'
 
 import '@styles/Blog.scss'
-import heroImage from '@assets/pictures/teamShape.webp'
+import heroImage from '@assets/pictures/labBanner.webp'
 import Header from '@components/Header/Header'
 import { BlogPostPreview } from '@components/BlogPostPreview/BlogPostPreview'
 import Headline from '@components/Headline/Headline'
@@ -13,9 +13,7 @@ export const metadata: Metadata = {
 }
 
 const Blog = async ({ params }) => {
-  console.log('===params==>', params)
   const posts = await getPosts(params.lng)
-  console.log('===posts==>', posts)
 
   return (
     <>

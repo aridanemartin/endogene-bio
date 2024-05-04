@@ -11,11 +11,14 @@ import Layout from '@components/Layout/Layout'
 import { ShareButton } from '@components/ShareButton/ShareButton'
 
 type Props = {
-  params: { slug: string }
+  params: { slug: string; lng: string }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { title, description, mainImage } = await getPost(params.slug)
+  const { title, description, mainImage } = await getPost(
+    params.slug,
+    params.lng,
+  )
 
   return {
     title: title,
@@ -29,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Post({ params }: Props) {
   const { title, body, mainImage, author, timeToRead } = await getPost(
     params.slug,
+    params.lng,
   )
 
   return (

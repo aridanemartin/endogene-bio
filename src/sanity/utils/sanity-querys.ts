@@ -33,15 +33,15 @@ export async function getPosts(lng: string) {
   )
 }
 
-export async function getPost(slug: string) {
+export async function getPost(slug: string, lng: string) {
   return sanityClient.fetch(
     groq`*[_type == "post" && slug.current == '${slug}'][0]{
       _id,
       _createdAt,
-      title,
-      description,
+       "title": title.${lng},
+      "description": description.${lng},
       author,
-      body,
+      "body": body_${lng},
       timeToRead,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,

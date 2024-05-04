@@ -1,6 +1,8 @@
 import Header from '@components/Header/Header'
 import Headline from '@components/Headline/Headline'
 import HeroBannerImage from '@assets/pictures/endogeneTeam3.jpg'
+import firstSectionImage from '@assets/pictures/talkingTeam.webp'
+import secondSectionImage from '@assets/pictures/teamMates.webp'
 import { getTeamMembers } from 'src/sanity/utils/sanity-querys'
 import { TeamSection } from '@components/TeamSection/TeamSection'
 import Layout from '@components/Layout/Layout'
@@ -15,13 +17,13 @@ const TeamPage = async ({ params: { lng } }) => {
       <Layout maxWidth="1100px">
         <PictureSection
           picturePosition="right"
-          pictureSrc={HeroBannerImage}
+          pictureSrc={firstSectionImage}
           translationKey="TEAM.intro1"
           lng={lng}
         />
         <PictureSection
           picturePosition="left"
-          pictureSrc={HeroBannerImage}
+          pictureSrc={secondSectionImage}
           translationKey="TEAM.intro2"
           lng={lng}
         />
