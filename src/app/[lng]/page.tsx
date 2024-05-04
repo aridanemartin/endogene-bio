@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 export default async function Home({ params: { lng } }) {
   const { t } = await useTranslation(lng)
-  const posts = await getPosts()
-  const latestPosts = posts.slice(posts.length - 3, posts.length)
+  // const posts = await getPosts()
+  // const latestPosts = posts.slice(posts.length - 3, posts.length)
 
   return (
     <>
