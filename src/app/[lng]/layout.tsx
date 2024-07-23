@@ -1,6 +1,6 @@
 import { dir } from 'i18next'
 import Nav from '@components/Nav/Nav'
-import { Forum } from 'next/font/google'
+import { Forum, Lexend, Open_Sans } from 'next/font/google'
 import '@styles/global.scss'
 import Footer from '@components/Footer/Footer'
 import AriSignature from '@components/AriSignature/AriSignature'
@@ -25,10 +25,16 @@ export const metadata = {
   },
 }
 
-const forum = Forum({
-  weight: '400',
+const openSans = Open_Sans({
+  weight: ['400', '600'],
   subsets: ['latin'],
-  variable: '--font-forum',
+  variable: '--font-open-sans',
+})
+
+const lexend = Lexend({
+  weight: ['400', '600'],
+  subsets: ['latin'],
+  variable: '--font-lexend',
 })
 
 export async function generateStaticParams() {
@@ -44,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={lng} dir={dir(lng)}>
-      <body className={forum.variable}>
+      <body className={openSans.variable + ' ' + lexend.variable}>
         <Nav lng={lng} />
         {children}
         <Footer lng={lng} />

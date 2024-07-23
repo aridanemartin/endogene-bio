@@ -18,7 +18,6 @@
 
     input,
     textarea {
-      font-family: var(--font-forum);
       display: inline-block;
       font-size: 1.1rem;
       color: var(--main-purple);

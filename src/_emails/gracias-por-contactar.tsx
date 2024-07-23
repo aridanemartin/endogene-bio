@@ -125,7 +125,6 @@ export default GraciasPorContactarEmail
 
 const main = {
   backgroundColor: '#fff',
-  fontFamily: 'forum',
 }
 
 const paragraph = {

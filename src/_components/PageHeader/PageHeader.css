@@ -22,7 +22,6 @@
   }
 
   button {
-    font-family: var(--font-forum);
     background-color: white;
     color: var(--main-purple);
     font-weight: 600;

@@ -16,8 +16,6 @@
     justify-content: center;
     text-align: center;
 
-    font-family: $forum;
-
     h1 {
       color: $main-purple;
       font-size: 2rem;
@@ -88,7 +86,6 @@
     color: white;
     border: 0;
     font-size: 1.2rem;
-    font-family: $forum;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     background-size: 200% 100%;
