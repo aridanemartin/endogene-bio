@@ -6,6 +6,7 @@ import secondSectionImage from '@assets/pictures/teamMeeting.webp'
 import { getTeamMembers } from 'src/sanity/utils/sanity-querys'
 import { TeamSection } from '@components/TeamSection/TeamSection'
 import Layout from '@components/Layout/Layout'
+import '../../../styles/TeamPage.css'
 import PictureSection from '@components/PictureSection/PictureSection'
 
 const TeamPage = async ({ params: { lng } }) => {
@@ -13,20 +14,7 @@ const TeamPage = async ({ params: { lng } }) => {
 
   return (
     <div>
-      <Header title="Team" image={HeroBannerImage} />
-      <Layout maxWidth="1100px">
-        <PictureSection
-          picturePosition="right"
-          pictureSrc={firstSectionImage}
-          translationKey="TEAM.intro1"
-          lng={lng}
-        />
-        <PictureSection
-          picturePosition="left"
-          pictureSrc={secondSectionImage}
-          translationKey="TEAM.intro2"
-          lng={lng}
-        />
+      <Layout maxWidth="1100px" className="teamPage">
         <Headline lng={lng} titleKey="TEAM.title" />
         <TeamSection teamMembers={team} />
       </Layout>

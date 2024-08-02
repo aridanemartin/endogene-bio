@@ -29,22 +29,52 @@ const Headline = ({
   const renderHeadline = (headlineType: HeadlineType) => {
     switch (headlineType) {
       case 'h1':
-        return <h1 className="headline__title">{title}</h1>
+        return (
+          <h1
+            className="headline__title"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )
       case 'h2':
-        return <h2 className="headline__title">{title}</h2>
+        return (
+          <h2
+            className="headline__title"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )
       case 'h3':
-        return <h3 className="headline__title">{title}</h3>
+        return (
+          <h3
+            className="headline__title"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )
       case 'h4':
-        return <h4 className="headline__title">{title}</h4>
+        return (
+          <h4
+            className="headline__title"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )
       default:
-        return <h2 className="headline__title">{title}</h2>
+        return (
+          <h2
+            className="headline__title"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )
     }
   }
 
   return (
     <div className="headline" id={id} style={styles}>
       {renderHeadline(headlineType)}
-      {subtitleKey && <p className="headline__subtitle">{subtitle}</p>}
+      {subtitleKey && (
+        <p
+          className="headline__subtitle"
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+        />
+      )}
     </div>
   )
 }

@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
-  --main-purple: #5e1e3c;
-  --main-purple-hover: #953160;
   --main-purple-light: #5e1e3c44;
 
-  --main-turquoise: #78bfbf;
+  --main-purple: #7758a3;
+  --main-purple-hover: #6134a0;
+  --main-turquoise: #72c2be;
+  --main-pink: #e63e6b;
+
+  --light-gray: #9b9b9b;
+  --dark-gray: #828282;
 }
 
 body {
-  font-family: var(--font-open-sans);
+  font-family: var(--font-lexend);
   margin: 0;
   padding: 0;
   box-sizing: border-box;

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import './Layout.css'
 
 interface LayoutProps {
   maxWidth?: string
@@ -8,10 +9,7 @@ interface LayoutProps {
 
 const Layout = ({ maxWidth, children, className }: LayoutProps) => {
   return (
-    <section
-      className={className}
-      style={{ maxWidth: maxWidth, margin: '0 auto', padding: '1rem' }}
-    >
+    <section className={`layout ${className}`} style={{ maxWidth: maxWidth }}>
       {children}
     </section>
   )

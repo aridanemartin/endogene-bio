@@ -1,12 +1,19 @@
 @use '@sass/colors.scss' as *;
 
 .headline {
+  display: flex;
+  justify-content: center;
   margin-bottom: 3rem;
   text-wrap: balance;
+  text-align: center;
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 200;
+  }
 
   &__title {
-    color: $main-purple;
-
     margin-bottom: 1rem;
   }
 
@@ -24,6 +31,10 @@
 
   &__subtitle {
     font-size: 1.2rem;
+  }
+
+  strong {
+    font-weight: bold;
   }
 }
 

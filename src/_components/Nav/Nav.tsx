@@ -9,7 +9,7 @@ import { use, useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 // images
-import navLogo from '@assets/logos/endogeneLogo.png'
+import navLogo from '@assets/logos/endogeneLogo.svg'
 import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'src/app/i18n/client'
@@ -35,6 +35,7 @@ export default function Nav({ lng }: { lng: string }) {
   //     pathname === '/') &&
   //   !isOpen
   const isBurgerIconWhite = false
+  const pathname = usePathname()
 
   const linkAnimation = {
     open: {
@@ -108,7 +109,9 @@ export default function Nav({ lng }: { lng: string }) {
           >
             <motion.li variants={linkAnimation}>
               <Link
-                className="link"
+                className={`link ${
+                  pathname === `/${lng}/technology` ? 'active' : ''
+                }`}
                 href={`/${lng}/technology`}
                 onClick={toggle}
               >
@@ -116,24 +119,44 @@ export default function Nav({ lng }: { lng: string }) {
               </Link>
             </motion.li>
             <motion.li variants={linkAnimation}>
-              <Link className="link" href={`/${lng}/team`} onClick={toggle}>
+              <Link
+                className={`link ${
+                  pathname === `/${lng}/team` ? 'active' : ''
+                }`}
+                href={`/${lng}/team`}
+                onClick={toggle}
+              >
                 {t('NAV.team')}
               </Link>
             </motion.li>
             <motion.li variants={linkAnimation}>
-              <Link className="link" href={`/${lng}/blog`} onClick={toggle}>
+              <Link
+                className={`link ${
+                  pathname === `/${lng}/services` ? 'active' : ''
+                }`}
+                href={`/${lng}/blog`}
+                onClick={toggle}
+              >
                 {t('NAV.news')}
               </Link>
             </motion.li>
 
             <motion.li variants={linkAnimation}>
-              <Link className="link" href={`/${lng}/contact`} onClick={toggle}>
+              <Link
+                className={`link ${
+                  pathname === `/${lng}/contact` ? 'active' : ''
+                }`}
+                href={`/${lng}/contact`}
+                onClick={toggle}
+              >
                 {t('NAV.contact')}
               </Link>
             </motion.li>
             <motion.li variants={linkAnimation}>
               <Link
-                className="link joinUs"
+                className={`link joinUs ${
+                  pathname === `/${lng}/join-us` ? 'active' : ''
+                }`}
                 href={`/${lng}/join-us`}
                 onClick={toggle}
               >

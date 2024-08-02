@@ -1,132 +1,42 @@
 @use '@sass/colors.scss' as *;
-@use '@sass/fonts.scss' as *;
 
-.heros {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: 'text image';
+.hero {
+  position: relative;
+  height: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
 
-  height: 35rem;
-
-  &__text-content {
-    grid-area: text;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    h1 {
-      color: $main-purple;
-      font-size: 2rem;
-
-      strong {
-        color: $main-purple-hover;
-        font-size: 4rem;
-      }
-      padding-bottom: 2rem;
-    }
-
-    p {
-      color: #3d3d3d;
-      font-size: 1.2rem;
-    }
+  &__background {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 
-  &__quote {
-    display: flex;
-    flex-direction: column;
-    color: $main-purple;
-
-    h2 {
-      font-size: 2rem;
-      text-wrap: balance;
-    }
-
-    i {
-      font-size: 1.5rem;
-      margin: 0.5rem 0;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b83457;
+    opacity: 0.7;
+    z-index: 1;
   }
 
-  &__image {
+  &__logo {
     position: relative;
-    margin: auto auto;
-    grid-area: image;
-
-    height: 20rem;
-    width: 20rem;
+    width: 100%;
+    height: 100%;
 
     img {
-      clip-path: circle(50% at 50% 50%);
-    }
-  }
+      position: absolute;
+      height: 6rem;
 
-  &__button-container {
-    margin-top: 2rem;
-
-    p {
-      margin: 1rem 0;
-    }
-  }
-
-  &__button {
-    width: fit-content;
-
-    padding: 1rem 2rem;
-    border-radius: 10rem;
-    background: rgb(14, 104, 53);
-    background: linear-gradient(
-      90deg,
-      rgba(14, 104, 53, 1) 50%,
-      rgba(136, 189, 48, 1) 100%
-    );
-    cursor: pointer;
-    color: $main-purple;
-    color: white;
-    border: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
-    background-size: 200% 100%;
-
-    &:hover {
-      background-color: red;
-      background-position: 100% 0;
-    }
-  }
-}
-
-@media (max-width: 1100px) {
-  .heros {
-    height: auto;
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-
-    &__text-content {
-      padding-bottom: 3rem;
-
-      h1 {
-        strong {
-          font-size: 3rem;
-        }
-        padding-bottom: 1rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
-
-    &__image {
-      height: 15rem;
-      width: 15rem;
-      margin-bottom: 3rem;
-
-      img {
-        clip-path: circle(50%);
-      }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
     }
   }
 }

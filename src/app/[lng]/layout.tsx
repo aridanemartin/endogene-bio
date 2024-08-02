@@ -14,11 +14,11 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/endogeneLogoPurple.ico',
+        url: '/endogeneFavicon.ico',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/endogeneLogoWhite.ico',
+        url: '/endogeneFavicon.ico',
         media: '(prefers-color-scheme: dark)',
       },
     ],
@@ -32,7 +32,7 @@ const openSans = Open_Sans({
 })
 
 const lexend = Lexend({
-  weight: ['400', '600'],
+  weight: ['100', '200', '400', '600'],
   subsets: ['latin'],
   variable: '--font-lexend',
 })
