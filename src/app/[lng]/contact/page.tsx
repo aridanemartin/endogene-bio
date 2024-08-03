@@ -5,6 +5,8 @@ import type { Metadata } from 'next'
 
 import '@styles/Contacto.css'
 import { useTranslation } from 'src/app/i18n'
+import Layout from '@components/Layout/Layout'
+import Headline from '@components/Headline/Headline'
 
 export const metadata: Metadata = {
   title: 'Contacto | Endogene.bio',
@@ -15,10 +17,10 @@ const Contacto = async ({ params: { lng } }) => {
   const { t } = await useTranslation(lng)
 
   return (
-    <main className="main-layout">
+    <Layout maxWidth="1100px" className="contactPage">
+      <Headline lng={lng} titleKey="CONTACT.title" />
       <div className="contacto">
         <section className="form-section">
-          <h1>{t('CONTACT.title')}</h1>
           <ContactForm lng={lng} />
         </section>
         <section className="image-section">
@@ -30,7 +32,7 @@ const Contacto = async ({ params: { lng } }) => {
           />
         </section>
       </div>
-    </main>
+    </Layout>
   )
 }
 

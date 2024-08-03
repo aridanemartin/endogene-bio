@@ -84,6 +84,7 @@ export default function Nav({ lng }: { lng: string }) {
       </button>
       <div className={isOpen ? 'nav' + ' ' + 'navOpen' : 'nav'}>
         <div className="navContent">
+          {/* a needs to be used here to avoid video bug when navigating */}
           <a href={`/${lng}`} className="navContent__logo" onClick={toggle}>
             <Image
               src={navLogo}

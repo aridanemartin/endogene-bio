@@ -48,7 +48,7 @@ i {
   line-height: 64px;
 
   color: #eeeeed;
-  background-color: $main-purple;
+  background-color: var(--main-purple);
   //   padding: 0 18px;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;

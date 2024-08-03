@@ -13,12 +13,10 @@ const TeamPage = async ({ params: { lng } }) => {
   const team = await getTeamMembers()
 
   return (
-    <div>
-      <Layout maxWidth="1100px" className="teamPage">
-        <Headline lng={lng} titleKey="TEAM.title" />
-        <TeamSection teamMembers={team} />
-      </Layout>
-    </div>
+    <Layout maxWidth="1100px" className="teamPage">
+      <Headline lng={lng} titleKey="TEAM.title" />
+      <TeamSection teamMembers={team} />
+    </Layout>
   )
 }
 

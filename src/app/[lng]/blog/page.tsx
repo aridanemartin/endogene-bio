@@ -6,6 +6,7 @@ import Header from '@components/Header/Header'
 import { BlogPostPreview } from '@components/BlogPostPreview/BlogPostPreview'
 import Headline from '@components/Headline/Headline'
 import type { Metadata } from 'next'
+import Layout from '@components/Layout/Layout'
 
 export const metadata: Metadata = {
   title: 'Blog | Endogene.Bio',
@@ -16,16 +17,12 @@ const Blog = async ({ params }) => {
   const posts = await getPosts(params.lng)
 
   return (
-    <>
-      <Header title="Blog" image={heroImage} />
+    <Layout maxWidth="1100px" className="blogPage">
+      <Headline lng={params.lng} titleKey="BLOG.title" />
       <div className="postsContainer">
-        {/* <Headline
-          titleKey="Artículos"
-          subtitleKey="Te damos la bienvenida a nuestro blog, donde podrás obtener inspiración, consejos prácticos y la información más reciente sobre cómo mejorar tu bienestar a través de una alimentación saludable."
-        /> */}
         {posts.length && posts.map((post) => <BlogPostPreview post={post} />)}
       </div>
-    </>
+    </Layout>
   )
 }
 

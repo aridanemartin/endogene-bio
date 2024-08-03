@@ -9,10 +9,10 @@
     svg {
       max-width: 2.3rem;
       transition: all 0.3s ease-in-out;
-      fill: $main-purple;
+      fill: var(--main-purple);
 
       &:hover {
-        fill: $main-purple-hover;
+        fill: var(--main-purple)-hover;
       }
     }
   }

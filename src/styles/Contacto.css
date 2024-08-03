@@ -20,10 +20,10 @@
     textarea {
       display: inline-block;
       font-size: 1.1rem;
-      color: var(--main-purple);
+      color: var(--dark-gray);
       border: none;
       width: 90%;
-      background-color: var(--main-purple-light);
+      background-color: var(--light-gray);
       display: inline-block;
       border-radius: 1rem;
       padding: 1rem;
@@ -75,7 +75,7 @@
 }
 
 @media (max-width: 1280px) {
-  .main-layout:has(.contacto) {
+  .contactPage:has(.contacto) {
     padding: 0rem;
   }
 

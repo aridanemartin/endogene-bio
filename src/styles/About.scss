@@ -14,7 +14,7 @@
         rgba(136, 189, 48, 0.9) 100%
       ),
       url('../../_assets/pictures/educationExample.jpg');
-    background-color: $main-purple;
+    background-color: var(--main-purple);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,13 +65,13 @@
       text-align: center;
 
       h1 {
-        color: $main-purple;
+        color: var(--main-purple);
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
       }
 
       h2 {
-        color: $main-purple-hover;
+        color: var(--main-purple)-hover;
         font-size: 1.5rem;
         margin-bottom: 2rem;
       }
@@ -115,7 +115,7 @@
     border-radius: 1rem;
 
     &-title {
-      color: $main-purple;
+      color: var(--main-purple);
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }

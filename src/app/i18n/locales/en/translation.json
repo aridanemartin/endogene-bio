@@ -26,6 +26,9 @@
     "intro1": "<p>Period pain is not normal. But because of undiagnosed endometriosis, it’s a reality for 190 million women globally. At EndoGene.bio, we will be helping women across the world get access to early diagnosis through cutting-edge epigenetics.</p><p>Endometriosis affects 10% of women, takes 7 years to diagnose and has high societal and economic costs. In the EU and US alone, the estimated cost of delayed diagnosis reaches €300B.</p>",
     "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
   },
+  "BLOG": {
+    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>"
+  },
   "TECHNOLOGY": {
     "endometriosis": {
       "definition": "Endometriosis is a complex gynecological condition characterized by the presence of endometrial-like tissue outside the uterus, which induces a chronic, inflammatory response. This tissue, behaving similarly to the lining of the uterus, thickens, breaks down, and bleeds with each menstrual cycle. However, because it is located outside the uterus, it has no way to exit the body, leading to pain, inflammation, and the formation of scar tissue. Symptoms can vary but often include severe menstrual cramps, chronic pain in the lower back and pelvis, pain during or after sexual intercourse, intestinal pain, and infertility in some cases.",
@@ -41,7 +44,7 @@
     }
   },
   "CONTACT": {
-    "title": "Contact us",
+    "title": "Let's talk. <strong>Share</strong> your excitement <strong>with us.</strong>",
     "form": {
       "name": "Name",
       "email": "example@gmail.com",

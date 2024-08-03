@@ -27,6 +27,7 @@ h6 {
   font-family: var(--font-lexend);
 }
 
-p {
+p,
+span {
   font-family: var(--font-open-sans);
 }

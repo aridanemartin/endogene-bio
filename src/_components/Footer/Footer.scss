@@ -4,7 +4,7 @@
 .footer {
   width: 100%;
   height: fit-content;
-  background: $main-purple;
+  background: var(--main-purple);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          fill: $main-purple-hover;
+          fill: var(--main-purple)-hover;
         }
       }
     }

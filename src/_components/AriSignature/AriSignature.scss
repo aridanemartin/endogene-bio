@@ -7,7 +7,7 @@
   text-align: center;
 
   background: #ffffff;
-  color: $main-purple;
+  color: var(--main-purple);
   padding: 1rem;
   font-weight: bold;
 }
@@ -17,12 +17,12 @@
 }
 
 .createdBy a {
-  color: $main-purple;
+  color: var(--main-purple);
   font-weight: 700;
   transition: all 300ms ease-in-out;
 
   &:hover {
-    color: $main-purple-hover;
+    color: var(--main-purple)-hover;
     cursor: pointer;
   }
 }
