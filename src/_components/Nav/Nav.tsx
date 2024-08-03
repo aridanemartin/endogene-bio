@@ -5,23 +5,14 @@ import './Burger.scss'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { use, useCallback, useEffect, useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 // images
 import navLogo from '@assets/logos/endogeneLogo.svg'
-import { FacebookIcon } from '@components/SocialIcon/FacebookIcon'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'src/app/i18n/client'
-import { set } from 'sanity'
 import { useMediaQuery } from 'src/_hooks/useMediaQuery'
-
-const socialLinks = [
-  {
-    href: 'https://www.linkedin.com/company/endogene-bio/',
-    icon: <FacebookIcon />,
-  },
-]
 
 export default function Nav({ lng }: { lng: string }) {
   const { t } = useTranslation(lng)
@@ -93,14 +84,14 @@ export default function Nav({ lng }: { lng: string }) {
       </button>
       <div className={isOpen ? 'nav' + ' ' + 'navOpen' : 'nav'}>
         <div className="navContent">
-          <Link href={`/${lng}`} className="navContent__logo">
+          <a href={`/${lng}`} className="navContent__logo" onClick={toggle}>
             <Image
               src={navLogo}
               alt="Endogene.Bio - Logo"
               fill
               style={{ objectFit: 'contain' }}
             />
-          </Link>
+          </a>
           <motion.ul
             className="linksWrapper"
             initial={false}
