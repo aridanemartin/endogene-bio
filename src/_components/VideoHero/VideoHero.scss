@@ -1,0 +1,56 @@
+@use '@sass/colors.scss' as *;
+
+.videoHero {
+  position: relative;
+  width: 100%;
+  max-height: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  &__background {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b83457;
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  &__logo {
+    img {
+      position: absolute;
+      height: 6rem;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  }
+}
+
+@media (width < 768px) {
+  .videoHero {
+    height: 22rem;
+
+    video {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

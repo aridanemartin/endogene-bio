@@ -10,8 +10,9 @@ import { PartnerLogos } from '@components/PartnerLogos/PartnerLogos'
 import type { Metadata } from 'next'
 import { Counter } from '@components/Counter/Counter'
 import HeroTemplate from '@components/HeroTemplate/HeroTemplate'
-import heroImage from '../../_assets/pictures/scientistPlaceholder.jpg'
+// import heroImage from '../../_assets/pictures/scientistPlaceholder.jpg'
 import '../../styles/HomePage.css'
+import VideoHero from '@components/VideoHero/VideoHero'
 
 export const metadata: Metadata = {
   title: 'Blog | Endogene.Bio',
@@ -27,7 +28,7 @@ export default async function Home({ params: { lng } }) {
     <>
       <Layout maxWidth="1100px" className="homePageLayout">
         <Headline titleKey="HOME.slogan" lng={lng} />
-        <HeroTemplate src={heroImage} />
+        <VideoHero />
         <Headline titleKey="HOME.about-us" lng={lng} />
         <PictureSection
           picturePosition="right"
