@@ -17,6 +17,7 @@
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
   }
 
   &::after {
@@ -47,6 +48,9 @@
 @media (width < 768px) {
   .videoHero {
     height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     video {
       height: 100%;
