@@ -35,7 +35,7 @@
   &__logo {
     img {
       position: absolute;
-      height: 6rem;
+      height: 7rem;
 
       top: 50%;
       left: 50%;
@@ -55,6 +55,12 @@
     video {
       height: 100%;
       width: auto;
+    }
+
+    &__logo {
+      img {
+        height: 6rem;
+      }
     }
   }
 }

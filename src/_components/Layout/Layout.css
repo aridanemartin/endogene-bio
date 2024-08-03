@@ -3,4 +3,8 @@
   padding: 1rem;
 }
 
-
+@media (width < 1100px) {
+  .layout {
+    margin-top: 4rem;
+  }
+}
