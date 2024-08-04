@@ -6,25 +6,14 @@ import './TeamSection.css'
 import Image from 'next/image'
 import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
 import teamShape from '../../_assets/shapes/teamShapeTurquouise.svg'
+import { useHasScrolled } from 'src/_hooks/useHasScrolled'
 
 export const TeamSection = ({ teamMembers }) => {
   const [fullyVisibleCardIds, setFullyVisibleCardIds] = useState<Set<string>>(
     new Set(),
   )
-  const [hasScrolled, setHasScrolled] = useState(false)
+  const hasScrolled = useHasScrolled()
   const cardRefs = React.useRef<(HTMLElement | null)[]>([])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(true)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(

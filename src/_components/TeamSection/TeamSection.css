@@ -82,6 +82,7 @@
   .profile-image {
     height: 300px;
     img {
+      transition: filter 0.3s ease-in-out;
       filter: grayscale(100%);
     }
   }
@@ -121,6 +122,28 @@
 
 @media (width < 768px) {
   .team-cards-section {
+    /* Delay the animation of the team member card */
+    .team-member-card .text-content {
+      transition-delay: 0.3s;
+    }
+
+    .team-member-card .team-shape {
+      transition-delay: 0.3s;
+    }
+
+    .team-member-card .linkedinIcon {
+      transition-delay: 0.3s;
+    }
+
+    .team-member-card .profile-image img {
+      transition-delay: 0.3s;
+    }
+
+    /* Animate the team member card when it's visible*/
+    .team-member-card.fully-visible .profile-image img {
+      filter: grayscale(0%);
+    }
+
     .team-member-card.fully-visible .text-content {
       transform: translateY(0%);
     }

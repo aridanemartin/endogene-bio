@@ -4,13 +4,18 @@
 .footer {
   width: 100%;
   height: fit-content;
-  background: var(--main-purple);
+  background: var(--main-pink);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
     max-width: 1440px;
     margin: 0 auto;
 
@@ -48,11 +53,12 @@
   &__logo {
     position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 4rem;
-    width: 14rem;
+    justify-content: center;
+    height: 3rem;
+    width: 7rem;
     padding-bottom: 2rem;
+    img {
+    }
   }
 
   &__legal {
@@ -64,14 +70,6 @@
       color: white;
       font-size: 0.8rem;
       padding: 1rem;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .footer {
-    &__content {
-      padding-bottom: 3rem;
     }
   }
 }

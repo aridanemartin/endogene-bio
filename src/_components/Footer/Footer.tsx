@@ -4,7 +4,7 @@ import './Footer.scss'
 import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
 import { TwitterIcon } from '@components/SocialIcon/TwitterIcon'
 import { InstagramIcon } from '@components/SocialIcon/InstagramIcon'
-import footerLogo from '@assets/logos/endogeneLogoWhite.webp'
+import footerLogo from '@assets/logos/endogeneLogo.svg'
 import Image from 'next/image'
 
 export default function Footer({ lng }) {
