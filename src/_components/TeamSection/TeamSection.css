@@ -119,20 +119,20 @@
   }
 }
 
-/* @media (width < 768px) {
+@media (width < 768px) {
   .team-cards-section {
-    grid-auto-rows: 35rem;
+    .team-member-card.fully-visible .text-content {
+      transform: translateY(0%);
+    }
 
-    .team-member-card {
-      .profile-image {
-        img {
-          height: 70% !important;
-        }
+    .team-member-card.fully-visible .team-shape {
+      transform: translateY(0%);
+      opacity: 0.7;
+    }
 
-        &::after {
-          background-image: none;
-        }
-      }
+    .team-member-card.fully-visible .linkedinIcon {
+      transform: translateY(0%);
+      opacity: 1;
     }
   }
-} */
+}

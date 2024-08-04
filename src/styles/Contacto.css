@@ -1,13 +1,7 @@
 .contacto {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 6rem;
-
-  h1 {
-    font-size: 3rem;
-    color: var(--main-purple);
-    padding: 2rem 0;
-  }
+  margin-bottom: 3rem;
 
   .form-section {
     display: flex;
@@ -20,10 +14,10 @@
     textarea {
       display: inline-block;
       font-size: 1.1rem;
-      color: var(--dark-gray);
+
       border: none;
       width: 90%;
-      background-color: var(--light-gray);
+      background-color: var(--input-gray);
       display: inline-block;
       border-radius: 1rem;
       padding: 1rem;
@@ -31,25 +25,29 @@
       resize: none;
     }
 
+    input::placeholder,
+    textarea::placeholder {
+      color: var(--input-write-gray);
+      font-family: var(--font-open-sans);
+    }
+
     textarea {
       height: 10rem;
     }
 
     button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 3rem;
-      width: 50%;
+      padding: 1rem 2rem;
       font-size: 1.2rem;
       border-radius: 10rem;
       border: none;
       color: white;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      background-color: var(--main-purple);
-      background: linear-gradient(
-        90deg,
-        var(--main-purple) 50%,
-        var(--main-purple-hover) 100%
-      );
+      background-color: var(--main-pink);
       background-size: 200% 100%;
 
       &:hover {
@@ -60,12 +58,17 @@
 
   .image-section {
     position: relative;
-    height: 50rem;
+    height: auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   .image {
     position: relative;
-
     grid-area: image;
 
     height: 60rem;
@@ -75,16 +78,11 @@
 }
 
 @media (max-width: 1280px) {
-  .contactPage:has(.contacto) {
-    padding: 0rem;
-  }
-
   .contacto {
     display: flex;
     flex-direction: column-reverse;
 
     .form-section {
-      width: 100vw;
       height: 100%;
       overflow: hidden;
 
@@ -95,7 +93,7 @@
       }
 
       form {
-        padding: 2rem 1rem;
+        padding-top: 2rem;
       }
     }
 

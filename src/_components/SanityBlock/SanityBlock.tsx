@@ -83,7 +83,11 @@ function SanityBlock({ sanityContent }) {
       }
     }
 
-    return <span className="sanityBlock__paragraph">{child.text}</span>
+    return (
+      <span className="sanityBlock__paragraph" key={child._key}>
+        {child.text}
+      </span>
+    )
   }
 
   const renderBlock = (sanityContent) => {

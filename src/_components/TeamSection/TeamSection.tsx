@@ -1,15 +1,72 @@
+'use client'
+
 import SanityBlock from '@components/SanityBlock/SanityBlock'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './TeamSection.css'
 import Image from 'next/image'
 import { LinkedinIcon } from '@components/SocialIcon/LinkedinIcon'
 import teamShape from '../../_assets/shapes/teamShapeTurquouise.svg'
 
 export const TeamSection = ({ teamMembers }) => {
+  const [fullyVisibleCardIds, setFullyVisibleCardIds] = useState<Set<string>>(
+    new Set(),
+  )
+  const [hasScrolled, setHasScrolled] = useState(false)
+  const cardRefs = React.useRef<(HTMLElement | null)[]>([])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(true)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!hasScrolled) return
+
+        const newFullyVisibleCardIds = new Set(fullyVisibleCardIds)
+        entries.forEach((entry) => {
+          const cardId = entry.target.getAttribute('data-id')
+          if (entry.isIntersecting && entry.intersectionRatio === 1) {
+            newFullyVisibleCardIds.add(cardId)
+          } else if (entry.intersectionRatio < 1) {
+            newFullyVisibleCardIds.delete(cardId)
+          }
+        })
+        setFullyVisibleCardIds(newFullyVisibleCardIds)
+      },
+      { threshold: [0, 1] },
+    )
+
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card)
+    })
+
+    return () => {
+      cardRefs.current.forEach((card) => {
+        if (card) observer.unobserve(card)
+      })
+    }
+  }, [fullyVisibleCardIds, hasScrolled])
+
   return (
     <section className="team-cards-section">
-      {teamMembers.map((member) => (
-        <article key={member._id} className="team-member-card">
+      {teamMembers.map((member, index) => (
+        <article
+          ref={(el) => (cardRefs.current[index] = el)}
+          key={member._id}
+          data-id={member._id}
+          className={`team-member-card ${
+            fullyVisibleCardIds.has(member._id) ? 'fully-visible' : ''
+          }`}
+        >
           <div className="content-wrapper">
             <div className="profile-image">
               <Image

@@ -124,7 +124,7 @@ export default function Nav({ lng }: { lng: string }) {
             <motion.li variants={linkAnimation}>
               <Link
                 className={`link ${
-                  pathname === `/${lng}/services` ? 'active' : ''
+                  pathname === `/${lng}/blog` ? 'active' : ''
                 }`}
                 href={`/${lng}/blog`}
                 onClick={toggle}
