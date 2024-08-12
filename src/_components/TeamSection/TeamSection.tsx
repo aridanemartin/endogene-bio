@@ -48,57 +48,59 @@ export const TeamSection = ({ teamMembers }) => {
   return (
     <section className="team-cards-section">
       {teamMembers.map((member, index) => (
-        <article
-          ref={(el) => (cardRefs.current[index] = el)}
-          key={member._id}
-          data-id={member._id}
-          className={`team-member-card ${
-            fullyVisibleCardIds.has(member._id) ? 'fully-visible' : ''
-          }`}
-        >
-          <div className="content-wrapper">
-            <div className="profile-image">
-              <Image
-                src={member.profileImage}
-                alt={member.name}
-                fill
-                style={{
-                  objectFit: 'cover',
-                }}
-              />
+        <div>
+          <article
+            ref={(el) => (cardRefs.current[index] = el)}
+            key={member._id}
+            data-id={member._id}
+            className={`team-member-card ${
+              fullyVisibleCardIds.has(member._id) ? 'fully-visible' : ''
+            }`}
+          >
+            <div className="content-wrapper">
+              <div className="profile-image">
+                <Image
+                  src={member.profileImage}
+                  alt={member.name}
+                  fill
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
+              <div className="text-content">
+                {member.bio &&
+                  member.bio.map((block) => (
+                    <div className="description" key={block._key}>
+                      <SanityBlock sanityContent={block} />
+                    </div>
+                  ))}
+              </div>
+              <div className="team-shape">
+                <Image
+                  src={teamShape}
+                  alt="team shape"
+                  fill
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
+              <a
+                className="linkedinIcon"
+                href={member.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinIcon />
+              </a>
             </div>
-            <div className="text-content">
-              {member.bio &&
-                member.bio.map((block) => (
-                  <div className="description" key={block._key}>
-                    <SanityBlock sanityContent={block} />
-                  </div>
-                ))}
-            </div>
-            <div className="team-shape">
-              <Image
-                src={teamShape}
-                alt="team shape"
-                fill
-                style={{
-                  objectFit: 'cover',
-                }}
-              />
-            </div>
-            <a
-              className="linkedinIcon"
-              href={member.linkedin}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedinIcon />
-            </a>
-          </div>
+          </article>
           <div className="title">
             <h2>{member.name}</h2>
             <h3>{member.position}</h3>
           </div>
-        </article>
+        </div>
       ))}
     </section>
   )
