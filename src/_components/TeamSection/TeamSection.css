@@ -54,6 +54,13 @@
       background-color: #f1f1f1;
     }
 
+    @supports not (aspect-ratio: 1/1) {
+      .content-wrapper {
+        height: 0;
+        padding-bottom: 100%;
+      }
+    }
+
     .team-shape {
       position: absolute;
       top: 0;
