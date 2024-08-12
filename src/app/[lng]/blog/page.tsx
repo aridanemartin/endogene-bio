@@ -20,7 +20,8 @@ const Blog = async ({ params }) => {
     <Layout maxWidth="1100px" className="blogPage">
       <Headline lng={params.lng} titleKey="BLOG.title" />
       <div className="postsContainer">
-        {posts.length && posts.map((post) => <BlogPostPreview post={post} />)}
+        {posts.length &&
+          posts.map((post, idx) => <BlogPostPreview post={post} index={idx} />)}
       </div>
     </Layout>
   )
