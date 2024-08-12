@@ -6,7 +6,10 @@
 
 .team-member-card {
   position: relative;
-  aspect-ratio: 1/1;
+  width: 100%;
+  padding-top: 100%; /* Maintain 1:1 aspect ratio */
+  background-color: #f1f1f1;
+  overflow: hidden;
 }
 
 .text-content {
@@ -38,11 +41,16 @@
 }
 
 .content-wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .team-shape {
@@ -51,9 +59,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 0.7;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   will-change: transform, opacity;
 }
 
@@ -63,15 +71,19 @@
   right: 4%;
   z-index: 1;
   transform: translateY(20rem);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   will-change: transform, opacity;
 }
 
 .profile-image {
-  height: 300px;
+  width: 100%;
+  height: auto; /* Ensure the image fits within the wrapper */
 }
 
 .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
   transition: filter 0.3s ease-in-out;
   filter: grayscale(100%);
 }
@@ -82,7 +94,6 @@
 
 .team-member-card:hover .team-shape {
   transform: translateY(0%);
-  opacity: 0.7;
 }
 
 .team-member-card:hover .linkedinIcon {
