@@ -51,9 +51,11 @@ export function middleware(req) {
       refererUrl.pathname.startsWith(`/${l}`),
     )
     const response = NextResponse.next()
-    if (lngInReferer) {
+    if (lngInReferer && languages.includes(lngInReferer)) {
       response.cookies.set(cookieName, lngInReferer, { sameSite: 'lax' })
       console.log('Setting cookie from referer:', lngInReferer)
+    } else {
+      console.log('Language from referer is not available:', lngInReferer)
     }
     return response
   }
