@@ -2,164 +2,157 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 1rem;
+}
 
-  .team-member-card {
-    position: relative;
-    aspect-ratio: 1/1;
+.team-member-card {
+  position: relative;
+  aspect-ratio: 1/1;
+}
 
-    .text-content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      z-index: 1;
-      color: white;
-      transform: translateY(100%);
-      transition: all 0.4s ease-in-out;
+.text-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+  color: white;
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
+}
 
-      .description {
-        span {
-          font-size: 1rem;
-          line-height: 1.3rem;
-        }
-        overflow: hidden;
-        margin: 0rem 2rem 2rem 1rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        line-clamp: 4;
-        -webkit-box-orient: vertical;
-        margin-bottom: 1rem;
-      }
-    }
+.text-content .description {
+  margin: 0rem 2rem 2rem 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 
-    .content-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow: hidden; /* Hide the overflow of the description text */
-      background-color: #f1f1f1;
-    }
+.text-content .description span {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
 
-    .team-shape {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
-      will-change: transform, opacity;
-    }
+.team-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  will-change: transform, opacity;
+}
 
-    .linkedinIcon {
-      position: absolute;
-      bottom: 8rem;
-      right: 1rem;
-      z-index: 1;
+.linkedinIcon {
+  position: absolute;
+  bottom: 40%;
+  right: 4%;
+  z-index: 1;
+  transform: translateY(20rem);
+  transition: transform 0.3s ease;
+  will-change: transform, opacity;
+}
 
-      transform: translateY(20rem);
-      transition: transform 0.3s ease;
-      will-change: transform, opacity;
-    }
+.profile-image {
+  height: 300px;
+}
+
+.profile-image img {
+  transition: filter 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.team-member-card:hover .text-content {
+  transform: translateY(0%);
+}
+
+.team-member-card:hover .team-shape {
+  transform: translateY(0%);
+  opacity: 0.7;
+}
+
+.team-member-card:hover .linkedinIcon {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.team-member-card:hover .hover-image {
+  opacity: 1;
+}
+
+.team-member-card:hover .title h2 {
+  color: #13505b;
+}
+
+.team-member-card:hover .title h3 {
+  color: #13505b;
+  opacity: 0.6;
+}
+
+.team-member-card:hover .profile-image img {
+  filter: grayscale(0%);
+}
+
+.title {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.title h2 {
+  font-weight: 600;
+}
+
+.title h3 {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+@media (max-width: 588px) {
+  .team-member-card .text-content {
+    transition-delay: 0.3s;
   }
 
-  .profile-image {
-    height: 300px;
-    img {
-      transition: filter 0.3s ease-in-out;
-      filter: grayscale(100%);
-    }
+  .team-member-card .team-shape {
+    transition-delay: 0.3s;
   }
 
-  .team-member-card:hover .text-content {
+  .team-member-card .linkedinIcon {
+    transition-delay: 0.3s;
+  }
+
+  .team-member-card .profile-image img {
+    transition-delay: 0.3s;
+  }
+
+  .team-member-card.fully-visible .profile-image img {
+    filter: grayscale(0%);
+  }
+
+  .team-member-card.fully-visible .text-content {
     transform: translateY(0%);
   }
 
-  .team-member-card:hover .team-shape {
+  .team-member-card.fully-visible .team-shape {
     transform: translateY(0%);
     opacity: 0.7;
   }
 
-  .team-member-card:hover .linkedinIcon {
+  .team-member-card.fully-visible .linkedinIcon {
     transform: translateY(0%);
     opacity: 1;
-  }
-
-  .team-member-card:hover .hover-image {
-    opacity: 1;
-  }
-
-  .team-member-card:hover .title {
-    h2 {
-      color: #13505b;
-    }
-    h3 {
-      color: #13505b;
-      opacity: 0.6;
-    }
-  }
-
-  .team-member-card:hover .profile-image img {
-    filter: grayscale(0%);
-  }
-
-  .title {
-    padding-top: 1rem;
-    font-size: 1.2rem;
-
-    h2 {
-      font-weight: 600;
-    }
-
-    h3 {
-      font-weight: 400;
-      color: var(--dark-gray);
-    }
-
-    background-image: none;
-  }
-}
-
-@media (width < 588px) {
-  .team-cards-section {
-    /* Delay the animation of the team member card */
-    .team-member-card .text-content {
-      transition-delay: 0.3s;
-    }
-
-    .team-member-card .team-shape {
-      transition-delay: 0.3s;
-    }
-
-    .team-member-card .linkedinIcon {
-      transition-delay: 0.3s;
-    }
-
-    .team-member-card .profile-image img {
-      transition-delay: 0.3s;
-    }
-
-    /* Animate the team member card when it's visible*/
-    .team-member-card.fully-visible .profile-image img {
-      filter: grayscale(0%);
-    }
-
-    .team-member-card.fully-visible .text-content {
-      transform: translateY(0%);
-    }
-
-    .team-member-card.fully-visible .team-shape {
-      transform: translateY(0%);
-      opacity: 0.7;
-    }
-
-    .team-member-card.fully-visible .linkedinIcon {
-      transform: translateY(0%);
-      opacity: 1;
-    }
   }
 }
