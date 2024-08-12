@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "technology": "Technology",
+    "team": "About Us",
+    "news": "News",
+    "contact": "Contact",
+    "join-us": "Join Us"
+  },
+  "HOME": {
+    "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
+    "about-us": "About <strong>us</strong>",
+    "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
+    "core-values": {
+      "title": "Our core <strong>values</strong>",
+      "education-title": "Education",
+      "education-text": "EndoGene.Bio prioritizes education in female health research, utilizing cutting-edge molecular biology to explore epigenetic markers in menstrual blood. Our mission focuses on developing non-invasive solutions for enhanced endometriosis diagnosis and management, driving innovation to improve women's health globally.",
+      "made-for-women-title": "Made For Women",
+      "made-for-women-text": "EndoGene.Bio is founded on the principle of being \"Made for Women,\" addressing their unique healthcare needs with tailored solutions. From molecular research to non-invasive diagnostics, we empower women in their health journey with compassionate care and innovative approaches.",
+      "investigation-title": "Investigation",
+      "investigation-text": "Investigation drives EndoGene.Bio's relentless pursuit of understanding in female health. With curiosity and rigor, we delve into menstrual blood complexities to uncover insights into endometriosis diagnosis and management. Through meticulous inquiry, we advance knowledge and enhance women's health outcomes."
+    },
+    "in-numbers": "Endogene.bio in numbers"
+  },
+  "TEAM": {
+    "title": "Here <strong>we are.</strong> Meet <strong>the team.</strong>",
+    "intro1": "<p>Period pain is not normal. But because of undiagnosed endometriosis, it’s a reality for 190 million women globally. At EndoGene.bio, we will be helping women across the world get access to early diagnosis through cutting-edge epigenetics.</p><p>Endometriosis affects 10% of women, takes 7 years to diagnose and has high societal and economic costs. In the EU and US alone, the estimated cost of delayed diagnosis reaches €300B.</p>",
+    "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
+  },
+  "BLOG": {
+    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>"
+  },
+  "TECHNOLOGY": {
+    "endometriosis": {
+      "definition": "Endometriosis is a complex gynecological condition characterized by the presence of endometrial-like tissue outside the uterus, which induces a chronic, inflammatory response. This tissue, behaving similarly to the lining of the uterus, thickens, breaks down, and bleeds with each menstrual cycle. However, because it is located outside the uterus, it has no way to exit the body, leading to pain, inflammation, and the formation of scar tissue. Symptoms can vary but often include severe menstrual cramps, chronic pain in the lower back and pelvis, pain during or after sexual intercourse, intestinal pain, and infertility in some cases.",
+      "diagnosis": "Diagnosis of endometriosis can be notably challenging and is frequently delayed. On average, it takes from 7 to 10 years from the onset of symptoms for a woman to receive a definitive diagnosis. This delay is due to a combination of factors, including the normalization of menstrual pain, the variability of symptoms, and the necessity for a definitive diagnosis to be made through laparoscopy—a surgical procedure that allows a physician to observe the pelvic organs directly and take tissue samples for examination. The complex nature of endometriosis and the broad spectrum of its manifestations contribute to the prolonged period many women experience before receiving an accurate diagnosis."
+    },
+    "menstrual_blood_diagnosis": {
+      "importance": "Menstrual blood, often regarded as waste, serves as an excellent diagnostic tool. It contains materials shed during menstruation, such as endometrial tissue, immune cells, proteins, and microorganisms. In fact, menstrual blood boasts over 300 unique proteins not found in other blood or body parts. The proportions of different cell types in menstrual blood differ significantly from those in other areas of the body, presenting novel diagnostic targets.",
+      "method": "Using menstrual blood for diagnostics is non-invasive and does not require a needle. This method offers the potential to identify diseases, determine a patient's likely response to specific treatments, and predict current health status. Furthermore, it can forecast future risks of gynecological or reproductive disorders in subsequent menstrual cycles."
+    },
+    "epigenetics": {
+      "definition": "Epigenetics explores how environmental factors and behaviors influence gene expression. Throughout our growth and development, various factors act on our genome, regulating the activation and deactivation of genes at specific times and locations. These regulatory mechanisms can be significantly affected by our environment and lifestyle choices, such as stress levels, or whether an individual smokes. Consequently, these influences may lead to changes that activate or deactivate genes in ways that deviate from their normal patterns.",
+      "importance": "Crucially, alterations in these regulatory factors can lead to diseases by improperly activating or deactivating genes."
+    }
+  },
+  "CONTACT": {
+    "title": "Let's talk. <strong>Share</strong> your excitement <strong>with us.</strong>",
+    "form": {
+      "name": "Name",
+      "email": "example@gmail.com",
+      "message": "Write your message here.",
+      "send": "Send",
+      "sent": "Message sent!",
+      "no-service": "The service of sending emails is not available at the moment.",
+      "success": "Message sent successfully!"
+    }
+  },
+  "JOIN-US": {
+    "title": "Join us",
+    "intro": "Our team is growing. We need passionate people who want to make an impact on the future of food. Check out our vacancies and apply now."
+  }
+}
