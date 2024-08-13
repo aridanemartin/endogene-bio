@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "technology": "Technologie",
+    "team": "À propos de nous",
+    "news": "Actualités",
+    "contact": "Contact",
+    "join-us": "Rejoignez-nous"
+  },
+  "HOME": {
+    "slogan": "Construire un <strong>héritage</strong> dans la <strong>santé féminine</strong>",
+    "about-us": "À propos de <strong>nous</strong>",
+    "intro": "<p>EndoGene.Bio est dédié à la découverte de biomarqueurs moléculaires dans la santé féminine.</p> <p>Nous nous concentrons sur les marqueurs épigénétiques dans le sang menstruel. Notre premier objectif est le développement de biomarqueurs non invasifs pour améliorer le diagnostic et la gestion de l'endométriose.</p>",
+    "core-values": {
+      "title": "Nos <strong>valeurs</strong> fondamentales",
+      "education-title": "Éducation",
+      "education-text": "EndoGene.Bio privilégie l'éducation dans la recherche sur la santé féminine, en utilisant la biologie moléculaire de pointe pour explorer les marqueurs épigénétiques dans le sang menstruel. Notre mission se concentre sur le développement de solutions non invasives pour améliorer le diagnostic et la gestion de l'endométriose, en stimulant l'innovation pour améliorer la santé des femmes dans le monde entier.",
+      "made-for-women-title": "Conçu pour les femmes",
+      "made-for-women-text": "EndoGene.Bio est fondé sur le principe de « Conçu pour les femmes », répondant à leurs besoins de santé uniques avec des solutions adaptées. De la recherche moléculaire aux diagnostics non invasifs, nous aidons les femmes dans leur parcours de santé avec des soins compassionnels et des approches innovantes.",
+      "investigation-title": "Recherche",
+      "investigation-text": "La recherche est au cœur de la quête incessante d'EndoGene.Bio pour comprendre la santé féminine. Avec curiosité et rigueur, nous explorons les complexités du sang menstruel pour découvrir des informations sur le diagnostic et la gestion de l'endométriose. Grâce à une enquête minutieuse, nous faisons progresser les connaissances et améliorons les résultats en matière de santé des femmes."
+    },
+    "in-numbers": "EndoGene.bio en chiffres"
+  },
+  "TEAM": {
+    "title": "Voici <strong>notre équipe.</strong> Rencontrez <strong>l'équipe.</strong>",
+    "intro1": "<p>La douleur menstruelle n'est pas normale. Mais à cause de l'endométriose non diagnostiquée, c'est une réalité pour 190 millions de femmes dans le monde. Chez EndoGene.bio, nous aiderons les femmes du monde entier à accéder à un diagnostic précoce grâce à l'épigénétique de pointe.</p><p>L'endométriose touche 10 % des femmes, prend 7 ans pour être diagnostiquée et entraîne des coûts sociétaux et économiques élevés. Rien qu'en UE et aux États-Unis, le coût estimé du retard de diagnostic atteint 300 milliards d'euros.</p>",
+    "intro2": "<p>Cela est dû à un manque de tests spécifiques et précoces. Chez EndoGene.Bio, nous développons un test diagnostique sur ordonnance basé sur des biomarqueurs épigénétiques trouvés dans le sang menstruel que les patientes peuvent faire dans le confort de leur foyer.</p><p>Avec cette technologie, nous réduirons le délai de diagnostic de 7 ans à deux consultations : une pour faire votre test, une pour obtenir vos résultats.</p>"
+  },
+  "BLOG": {
+    "title": "Voyez ce qui se <strong>passe</strong> chez <strong>EndoGene.bio</strong>"
+  },
+  "TECHNOLOGY": {
+    "endometriosis": {
+      "definition": "L'endométriose est une condition gynécologique complexe caractérisée par la présence de tissu semblable à l'endomètre en dehors de l'utérus, ce qui induit une réponse inflammatoire chronique. Ce tissu, se comportant de manière similaire à la muqueuse de l'utérus, s'épaissit, se décompose et saigne à chaque cycle menstruel. Cependant, étant situé en dehors de l'utérus, il n'a aucun moyen de sortir du corps, ce qui entraîne des douleurs, de l'inflammation et la formation de tissu cicatriciel. Les symptômes peuvent varier mais incluent souvent des crampes menstruelles sévères, des douleurs chroniques dans le bas du dos et le bassin, des douleurs pendant ou après les rapports sexuels, des douleurs intestinales et, dans certains cas, de l'infertilité.",
+      "diagnosis": "Le diagnostic de l'endométriose peut être particulièrement difficile et est souvent retardé. En moyenne, il faut de 7 à 10 ans à partir de l'apparition des symptômes pour qu'une femme reçoive un diagnostic définitif. Ce retard est dû à une combinaison de facteurs, notamment la normalisation de la douleur menstruelle, la variabilité des symptômes et la nécessité d'un diagnostic définitif par laparoscopie - une procédure chirurgicale permettant à un médecin d'observer directement les organes pelviens et de prélever des échantillons de tissus pour examen. La nature complexe de l'endométriose et le large éventail de ses manifestations contribuent à la période prolongée que de nombreuses femmes subissent avant de recevoir un diagnostic précis."
+    },
+    "menstrual_blood_diagnosis": {
+      "importance": "Le sang menstruel, souvent considéré comme un déchet, constitue un excellent outil diagnostique. Il contient des matériaux évacués pendant les menstruations, tels que des tissus endométriaux, des cellules immunitaires, des protéines et des micro-organismes. En fait, le sang menstruel contient plus de 300 protéines uniques que l'on ne trouve pas dans d'autres parties du corps. Les proportions de différents types de cellules dans le sang menstruel diffèrent considérablement de celles d'autres zones du corps, présentant ainsi de nouvelles cibles diagnostiques.",
+      "method": "Utiliser le sang menstruel pour des diagnostics est non invasif et ne nécessite pas d'aiguille. Cette méthode offre la possibilité d'identifier des maladies, de déterminer la réponse probable d'un patient à des traitements spécifiques et de prédire l'état de santé actuel. De plus, elle peut prévoir les risques futurs de troubles gynécologiques ou reproductifs lors des cycles menstruels suivants."
+    },
+    "epigenetics": {
+      "definition": "L'épigénétique explore comment les facteurs environnementaux et les comportements influencent l'expression des gènes. Tout au long de notre croissance et de notre développement, divers facteurs agissent sur notre génome, régulant l'activation et la désactivation des gènes à des moments et dans des lieux spécifiques. Ces mécanismes de régulation peuvent être fortement affectés par notre environnement et nos choix de vie, tels que les niveaux de stress ou le tabagisme. Par conséquent, ces influences peuvent entraîner des changements qui activent ou désactivent des gènes de manière anormale.",
+      "importance": "Il est crucial de noter que des altérations de ces facteurs de régulation peuvent conduire à des maladies en activant ou désactivant les gènes de manière inappropriée."
+    }
+  },
+  "CONTACT": {
+    "title": "Discutons. <strong>Partagez</strong> votre enthousiasme <strong>avec nous.</strong>",
+    "form": {
+      "name": "Nom",
+      "email": "exemple@gmail.com",
+      "message": "Écrivez votre message ici.",
+      "send": "Envoyer",
+      "sent": "Message envoyé !",
+      "no-service": "Le service d'envoi de courriels n'est pas disponible pour le moment.",
+      "success": "Message envoyé avec succès !"
+    }
+  },
+  "JOIN-US": {
+    "title": "Rejoignez-nous",
+    "intro": "Notre équipe s'agrandit. Nous avons besoin de personnes passionnées qui souhaitent avoir un impact sur l'avenir de la santé féminine. Consultez nos offres d'emploi et postulez dès maintenant."
+  }
+}

@@ -55,12 +55,6 @@ const post = {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'string',
-    },
-
-    {
       name: 'mainImage',
       title: 'Imagen de portada',
       description: 'CAMPO OBLIGATORIO',
@@ -80,14 +74,7 @@ const post = {
   preview: {
     select: {
       title: 'refTitle',
-      author: 'author.name',
       media: 'mainImage',
-    },
-    prepare(selection) {
-      const { author } = selection
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      })
     },
   },
 }

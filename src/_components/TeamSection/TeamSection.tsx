@@ -48,10 +48,9 @@ export const TeamSection = ({ teamMembers }) => {
   return (
     <section className="team-cards-section">
       {teamMembers.map((member, index) => (
-        <div>
+        <div key={member._id}>
           <article
             ref={(el) => (cardRefs.current[index] = el)}
-            key={member._id}
             data-id={member._id}
             className={`team-member-card ${
               fullyVisibleCardIds.has(member._id) ? 'fully-visible' : ''

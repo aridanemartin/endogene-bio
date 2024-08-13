@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Post({ params }: Props) {
-  const { title, body, mainImage, author, timeToRead } = await getPost(
+  const { title, body, mainImage, timeToRead } = await getPost(
     params.slug,
     params.lng,
   )
@@ -42,7 +42,7 @@ export default async function Post({ params }: Props) {
           <Image
             src={mainImage}
             className="blogArticlePage__hero-image"
-            alt={enhanceAltDescription(title + ' | ' + author)}
+            alt={enhanceAltDescription(title)}
             loading="eager"
             priority
             fill
@@ -71,7 +71,7 @@ export default async function Post({ params }: Props) {
                 <em>{timeToRead} min de lectura</em>
               </p>
             </div>
-            <div className="author">
+            {/* <div className="author">
               <div className="author__text">
                 <p className="name">{author}</p>
               </div>
@@ -86,8 +86,8 @@ export default async function Post({ params }: Props) {
                     objectFit: 'cover',
                   }}
                 />
-              </div>
-            </div>
+              </div> 
+            </div>*/}
           </div>
         </section>
       </div>

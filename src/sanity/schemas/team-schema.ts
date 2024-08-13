@@ -55,13 +55,12 @@ const post = {
       },
     },
     {
-      name: 'profileHoverImage',
-      title: 'Imagen de perfil hover',
-      type: 'image',
+      name: 'priority',
+      title: 'Número de prioridad de aparición',
+      description:
+        'Ejemplo: Número 1 solo CEO, 2 CTO, 3 el resto... (Varias personas con el mismo número se ordenarán alfabéticamente)',
+      type: 'number',
       required: true,
-      options: {
-        hotspot: true,
-      },
     },
   ],
 

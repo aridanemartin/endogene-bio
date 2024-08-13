@@ -1,10 +1,6 @@
 import { createClient, groq } from 'next-sanity'
 import schemas from '../schemas'
 
-// import { Project } from '@/types/Project'
-
-// import { Page } from '@/types/Page'
-
 const config = {
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
@@ -22,7 +18,6 @@ export async function getPosts(lng: string) {
       _createdAt,
       "title": title.${lng},
       "description": description.${lng},
-      author,
       timeToRead,
       "body": body_${lng},
       "slug": slug.current,
@@ -40,27 +35,10 @@ export async function getPost(slug: string, lng: string) {
       _createdAt,
        "title": title.${lng},
       "description": description.${lng},
-      author,
       "body": body_${lng},
       timeToRead,
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-    }`,
-    undefined,
-    { cache: 'no-store' },
-  )
-}
-
-export async function getPrices(tarifa) {
-  return sanityClient.fetch(
-    groq`*[_type == "${tarifa}"]{
-      _id,
-      title,
-      price,
-      priceDiscount,
-      description,
-      order,
-      "icon": icon.asset->url,
     }`,
     undefined,
     { cache: 'no-store' },
@@ -77,7 +55,7 @@ export async function getTeamMembers() {
       email,
       linkedin,
       "profileImage": profileImage.asset->url,
-      "profileHoverImage": profileHoverImage.asset->url,
+      priority
     }`,
     undefined,
     { cache: 'no-store' },

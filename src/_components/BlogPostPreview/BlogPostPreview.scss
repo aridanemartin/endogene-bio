@@ -115,6 +115,13 @@
   padding: 1rem;
 }
 
+.noPosts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 400px);
+}
+
 @media (width < 500px) {
   .blogPostPreview {
     padding-bottom: 0;

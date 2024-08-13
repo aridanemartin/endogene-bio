@@ -1,62 +1,62 @@
 {
   "NAV": {
-    "technology": "Technology",
-    "team": "About Us",
-    "news": "News",
-    "contact": "Contact",
-    "join-us": "Join Us"
+    "technology": "Tecnología",
+    "team": "Sobre Nosotros",
+    "news": "Noticias",
+    "contact": "Contacto",
+    "join-us": "Únete a Nosotros"
   },
   "HOME": {
-    "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
-    "about-us": "About <strong>us</strong>",
-    "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
+    "slogan": "Construyendo un <strong>legado</strong> en la <strong>salud femenina</strong>",
+    "about-us": "Sobre <strong>nosotros</strong>",
+    "intro": "<p>EndoGene.Bio se dedica al descubrimiento de biomarcadores moleculares en la salud femenina.</p> <p>Nos enfocamos en los marcadores epigenéticos en la sangre menstrual. Nuestro primer objetivo es el desarrollo de biomarcadores no invasivos para mejorar el diagnóstico y manejo de la endometriosis.</p>",
     "core-values": {
-      "title": "Our core <strong>values</strong>",
-      "education-title": "Education",
-      "education-text": "EndoGene.Bio prioritizes education in female health research, utilizing cutting-edge molecular biology to explore epigenetic markers in menstrual blood. Our mission focuses on developing non-invasive solutions for enhanced endometriosis diagnosis and management, driving innovation to improve women's health globally.",
-      "made-for-women-title": "Made For Women",
-      "made-for-women-text": "EndoGene.Bio is founded on the principle of being \"Made for Women,\" addressing their unique healthcare needs with tailored solutions. From molecular research to non-invasive diagnostics, we empower women in their health journey with compassionate care and innovative approaches.",
-      "investigation-title": "Investigation",
-      "investigation-text": "Investigation drives EndoGene.Bio's relentless pursuit of understanding in female health. With curiosity and rigor, we delve into menstrual blood complexities to uncover insights into endometriosis diagnosis and management. Through meticulous inquiry, we advance knowledge and enhance women's health outcomes."
+      "title": "Nuestros <strong>valores</strong> fundamentales",
+      "education-title": "Educación",
+      "education-text": "EndoGene.Bio prioriza la educación en la investigación de la salud femenina, utilizando biología molecular de vanguardia para explorar los marcadores epigenéticos en la sangre menstrual. Nuestra misión se centra en desarrollar soluciones no invasivas para mejorar el diagnóstico y manejo de la endometriosis, impulsando la innovación para mejorar la salud de las mujeres a nivel global.",
+      "made-for-women-title": "Hecho para Mujeres",
+      "made-for-women-text": "EndoGene.Bio se basa en el principio de estar \"Hecho para Mujeres\", abordando sus necesidades únicas de atención médica con soluciones personalizadas. Desde la investigación molecular hasta los diagnósticos no invasivos, empoderamos a las mujeres en su viaje de salud con cuidado compasivo y enfoques innovadores.",
+      "investigation-title": "Investigación",
+      "investigation-text": "La investigación impulsa la búsqueda incansable de EndoGene.Bio por comprender la salud femenina. Con curiosidad y rigor, profundizamos en las complejidades de la sangre menstrual para descubrir conocimientos sobre el diagnóstico y manejo de la endometriosis. A través de una investigación meticulosa, avanzamos en el conocimiento y mejoramos los resultados de salud de las mujeres."
     },
-    "in-numbers": "Endogene.bio in numbers"
+    "in-numbers": "EndoGene.bio en cifras"
   },
   "TEAM": {
-    "title": "Here <strong>we are.</strong> Meet <strong>the team.</strong>",
-    "intro1": "<p>Period pain is not normal. But because of undiagnosed endometriosis, it’s a reality for 190 million women globally. At EndoGene.bio, we will be helping women across the world get access to early diagnosis through cutting-edge epigenetics.</p><p>Endometriosis affects 10% of women, takes 7 years to diagnose and has high societal and economic costs. In the EU and US alone, the estimated cost of delayed diagnosis reaches €300B.</p>",
-    "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
+    "title": "Aquí <strong>estamos.</strong> Conozca al <strong>equipo.</strong>",
+    "intro1": "<p>El dolor menstrual no es normal. Pero debido a la endometriosis no diagnosticada, es una realidad para 190 millones de mujeres en todo el mundo. En EndoGene.bio, ayudaremos a mujeres de todo el mundo a acceder a un diagnóstico temprano mediante la epigenética de vanguardia.</p><p>La endometriosis afecta al 10 % de las mujeres, toma 7 años en diagnosticarse y tiene altos costos sociales y económicos. Solo en la UE y EE.UU., el costo estimado del retraso en el diagnóstico alcanza los 300 mil millones de euros.</p>",
+    "intro2": "<p>Esto se debe a la falta de pruebas específicas y tempranas. En EndoGene.Bio, estamos desarrollando una prueba diagnóstica con receta basada en biomarcadores epigenéticos encontrados en la sangre menstrual que las pacientes pueden realizar en la comodidad de su hogar.</p><p>Con esta tecnología, reduciremos el tiempo de diagnóstico de 7 años a dos consultas: una para realizar tu prueba, y otra para obtener tus resultados.</p>"
   },
   "BLOG": {
-    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>"
+    "title": "Vea lo que está <strong>sucediendo</strong> en <strong>EndoGene.bio</strong>"
   },
   "TECHNOLOGY": {
     "endometriosis": {
-      "definition": "Endometriosis is a complex gynecological condition characterized by the presence of endometrial-like tissue outside the uterus, which induces a chronic, inflammatory response. This tissue, behaving similarly to the lining of the uterus, thickens, breaks down, and bleeds with each menstrual cycle. However, because it is located outside the uterus, it has no way to exit the body, leading to pain, inflammation, and the formation of scar tissue. Symptoms can vary but often include severe menstrual cramps, chronic pain in the lower back and pelvis, pain during or after sexual intercourse, intestinal pain, and infertility in some cases.",
-      "diagnosis": "Diagnosis of endometriosis can be notably challenging and is frequently delayed. On average, it takes from 7 to 10 years from the onset of symptoms for a woman to receive a definitive diagnosis. This delay is due to a combination of factors, including the normalization of menstrual pain, the variability of symptoms, and the necessity for a definitive diagnosis to be made through laparoscopy—a surgical procedure that allows a physician to observe the pelvic organs directly and take tissue samples for examination. The complex nature of endometriosis and the broad spectrum of its manifestations contribute to the prolonged period many women experience before receiving an accurate diagnosis."
+      "definition": "La endometriosis es una condición ginecológica compleja caracterizada por la presencia de tejido similar al endometrial fuera del útero, lo que induce una respuesta inflamatoria crónica. Este tejido, que se comporta de manera similar al revestimiento del útero, se engrosa, se descompone y sangra con cada ciclo menstrual. Sin embargo, al estar ubicado fuera del útero, no tiene manera de salir del cuerpo, lo que provoca dolor, inflamación y la formación de tejido cicatricial. Los síntomas pueden variar, pero a menudo incluyen calambres menstruales severos, dolor crónico en la parte baja de la espalda y la pelvis, dolor durante o después de las relaciones sexuales, dolor intestinal e infertilidad en algunos casos.",
+      "diagnosis": "El diagnóstico de la endometriosis puede ser notablemente desafiante y, con frecuencia, se retrasa. En promedio, se tarda entre 7 y 10 años desde la aparición de los síntomas para que una mujer reciba un diagnóstico definitivo. Este retraso se debe a una combinación de factores, incluyendo la normalización del dolor menstrual, la variabilidad de los síntomas y la necesidad de un diagnóstico definitivo mediante laparoscopia, un procedimiento quirúrgico que permite al médico observar directamente los órganos pélvicos y tomar muestras de tejido para su examen. La naturaleza compleja de la endometriosis y el amplio espectro de sus manifestaciones contribuyen al prolongado período que muchas mujeres experimentan antes de recibir un diagnóstico preciso."
     },
     "menstrual_blood_diagnosis": {
-      "importance": "Menstrual blood, often regarded as waste, serves as an excellent diagnostic tool. It contains materials shed during menstruation, such as endometrial tissue, immune cells, proteins, and microorganisms. In fact, menstrual blood boasts over 300 unique proteins not found in other blood or body parts. The proportions of different cell types in menstrual blood differ significantly from those in other areas of the body, presenting novel diagnostic targets.",
-      "method": "Using menstrual blood for diagnostics is non-invasive and does not require a needle. This method offers the potential to identify diseases, determine a patient's likely response to specific treatments, and predict current health status. Furthermore, it can forecast future risks of gynecological or reproductive disorders in subsequent menstrual cycles."
+      "importance": "La sangre menstrual, a menudo considerada como un desecho, sirve como una excelente herramienta de diagnóstico. Contiene materiales eliminados durante la menstruación, como tejido endometrial, células inmunitarias, proteínas y microorganismos. De hecho, la sangre menstrual posee más de 300 proteínas únicas que no se encuentran en otras partes del cuerpo. Las proporciones de diferentes tipos de células en la sangre menstrual difieren significativamente de las de otras áreas del cuerpo, presentando nuevas metas diagnósticas.",
+      "method": "El uso de sangre menstrual para el diagnóstico es no invasivo y no requiere una aguja. Este método ofrece la posibilidad de identificar enfermedades, determinar la probable respuesta de un paciente a tratamientos específicos y predecir el estado de salud actual. Además, puede prever los riesgos futuros de trastornos ginecológicos o reproductivos en ciclos menstruales posteriores."
     },
     "epigenetics": {
-      "definition": "Epigenetics explores how environmental factors and behaviors influence gene expression. Throughout our growth and development, various factors act on our genome, regulating the activation and deactivation of genes at specific times and locations. These regulatory mechanisms can be significantly affected by our environment and lifestyle choices, such as stress levels, or whether an individual smokes. Consequently, these influences may lead to changes that activate or deactivate genes in ways that deviate from their normal patterns.",
-      "importance": "Crucially, alterations in these regulatory factors can lead to diseases by improperly activating or deactivating genes."
+      "definition": "La epigenética explora cómo los factores ambientales y los comportamientos influyen en la expresión génica. A lo largo de nuestro crecimiento y desarrollo, diversos factores actúan sobre nuestro genoma, regulando la activación y desactivación de los genes en momentos y lugares específicos. Estos mecanismos reguladores pueden verse significativamente afectados por nuestro entorno y nuestras elecciones de estilo de vida, como los niveles de estrés o si una persona fuma. En consecuencia, estas influencias pueden llevar a cambios que activan o desactivan genes de manera que se desvían de sus patrones normales.",
+      "importance": "Es crucial señalar que las alteraciones en estos factores reguladores pueden conducir a enfermedades al activar o desactivar genes de manera inapropiada."
     }
   },
   "CONTACT": {
-    "title": "Let's talk. <strong>Share</strong> your excitement <strong>with us.</strong>",
+    "title": "Hablemos. <strong>Comparte</strong> tu entusiasmo <strong>con nosotros.</strong>",
     "form": {
-      "name": "Name",
-      "email": "example@gmail.com",
-      "message": "Write your message here.",
-      "send": "Send",
-      "sent": "Message sent!",
-      "no-service": "The service of sending emails is not available at the moment.",
-      "success": "Message sent successfully!"
+      "name": "Nombre",
+      "email": "ejemplo@gmail.com",
+      "message": "Escribe tu mensaje aquí.",
+      "send": "Enviar",
+      "sent": "¡Mensaje enviado!",
+      "no-service": "El servicio de envío de correos electrónicos no está disponible en este momento.",
+      "success": "¡Mensaje enviado con éxito!"
     }
   },
   "JOIN-US": {
-    "title": "Join us",
-    "intro": "Our team is growing. We need passionate people who want to make an impact on the future of food. Check out our vacancies and apply now."
+    "title": "Únete a nosotros",
+    "intro": "Nuestro equipo está creciendo. Necesitamos personas apasionadas que quieran tener un impacto en el futuro de la salud femenina. Consulta nuestras vacantes y postula ahora."
   }
 }

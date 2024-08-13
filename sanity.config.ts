@@ -7,7 +7,7 @@ import { I18nFields } from 'sanity-plugin-i18n-fields'
 export default defineConfig({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || '',
-  title: 'Con Nutrición Saludable',
+  title: 'endogene.bio',
   apiVersion: '2023-03-09',
   plugins: [
     deskTool(),
