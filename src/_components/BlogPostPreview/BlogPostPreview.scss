@@ -7,12 +7,12 @@
   padding-bottom: 3rem;
 
   transition: all 0.3s ease-in-out;
-  // box-shadow: $card-box-shadow;
+  box-shadow: $card-box-shadow;
 
-  // &:hover {
-  //   box-shadow: $card-box-shadow-hover;
-  //   transform: translate(0, -2px);
-  // }
+  &:hover {
+    box-shadow: $card-box-shadow-hover;
+    transform: translate(0, -2px);
+  }
 
   &__shape {
     display: none;
@@ -41,7 +41,6 @@
       width: 100%;
       position: relative;
       object-fit: cover;
-      transform: scale(0.99);
     }
   }
 
@@ -50,12 +49,12 @@
     font-size: 2rem;
     height: fit-content;
     text-wrap: balance;
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
 
   &__description {
     grid-area: description;
-    padding: 0 1rem;
+    padding: 0 2rem;
 
     &-text {
       color: #566;
@@ -125,6 +124,18 @@
 @media (width < 500px) {
   .blogPostPreview {
     padding-bottom: 0;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+
+    &__image {
+      &-img {
+        transform: scale(0.99);
+      }
+    }
 
     &__title {
       font-size: 1.5rem;

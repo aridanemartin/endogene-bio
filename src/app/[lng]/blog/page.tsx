@@ -18,7 +18,7 @@ const Blog = async ({ params }) => {
 
   if (filteredPosts.length === 0) {
     return (
-      <Layout maxWidth="1100px" className="blogPage">
+      <Layout maxWidth="900px" className="blogPage">
         <Headline lng={params.lng} titleKey="BLOG.title" />
         <div className="noPosts">
           <h1>No posts available</h1>
@@ -28,7 +28,7 @@ const Blog = async ({ params }) => {
   }
 
   return (
-    <Layout maxWidth="1100px" className="blogPage">
+    <Layout maxWidth="900px" className="blogPage">
       <Headline lng={params.lng} titleKey="BLOG.title" />
       <div className="postsContainer">
         {filteredPosts.map((post, idx) => (

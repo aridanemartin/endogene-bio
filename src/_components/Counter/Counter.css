@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    border: 2px solid var(--main-purple);
+    border: 2px solid var(--main-turquoise);
     border-radius: 20px;
     flex-direction: column;
     min-height: 200px;
@@ -19,13 +19,13 @@
     display: flex;
 
     h2 {
-      color: var(--main-purple);
+      color: var(--main-pink);
       font-size: 5rem;
       margin: 0;
     }
 
     p {
-      color: var(--main-purple-hover);
+      color: var(--main-pink);
       font-size: 2rem;
       margin: 0;
     }
@@ -34,12 +34,21 @@
 
 @media (width < 768px) {
   .counterContainer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (width < 576px) {
-  .counterContainer {
     grid-template-columns: 1fr;
+
+    .counterBox {
+      justify-content: center;
+      align-items: center;
+      min-height: inherit;
+      padding: 16px;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

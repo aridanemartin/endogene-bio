@@ -39,9 +39,9 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets/pictures/womenScienceExample.jpg);
+    background: url(../../_assets/pictures/officeSharing.webp);
     background-size: cover;
-    background-position: 0 15%;
+    background-position: 0 30%;
     box-shadow:
       rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
       rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -53,7 +53,7 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets/pictures/laboratoryExample.jpg);
+    background: url(../../_assets/pictures/investigation.jpeg);
     background-size: cover;
     background-position: 50% 0;
     box-shadow:
@@ -69,8 +69,8 @@
     padding: 1rem;
 
     border-radius: 32px;
-    background: url(../../_assets/pictures/educationExample.jpg);
-    background-position: 0 70%;
+    background: url(../../_assets/pictures/women.jpeg);
+    background-position: 0 40%;
     background-size: cover;
     box-shadow:
       rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
@@ -87,12 +87,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+
     border-radius: 32px;
     z-index: 1;
 
     filter: brightness(0.5);
   }
+}
+
+.card1::before {
+  background: rgba(64, 224, 208, 0.5); /* Turquoise with 50% transparency */
+}
+
+.card2::before {
+  background: rgba(255, 105, 180, 0.5); /* Pink with 50% transparency */
+}
+
+.card3::before {
+  background: rgba(0, 0, 0, 0.4); /* Black with 50% transparency */
+  background: rgba(64, 224, 208, 0.5); /* Turquoise with 50% transparency */
 }
 
 .cardSection:hover .card:not(:hover) {

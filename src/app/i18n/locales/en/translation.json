@@ -8,18 +8,18 @@
   },
   "HOME": {
     "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
-    "about-us": "About <strong>us</strong>",
+    "about-us": "<strong>About us</strong>",
     "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
     "core-values": {
-      "title": "Our core <strong>values</strong>",
+      "title": "<strong>Our core values</strong>",
       "education-title": "Education",
-      "education-text": "EndoGene.Bio prioritizes education in female health research, utilizing cutting-edge molecular biology to explore epigenetic markers in menstrual blood. Our mission focuses on developing non-invasive solutions for enhanced endometriosis diagnosis and management, driving innovation to improve women's health globally.",
+      "education-text": "EndoGene.Bio prioritizes education in female health, using advanced research in menstrual blood to enhance endometriosis diagnosis.",
       "made-for-women-title": "Made For Women",
-      "made-for-women-text": "EndoGene.Bio is founded on the principle of being \"Made for Women,\" addressing their unique healthcare needs with tailored solutions. From molecular research to non-invasive diagnostics, we empower women in their health journey with compassionate care and innovative approaches.",
+      "made-for-women-text": "EndoGene.Bio provides tailored, non-invasive healthcare solutions for women, empowering them with innovative care.",
       "investigation-title": "Investigation",
-      "investigation-text": "Investigation drives EndoGene.Bio's relentless pursuit of understanding in female health. With curiosity and rigor, we delve into menstrual blood complexities to uncover insights into endometriosis diagnosis and management. Through meticulous inquiry, we advance knowledge and enhance women's health outcomes."
+      "investigation-text": "EndoGene.Bio rigorously investigates menstrual blood to enhance understanding and improve endometriosis management."
     },
-    "in-numbers": "Endogene.bio in numbers"
+    "in-numbers": "<strong>Endogene.bio in numbers</strong>"
   },
   "TEAM": {
     "title": "Here <strong>we are.</strong> Meet <strong>the team.</strong>",
