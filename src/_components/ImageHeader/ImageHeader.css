@@ -1,0 +1,18 @@
+.imageHeaderContainer {
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+}
+
+@media (768px < width < 1100px) {
+  .imageHeaderContainer {
+    height: 35rem;
+  }
+}
+
+@media (width < 768px) {
+  .imageHeaderContainer {
+    height: 30rem;
+    background-position: center;
+  }
+}

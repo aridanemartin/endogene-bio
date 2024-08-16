@@ -1,49 +1,47 @@
-import PictureSection from '@components/PictureSection/PictureSection'
-import HeroBannerImage from '../../../_assets/pictures/teamStock.jpg'
-import Header from '@components/Header/Header'
+'use client'
+
+import HeroBannerImage from '../../../_assets/pictures/technologyHeader.webp'
 import Layout from '@components/Layout/Layout'
+import { ImageHeader } from '@components/ImageHeader/ImageHeader'
+import Headline from '@components/Headline/Headline'
+import { useTranslation } from 'src/app/i18n/client'
+import '../../../styles/TechnologyPage.css'
+import Link from 'next/link'
 
 const TechnologyPage = ({ params: { lng } }) => {
+  const { t } = useTranslation(lng)
+  const introText = t('TECHNOLOGY.introText')
+
   return (
     <>
-      <Header title="Technology" image={HeroBannerImage} />
       <Layout maxWidth="1100px">
-        <PictureSection
-          lng={lng}
-          picturePosition="right"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.endometriosis.definition"
-        />
-        <PictureSection
-          lng={lng}
-          picturePosition="left"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.endometriosis.diagnosis"
-        />
-        <PictureSection
-          lng={lng}
-          picturePosition="right"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.menstrual_blood_diagnosis.importance"
-        />
-        <PictureSection
-          lng={lng}
-          picturePosition="left"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.menstrual_blood_diagnosis.method"
-        />
-        <PictureSection
-          lng={lng}
-          picturePosition="right"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.epigenettics.definition"
-        />
-        <PictureSection
-          lng={lng}
-          picturePosition="left"
-          pictureSrc={HeroBannerImage}
-          translationKey="TECHNOLOGY.epigenettics.importance"
-        />
+        <Headline lng={lng} titleKey="TECHNOLOGY.title" />
+      </Layout>
+      <ImageHeader
+        alt="Technology"
+        image={HeroBannerImage}
+        width={3840}
+        height={2191}
+      />
+      <Layout maxWidth="1100px" className="technologyPage">
+        <section className="technologyIntroText">
+          <p dangerouslySetInnerHTML={{ __html: introText }} />
+        </section>
+        <section className="linksSection">
+          <h3>Are you...</h3>
+          <div className="linksContainer">
+            <Link className="link" href={`/${lng}/contact`}>
+              Looking to develop/acquire a diagnostic test using menstrual
+              blood?
+            </Link>
+            <Link className="link" href={`/${lng}/contact`}>
+              Interested in finding a new target/drug candidate in female
+              health?
+            </Link>
+          </div>
+        </section>
+
+        <Headline lng={lng} titleKey="TECHNOLOGY.title2" headlineType="h2" />
       </Layout>
     </>
   )

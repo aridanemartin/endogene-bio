@@ -18,7 +18,7 @@ const Headline = ({
   titleKey,
   subtitleKey,
   id,
-  headlineType = 'h2',
+  headlineType = 'h1',
   styles,
   lng,
 }: HeadlineProps) => {

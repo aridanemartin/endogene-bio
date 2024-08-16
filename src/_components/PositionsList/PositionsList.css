@@ -7,7 +7,7 @@
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    color: var(--main-purple-hover);
+    color: var(--main-pink);
   }
 
   .position {
@@ -24,7 +24,7 @@
     transition: all 0.3s;
 
     h3 {
-      color: var(--main-purple-hover);
+      color: var(--main-pink);
     }
 
     .positionDescription {

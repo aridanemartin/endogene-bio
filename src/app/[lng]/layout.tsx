@@ -26,7 +26,7 @@ export const metadata = {
 }
 
 const openSans = Open_Sans({
-  weight: ['400', '600'],
+  weight: ['300', '400', '600'],
   subsets: ['latin'],
   variable: '--font-open-sans',
 })

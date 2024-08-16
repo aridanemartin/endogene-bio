@@ -132,27 +132,26 @@ export default function Nav({ lng }: { lng: string }) {
                 {t('NAV.news')}
               </Link>
             </motion.li>
-
             <motion.li variants={linkAnimation}>
               <Link
                 className={`link ${
-                  pathname === `/${lng}/contact` ? 'active' : ''
-                }`}
-                href={`/${lng}/contact`}
-                onClick={toggle}
-              >
-                {t('NAV.contact')}
-              </Link>
-            </motion.li>
-            <motion.li variants={linkAnimation}>
-              <Link
-                className={`link joinUs ${
                   pathname === `/${lng}/join-us` ? 'active' : ''
                 }`}
                 href={`/${lng}/join-us`}
                 onClick={toggle}
               >
                 {t('NAV.join-us')}
+              </Link>
+            </motion.li>
+            <motion.li variants={linkAnimation}>
+              <Link
+                className={`link specialLink${
+                  pathname === `/${lng}/contact` ? 'active' : ''
+                }`}
+                href={`/${lng}/contact`}
+                onClick={toggle}
+              >
+                {t('NAV.contact')}
               </Link>
             </motion.li>
           </motion.ul>

@@ -1,0 +1,45 @@
+.technologyPage {
+  margin-top: 3rem;
+}
+
+.technologyIntroText {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  font-family: var(--font-open-sans);
+}
+
+.linksSection h3 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  color: var(--light-gray);
+  text-align: center;
+}
+
+.technologyPage .linksContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.linksContainer .link {
+  background-color: var(--main-pink);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: white;
+  max-width: 35ch;
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+}
+
+@media (width < 768px) {
+  .technologyPage .linksContainer {
+    flex-direction: column;
+  }
+
+  .linksContainer .link {
+    max-width: 100%;
+  }
+}

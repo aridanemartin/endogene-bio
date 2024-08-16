@@ -5,10 +5,8 @@ import '../../../../styles/BlogArticlePage.scss'
 import SanityBlock from '@components/SanityBlock/SanityBlock'
 import type { Metadata } from 'next'
 
-import CarolinaProfileImage from '@assets/pictures/educationExample.jpg'
 import timeToReadIcon from '@assets/icons/time-to-read.webp'
 import Layout from '@components/Layout/Layout'
-import { ShareButton } from '@components/ShareButton/ShareButton'
 
 type Props = {
   params: { slug: string; lng: string }
@@ -71,23 +69,6 @@ export default async function Post({ params }: Props) {
                 <em>{timeToRead} min de lectura</em>
               </p>
             </div>
-            {/* <div className="author">
-              <div className="author__text">
-                <p className="name">{author}</p>
-              </div>
-              <div className="author__image">
-                <Image
-                  src={CarolinaProfileImage}
-                  alt={`${author} - Foto de Perfil`}
-                  fill
-                  quality={25}
-                  sizes="100vw"
-                  style={{
-                    objectFit: 'cover',
-                  }}
-                />
-              </div> 
-            </div>*/}
           </div>
         </section>
       </div>
@@ -99,9 +80,7 @@ export default async function Post({ params }: Props) {
             </>
           ))}
         </Layout>
-        <div className="blogArticlePage__shareButton">
-          <ShareButton />
-        </div>
+        \
       </article>
     </>
   )

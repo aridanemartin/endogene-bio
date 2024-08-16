@@ -118,16 +118,16 @@
   filter: grayscale(0%);
 }
 
-.title {
+.team-cards-section .title {
   padding-top: 1rem;
   font-size: 1.2rem;
 }
 
-.title h2 {
+.team-cards-section .title h2 {
   font-weight: 600;
 }
 
-.title h3 {
+.team-cards-section .title h3 {
   font-weight: 400;
   color: var(--dark-gray);
 }

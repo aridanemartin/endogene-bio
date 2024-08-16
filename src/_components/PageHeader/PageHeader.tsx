@@ -1,5 +1,5 @@
 import React from 'react'
-import headerImage from '../../_assets/pictures/teamShape.webp'
+import headerImage from '../../_assets/pictures/matesTalking.webp'
 import Image from 'next/image'
 import './PageHeader.css'
 
@@ -14,14 +14,8 @@ export const PageHeader = () => {
         </p>
         <button>Find your next job!</button>
       </div>
-      <div>
-        <Image
-          src={headerImage}
-          alt="Join us"
-          width={500}
-          height={500}
-          layout="responsive"
-        />
+      <div className="image">
+        <Image src={headerImage} alt="Join us" fill />
       </div>
     </div>
   )
