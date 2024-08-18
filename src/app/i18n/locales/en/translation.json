@@ -32,7 +32,25 @@
   "TECHNOLOGY": {
     "title": "We develop <strong>technology</strong> to improve <strong>female health.</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
-    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with <strong>analytical laboratories</strong> to provide <strong>diagnostic tests</strong> and we assist <strong>pharmaceutical companies</strong> in <strong> optimizing drug development and patient stratification for clinical trials </strong>.<br /><br /> We are <strong>determined to</strong> address the historical underrepresentation of female biology in medical research and <strong>bring precision medicine to female health.</strong>"
+    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with <strong>analytical laboratories</strong> to provide <strong>diagnostic tests</strong> and we assist <strong>pharmaceutical companies</strong> in <strong> optimizing drug development and patient stratification for clinical trials </strong>.<br /><br /> We are <strong>determined to</strong> address the historical underrepresentation of female biology in medical research and <strong>bring precision medicine to female health.</strong>",
+    "AREAS": {
+      "title": "team expertise areas",
+      "endometriosis": "endometriosis",
+      "endometrial-cancer": "endometrial cancer",
+      "fertility": "fertility",
+      "inmunology": "inmunology",
+      "cellular-biology": "cellular biology",
+      "molecular-biology": "molecular biology",
+      "ageing": "ageing"
+    },
+    "CAPABILITIES": {
+      "title": "capabilities",
+      "1": "// <strong>150 m<sup>2</sup></strong> of facilities, including 42 m<sup>2</sup> of P2 laboratory space",
+      "2": "// <strong>Molecular biology:</strong> DNA, RNA, Methylation",
+      "3": "// <strong>Specific cell type isolation, phenotyping</strong> and <strong>immunoprofiling</strong>",
+      "4": "// <strong>Bioinformatic analysis:</strong> epigenetics, genetics, transcriptomics (bulk & single cell)",
+      "5": "// <strong>Sample expertise:</strong> menstrual blood, endometrial and endometriosis lesion biopsy"
+    }
   },
   "CONTACT": {
     "title": "Let's talk. <strong>Share</strong> your excitement <strong>with us.</strong>",
