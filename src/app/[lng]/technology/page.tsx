@@ -7,39 +7,48 @@ import Headline from '@components/Headline/Headline'
 import { useTranslation } from 'src/app/i18n/client'
 import '../../../styles/TechnologyPage.css'
 import Link from 'next/link'
-import molecularBiology from '@assets/icons/molecularBiology.svg'
+
+// Icons
+import endometriosisIcon from '@assets/icons/endometriosis.svg'
+import endometrialCancerIcon from '@assets/icons/endometrialCancer.svg'
+import fertilityIcon from '@assets/icons/fertility.svg'
+import inmunologyIcon from '@assets/icons/inmunology.svg'
+import cellularBiologyIcon from '@assets/icons/cellularBiology.svg'
+import ageingIcon from '@assets/icons/ageing.svg'
+import molecularBiologyIcon from '@assets/icons/molecularBiology.svg'
+
 import Image from 'next/image'
 
 const areas1 = [
   {
-    image: `${molecularBiology.src}`,
+    image: `${endometriosisIcon.src}`,
     translationKey: 'endometriosis',
   },
   {
-    image: `${molecularBiology.src}`,
+    image: `${endometrialCancerIcon.src}`,
     translationKey: 'endometrial-cancer',
   },
   {
-    image: `${molecularBiology.src}`,
+    image: `${fertilityIcon.src}`,
     translationKey: 'fertility',
   },
 ]
 
 const areas2 = [
   {
-    image: `${molecularBiology.src}`,
+    image: `${inmunologyIcon.src}`,
     translationKey: 'inmunology',
   },
   {
-    image: `${molecularBiology.src}`,
+    image: `${cellularBiologyIcon.src}`,
     translationKey: 'cellular-biology',
   },
   {
-    image: `${molecularBiology.src}`,
+    image: `${molecularBiologyIcon.src}`,
     translationKey: 'molecular-biology',
   },
   {
-    image: `${molecularBiology.src}`,
+    image: `${ageingIcon.src}`,
     translationKey: 'ageing',
   },
 ]
