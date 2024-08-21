@@ -34,7 +34,11 @@
     "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
   },
   "BLOG": {
-    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>"
+    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>",
+    "no-posts": {
+      "title": "Posts not available",
+      "message": "looks like our latest updates are still in the lab?"
+    }
   },
   "TECHNOLOGY": {
     "title": "We develop <strong>technology</strong> to improve <strong>female health.</strong>",
@@ -74,5 +78,12 @@
   "JOIN-US": {
     "title": "Join us",
     "intro": "Our team is growing. We need passionate people who want to make an impact on the future of food. Check out our vacancies and apply now."
+  },
+  "404": {
+    "title": "Error 404",
+    "text": {
+      "title": "Oops!",
+      "message": "It looks like we've hit a genetic anomaly."
+    }
   }
 }

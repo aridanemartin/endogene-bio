@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1634 672" width="1634" height="672">
+	<title>notFound-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #72c1bd;stroke-linecap: round;stroke-linejoin: round;stroke-width: 73.8 } 
+		.s1 { fill: none;stroke: #e53d6b;stroke-linecap: round;stroke-linejoin: round;stroke-width: 73.8 } 
+		.s2 { mix-blend-mode: multiply;fill: none;stroke: #7759a0;stroke-linecap: round;stroke-linejoin: round;stroke-width: 73.8 } 
+	</style>
+	<g id="Layer">
+		<g id="Capa_1">
+			<g id="Layer">
+				<g id="Layer">
+					<path id="Layer" fill-rule="evenodd" class="s0" d="m1346 130.3l156.8 156.8"/>
+					<path id="Layer" fill-rule="evenodd" class="s0" d="m1233.3 556.6l285.2-285.2c11-11 16.5-16.6 20.5-21.8 25.2-33.5 25.2-79.7 0-113.2-4-5.3-9.5-10.8-20.5-21.8-11-11.1-16.6-16.6-21.8-20.5-33.6-25.3-79.7-25.3-113.2 0-5.3 3.9-10.8 9.4-21.8 20.5l-285.3 285.2c-16.2 16.3-24.4 24.4-30.2 33.9-5.1 8.4-8.9 17.6-11.3 27.2-2.6 10.8-2.6 22.3-2.6 45.3v44.3c0 17.6 0 26.4 3.5 33.1 3 5.9 7.8 10.7 13.7 13.7 6.7 3.4 15.5 3.4 33 3.4h44.3c23 0 34.5 0 45.4-2.6 9.6-2.3 18.7-6.1 27.2-11.3 9.5-5.8 17.6-13.9 33.9-30.2z"/>
+				</g>
+				<path id="Layer" fill-rule="evenodd" class="s1" d="m65.3 410.6l18.8 18.9c63 62.9 94.4 94.4 130.7 106.2 32 10.3 66.3 10.3 98.3 0 36.3-11.8 67.7-43.3 130.7-106.2l297-297.1"/>
+				<g id="Layer">
+					<path id="Layer" class="s2" d="m671.3 64.8h234.1c129.3 0 234.1 104.8 234.1 234.1v78c0 129.4-104.8 234.2-234.1 234.2h-234.1c-129.4 0-234.2-104.8-234.2-234.2v-78c0-129.3 104.8-234.1 234.2-234.1z"/>
+					<path id="Layer" fill-rule="evenodd" class="s2" d="m515.2 142.8l8.2 8.3c92.7 92.7 139.1 139.1 192.6 156.4 47 15.3 97.6 15.3 144.6 0 53.5-17.3 99.9-63.7 192.6-156.4l8.2-8.3"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

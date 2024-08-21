@@ -91,7 +91,7 @@ export const TeamSection = ({ teamMembers }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedinIcon />
+                <LinkedinIcon color="white" />
               </a>
             </div>
           </article>

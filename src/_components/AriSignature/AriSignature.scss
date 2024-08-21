@@ -7,7 +7,7 @@
   text-align: center;
 
   background: #ffffff;
-  color: var(--main-pink);
+  color: var(--main-turquoise);
   padding: 1rem;
   font-weight: bold;
 }
@@ -17,12 +17,12 @@
 }
 
 .createdBy a {
-  color: var(--main-pink);
+  color: var(--main-turquoise);
   font-weight: 700;
   transition: all 300ms ease-in-out;
 
   &:hover {
-    color: var(--main-pink)-hover;
+    color: var(--main-pink);
     cursor: pointer;
   }
 }

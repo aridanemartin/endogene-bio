@@ -19,39 +19,40 @@ export default function Footer({ lng }) {
             style={{ objectFit: 'contain' }}
           />
         </Link>
-        <div className="footer__socialIcons">
-          <Link
-            href="https://twitter.com/EndoGene_Bio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="socialIcon">
-              <TwitterIcon color="#FFFFFF" />
-            </div>
-          </Link>
-          <Link
-            href="https://twitter.com/EndoGene_Bio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="socialIcon">
-              <LinkedinIcon color="#FFFFFF" secondaryColor="#5e1e3c" />
-            </div>
-          </Link>
-
-          <Link
-            href="https://www.instagram.com/endogenebio/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="socialIcon">
-              <InstagramIcon color="#FFFFFF" />
-            </div>
-          </Link>
+        <div className="footer__links">
+          <div className="footer__socialIcons">
+            <Link
+              href="https://twitter.com/EndoGene_Bio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="socialIcon">
+                <TwitterIcon color="#FFFFFF" />
+              </div>
+            </Link>
+            <Link
+              href="https://twitter.com/EndoGene_Bio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="socialIcon">
+                <LinkedinIcon color="#FFFFFF" />
+              </div>
+            </Link>
+            <Link
+              href="https://www.instagram.com/endogenebio/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="socialIcon">
+                <InstagramIcon color="#FFFFFF" />
+              </div>
+            </Link>
+          </div>
+          <div className="footer__legal">
+            <Link href="/terms-of-use">Terms of use</Link>
+          </div>
         </div>
-      </div>
-      <div className="footer__legal">
-        <Link href="/terms-of-use">Terms of use</Link>
       </div>
     </div>
   )

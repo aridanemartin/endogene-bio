@@ -6,6 +6,7 @@ import Headline from '@components/Headline/Headline'
 import type { Metadata } from 'next'
 import Layout from '@components/Layout/Layout'
 import { removePostsWithEmptyFields } from '@utils/removePostsWithEmptyFields'
+import { NotFoundComponent } from '@components/NotFoundComponent/NotFoundComponent'
 
 export const metadata: Metadata = {
   title: 'Blog | Endogene.Bio',
@@ -17,14 +18,7 @@ const Blog = async ({ params }) => {
   const filteredPosts = removePostsWithEmptyFields(posts)
 
   if (filteredPosts.length === 0) {
-    return (
-      <Layout maxWidth="900px" className="blogPage">
-        <Headline lng={params.lng} titleKey="BLOG.title" />
-        <div className="noPosts">
-          <h1>No posts available</h1>
-        </div>
-      </Layout>
-    )
+    return <NotFoundComponent locale={params.lng} isBlogPage />
   }
 
   return (

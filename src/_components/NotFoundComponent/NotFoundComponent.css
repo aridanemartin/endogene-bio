@@ -1,0 +1,52 @@
+.notFoundIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  width: 100%;
+
+  .errorContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      max-width: 25ch;
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+  }
+
+  .errorImage {
+    margin: 1.5rem 0;
+    position: relative;
+    height: 12rem;
+    width: 100%;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+@media (width < 768px) {
+  .notFoundIconContainer {
+    height: calc(100vh - 50px);
+  }
+}
