@@ -8,7 +8,13 @@
   },
   "HOME": {
     "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
-    "about-us": "<strong>About us</strong>",
+    "about-us": "About <strong>us</strong>",
+    "our-values": {
+      "title": "Our <strong>values</strong>",
+      "determination": "<strong>Determination</strong> is a fundamental value in the company. It drives the constant pursuit of solutions and advancements in every field. This firm commitment not only guarantees scientific excellence but also demonstrates a dedicated and proactive approach to women's health.",
+      "humanity": "In the women's health industry, <strong>humanity</strong> is an essential value. It drives a compassionate and needs-centered approach, ensuring that every advancement is made with empathy and consideration. This genuine care reinforces trust and commitment to women's well-being.",
+      "innovation": "<strong>Innovation</strong> holds a prominent place as a brand value in the company. Its constant dedication to finding solutions demonstrates a firm commitment to progress and well-being in women's healthcare."
+    },
     "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
     "core-values": {
       "title": "<strong>Our core values</strong>",
@@ -19,6 +25,7 @@
       "investigation-title": "Investigation",
       "investigation-text": "EndoGene.Bio rigorously investigates menstrual blood to enhance understanding and improve endometriosis management."
     },
+    "trusted-by": "<strong>Trusted by companies like</strong>",
     "in-numbers": "<strong>Endogene.bio in numbers</strong>"
   },
   "TEAM": {

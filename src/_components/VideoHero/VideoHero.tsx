@@ -25,9 +25,9 @@ export default function VideoHero() {
         <source src={`static/headerLogoFirst.ogv`} type="video/ogg" />
       </video>
 
-      <div className="videoHero__logo">
+      {/* <div className="videoHero__logo">
         <Image src={logo} alt="logo" />
-      </div>
+      </div> */}
     </div>
   )
 }

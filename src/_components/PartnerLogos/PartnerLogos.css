@@ -1,10 +1,6 @@
-.partnerText {
-  text-align: center;
-  color: var(--main-pink);
-  margin-bottom: 1rem;
-}
-
 .partnerLogos {
+  filter: grayscale(1);
+  opacity: 0.6;
   display: flex;
   flex-flow: wrap;
   align-content: stretch;

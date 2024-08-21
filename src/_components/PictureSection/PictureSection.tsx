@@ -31,12 +31,14 @@ const PictureSection = ({
           alt="Picture"
         />
       </div>
-      <div className="picture-section__text">
-        <Trans
-          t={t}
-          i18nKey={translationKey}
-          components={{ br: <br />, p: <p />, h2: <h2 />, h3: <h3 /> }}
-        />
+      <div className="picture-section__textContainer">
+        <p className="picture-section__text">
+          <Trans
+            t={t}
+            i18nKey={translationKey}
+            components={{ br: <br />, p: <p />, h2: <h2 />, h3: <h3 /> }}
+          />
+        </p>
       </div>
     </div>
   )

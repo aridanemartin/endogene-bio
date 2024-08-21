@@ -3,8 +3,8 @@
   height: fit-content;
   min-height: 15rem;
   margin-bottom: 4rem;
-  gap: 1rem;
-  min-height: 20rem;
+  gap: 2rem;
+  min-height: 15rem;
 
   &__left {
     grid-template-areas: 'picture image';
@@ -32,13 +32,15 @@
     overflow: hidden;
   }
 
-  &__text {
+  &__textContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &__text {
     align-items: center;
-    font-size: 1.5rem;
-    height: 100%;
+    font-size: 1.3rem;
 
     .textBlock {
       padding: 1rem 2rem;
@@ -55,6 +57,7 @@
     grid-template-areas: 'picture' 'image';
     grid-template-columns: 1fr;
     grid-template-rows: 20rem 1fr;
+    gap: 1rem;
 
     margin-bottom: 2rem;
 
