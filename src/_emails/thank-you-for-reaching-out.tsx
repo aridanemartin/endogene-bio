@@ -18,7 +18,7 @@ interface graciasPorContactarProps {
   name?: string
 }
 
-const domainUrl = 'https://www.nutricionsaludablelaspalmas.com'
+const domainUrl = 'https://www.endogene.bio'
 
 export const GraciasPorContactarEmail = ({
   name,

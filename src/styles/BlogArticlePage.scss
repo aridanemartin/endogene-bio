@@ -6,7 +6,7 @@
   &__hero {
     margin-top: 6rem;
     position: relative;
-    height: 20rem;
+    height: 15rem;
     width: 100vw;
     overflow: hidden;
     z-index: -1;
@@ -21,7 +21,7 @@
     width: 80%;
     max-height: 200px;
     max-width: 1000px;
-    top: 29rem;
+    top: 24rem;
     left: 50%;
     transform: translate(-50%, -100%);
     background-color: white;
@@ -78,16 +78,23 @@
         }
       }
 
+      .date {
+        font-size: 0.8rem;
+        color: var(--main-grey);
+        margin-right: 0.5rem;
+      }
+
       .timeToRead {
         font-size: 0.8rem;
         display: flex;
         justify-content: center;
+        align-items: center;
 
         &__icon {
           position: relative;
           width: 0.8rem;
           height: 0.8rem;
-          margin-right: 0.5rem;
+          margin: 0 0.25rem 0 0.5rem;
         }
       }
     }
@@ -105,7 +112,6 @@
 }
 
 .contentWrapper {
-  padding: 1rem;
   padding-bottom: 3rem;
 }
 
@@ -116,7 +122,7 @@
 
 @media (max-width: 1100px) {
   .blogArticlePage__header {
-    top: calc(29rem - 6rem);
+    top: calc(24rem - 6rem);
   }
 
   .blogArticlePage__hero {

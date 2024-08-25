@@ -25,8 +25,14 @@
       "investigation-title": "Investigation",
       "investigation-text": "EndoGene.Bio rigorously investigates menstrual blood to enhance understanding and improve endometriosis management."
     },
-    "trusted-by": "<strong>Trusted by companies like</strong>",
-    "in-numbers": "<strong>Endogene.bio in numbers</strong>"
+    "trusted-by": "<strong>Funded by companies like</strong>",
+    "in-numbers": "<strong>Endogene.bio in numbers</strong>",
+    "counter": {
+      "team": "Team",
+      "scientists": "Scientists",
+      "languages": "Languages",
+      "female-male": "Female / Male"
+    }
   },
   "TEAM": {
     "title": "Here <strong>we are.</strong> Meet <strong>the team.</strong>",
@@ -40,10 +46,13 @@
       "message": "looks like our latest updates are still in the lab?"
     }
   },
+  "ARTICLE-PAGE": {
+    "time-to-read": "min read"
+  },
   "TECHNOLOGY": {
-    "title": "We develop <strong>technology</strong> to improve <strong>female health.</strong>",
+    "title": "we bring <strong>precision medicine</strong> to <strong>female health</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
-    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with <strong>analytical laboratories</strong> to provide <strong>diagnostic tests</strong> and we assist <strong>pharmaceutical companies</strong> in <strong> optimizing drug development and patient stratification for clinical trials </strong>.<br /><br /> We are <strong>determined to</strong> address the historical underrepresentation of female biology in medical research and <strong>bring precision medicine to female health.</strong>",
+    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and <strong>bring precision medicine to female health",
     "AREAS": {
       "title": "team expertise areas",
       "endometriosis": "endometriosis",
@@ -84,6 +93,22 @@
     "text": {
       "title": "Oops!",
       "message": "It looks like we've hit a genetic anomaly."
+    }
+  },
+  "COMMON": {
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
     }
   }
 }

@@ -19,14 +19,8 @@ export default function Nav({ lng }: { lng: string }) {
   const [isOpen, setIsOpen] = useState(false)
   const isDesktop = useMediaQuery(1100)
   const toggle = () => setIsOpen(!isOpen)
-  // const isBurgerIconWhite =
-  //   (pathname.includes('/blog') ||
-  //     pathname.includes('/tarifas') ||
-  //     pathname.includes('/servicios') ||
-  //     pathname === '/') &&
-  //   !isOpen
-  const isBurgerIconWhite = false
   const pathname = usePathname()
+  const isBurgerIconWhite = /\/blog\/.+/.test(pathname) && !isOpen
 
   const linkAnimation = {
     open: {

@@ -7,12 +7,16 @@ import svg2 from '@assets/shapes/blogShape2.svg'
 import svg3 from '@assets/shapes/blogShape3.svg'
 import svg4 from '@assets/shapes/blogShape4.svg'
 
-export const BlogPostPreview = ({ post, index }) => {
-  // Array of SVGs
+import { getFormattedDate } from '@utils/getFormattedDate'
+import { useTranslation } from 'src/app/i18n'
+
+export const BlogPostPreview = async ({ post, index, lng }) => {
+  const { t } = await useTranslation(lng)
   const svgs = [svg1, svg2, svg3, svg4]
-  // Determine which SVG to use based on the index
   const selectedSvg = svgs[index % svgs.length]
   const isOdd = index % 2 === 0
+
+  const { month, year } = getFormattedDate(post._createdAt)
 
   return (
     <Link key={post.slug} href={`blog/${post.slug}`}>
@@ -32,9 +36,15 @@ export const BlogPostPreview = ({ post, index }) => {
           />
         </div>
         <div className="blogPostPreview__text">
-          <div className="blogPostPreview__title">
-            <h2 id={post.title}>{post.title}</h2>
+          <div className="blogPostPreview__titleWrapper">
+            <p className="blogPostPreview__date">
+              {t(`COMMON.months.${month}`)}, {year}
+            </p>
+            <h2 className="blogPostPreview__title" id={post.title}>
+              {post.title}
+            </h2>
           </div>
+
           <div
             className="blogPostPreview__description"
             aria-labelledby={post.title}

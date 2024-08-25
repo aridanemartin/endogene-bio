@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 
-const CatchAll = ({ params }) => {
-  console.log('===params==>', params)
+const CatchAll = () => {
   return notFound()
 }
 

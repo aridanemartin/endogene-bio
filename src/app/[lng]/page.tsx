@@ -1,4 +1,4 @@
-import { getPosts } from 'src/sanity/utils/sanity-querys'
+import { getPosts, getTeamMembers } from 'src/sanity/utils/sanity-querys'
 import Headline from '@components/Headline/Headline'
 import Hero from '@components/Hero/Hero'
 import { CardSection } from '@components/CardSection/CardSection'
@@ -25,18 +25,18 @@ export const metadata: Metadata = {
 export default async function Home({ params: { lng } }) {
   const { t } = await useTranslation(lng)
 
+  const counterTranslationsKeys = {
+    team: t('HOME.counter.team'),
+    scientists: t('HOME.counter.scientists'),
+    languages: t('HOME.counter.languages'),
+    femaleMale: t('HOME.counter.female-male'),
+  }
+
   return (
     <>
       <Layout maxWidth="1000px" className="homePageLayout">
         <Headline titleKey="HOME.slogan" lng={lng} />
         <VideoHero />
-        <Headline titleKey="HOME.about-us" lng={lng} />
-        <PictureSection
-          picturePosition="right"
-          pictureSrc={HeroBannerImage}
-          translationKey="HOME.intro"
-          lng={lng}
-        />
         <Headline titleKey="HOME.our-values.title" lng={lng} />
         <PictureSection
           picturePosition="left"
@@ -59,7 +59,7 @@ export default async function Home({ params: { lng } }) {
         <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
         <PartnerLogos />
         <Headline titleKey="HOME.in-numbers" lng={lng} headlineType="h2" />
-        <Counter />
+        <Counter translationKeys={counterTranslationsKeys} />
       </Layout>
     </>
   )

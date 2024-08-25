@@ -20,7 +20,7 @@ interface mensajeCarolinaEmailProps {
   email?: string
 }
 
-const domainUrl = 'https://www.nutricionsaludablelaspalmas.com'
+const domainUrl = 'https://www.endogene.bio'
 
 export const MensajeCarolinaEmail = ({
   name,

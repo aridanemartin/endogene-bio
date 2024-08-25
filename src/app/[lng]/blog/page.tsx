@@ -26,7 +26,7 @@ const Blog = async ({ params }) => {
       <Headline lng={params.lng} titleKey="BLOG.title" />
       <div className="postsContainer">
         {filteredPosts.map((post, idx) => (
-          <BlogPostPreview post={post} index={idx} />
+          <BlogPostPreview post={post} index={idx} lng={params.lng} />
         ))}
       </div>
     </Layout>

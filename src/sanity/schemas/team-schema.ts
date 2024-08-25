@@ -28,12 +28,6 @@ const post = {
       ],
     },
     {
-      name: 'email',
-      title: 'Email',
-      type: 'string',
-      required: true,
-    },
-    {
       name: 'linkedin',
       title: 'LinkedIn',
       type: 'url',

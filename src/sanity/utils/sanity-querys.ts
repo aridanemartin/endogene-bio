@@ -22,7 +22,7 @@ export async function getPosts(lng: string) {
       "body": body_${lng},
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-    }`,
+    } | order(_createdAt desc)`,
     undefined,
     { cache: 'no-store' },
   )

@@ -46,12 +46,20 @@
     }
   }
 
-  &__title {
-    color: #333;
-    font-size: 2rem;
+  &__titleWrapper {
     height: fit-content;
     text-wrap: balance;
     padding: 1rem 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  &__date {
+    color: var(--dark-gray);
+    padding-bottom: 0.5rem;
   }
 
   &__description {
@@ -162,8 +170,7 @@
       }
     }
 
-    &__title {
-      font-size: 1.5rem;
+    &__titleWrapper {
       margin: 0.5rem 1rem;
       padding: 0;
 
@@ -171,6 +178,10 @@
       text-overflow: none;
       display: block;
       -webkit-line-clamp: none;
+    }
+
+    &__title {
+      font-size: 1.5rem;
     }
 
     &__description {
