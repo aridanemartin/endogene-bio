@@ -4,50 +4,89 @@
     "team": "Sobre Nosotros",
     "news": "Noticias",
     "contact": "Contacto",
-    "join-us": "Únete a Nosotros"
+    "join-us": "Trabaja con nosotros"
   },
   "HOME": {
-    "slogan": "Construyendo un <strong>legado</strong> en la <strong>salud femenina</strong>",
+    "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
     "about-us": "Sobre <strong>nosotros</strong>",
-    "intro": "<p>EndoGene.Bio se dedica al descubrimiento de biomarcadores moleculares en la salud femenina.</p> <p>Nos enfocamos en los marcadores epigenéticos en la sangre menstrual. Nuestro primer objetivo es el desarrollo de biomarcadores no invasivos para mejorar el diagnóstico y manejo de la endometriosis.</p>",
-    "core-values": {
-      "title": "Nuestros <strong>valores</strong> fundamentales",
-      "education-title": "Educación",
-      "education-text": "EndoGene.Bio prioriza la educación en la investigación de la salud femenina, utilizando biología molecular de vanguardia para explorar los marcadores epigenéticos en la sangre menstrual. Nuestra misión se centra en desarrollar soluciones no invasivas para mejorar el diagnóstico y manejo de la endometriosis, impulsando la innovación para mejorar la salud de las mujeres a nivel global.",
-      "made-for-women-title": "Hecho para Mujeres",
-      "made-for-women-text": "EndoGene.Bio se basa en el principio de estar \"Hecho para Mujeres\", abordando sus necesidades únicas de atención médica con soluciones personalizadas. Desde la investigación molecular hasta los diagnósticos no invasivos, empoderamos a las mujeres en su viaje de salud con cuidado compasivo y enfoques innovadores.",
-      "investigation-title": "Investigación",
-      "investigation-text": "La investigación impulsa la búsqueda incansable de EndoGene.Bio por comprender la salud femenina. Con curiosidad y rigor, profundizamos en las complejidades de la sangre menstrual para descubrir conocimientos sobre el diagnóstico y manejo de la endometriosis. A través de una investigación meticulosa, avanzamos en el conocimiento y mejoramos los resultados de salud de las mujeres."
+    "our-values": {
+      "title": "Nuestros <strong>valores</strong>",
+      "determination": {
+        "title": "Determinación",
+        "text": "<strong>Determinación</strong> es un valor fundamental en la empresa. Impulsa la búsqueda constante de soluciones y avances en todos los campos. Este firme compromiso no solo garantiza la excelencia científica, sino que también demuestra un enfoque dedicado y proactivo hacia la salud de la mujer."
+      },
+      "humanity": {
+        "title": "Humanidad",
+        "text": "En la industria de la salud femenina, la <strong>humanidad</strong> es un valor esencial. Impulsa un enfoque compasivo y centrado en las necesidades, asegurando que cada avance se realice con empatía y consideración. Este cuidado genuino refuerza la confianza y el compromiso con el bienestar de las mujeres."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "text": "<strong>Innovación</strong> ocupa un lugar destacado como valor de marca en la empresa. Su dedicación constante a encontrar soluciones demuestra un firme compromiso con el progreso y el bienestar en el cuidado de la salud femenina."
+      }
     },
-    "in-numbers": "EndoGene.bio en cifras"
+    "intro": "<p>EndoGene.Bio se dedica al descubrimiento de biomarcadores moleculares en la salud femenina.</p> <p>Analizamos marcadores epigenéticos en la sangre menstrual. Nuestro primer objetivo es desarrollar biomarcadores no invasivos para mejorar el diagnóstico y manejo de la endometriosis.</p>",
+    "core-values": {
+      "title": "<strong>Nuestros valores fundamentales</strong>",
+      "education-title": "Educación",
+      "education-text": "EndoGene.Bio prioriza la educación en salud femenina, utilizando investigación avanzada en sangre menstrual para mejorar el diagnóstico de la endometriosis.",
+      "made-for-women-title": "Hecho para Mujeres",
+      "made-for-women-text": "EndoGene.Bio ofrece soluciones de salud personalizadas y no invasivas para mujeres, empoderándolas con atención innovadora.",
+      "investigation-title": "Investigación",
+      "investigation-text": "EndoGene.Bio investiga rigurosamente la sangre menstrual para mejorar la comprensión y el manejo de la endometriosis."
+    },
+    "trusted-by": "<strong>Financiado por</strong> empresas como",
+    "in-numbers": "endogene.bio en <strong>números</strong>",
+    "counter": {
+      "team": "Equipo",
+      "scientists": "Científicos",
+      "languages": "Idiomas",
+      "female-male": "Mujeres / Hombres"
+    }
   },
   "TEAM": {
-    "title": "Aquí <strong>estamos.</strong> Conozca al <strong>equipo.</strong>",
-    "intro1": "<p>El dolor menstrual no es normal. Pero debido a la endometriosis no diagnosticada, es una realidad para 190 millones de mujeres en todo el mundo. En EndoGene.bio, ayudaremos a mujeres de todo el mundo a acceder a un diagnóstico temprano mediante la epigenética de vanguardia.</p><p>La endometriosis afecta al 10 % de las mujeres, toma 7 años en diagnosticarse y tiene altos costos sociales y económicos. Solo en la UE y EE.UU., el costo estimado del retraso en el diagnóstico alcanza los 300 mil millones de euros.</p>",
-    "intro2": "<p>Esto se debe a la falta de pruebas específicas y tempranas. En EndoGene.Bio, estamos desarrollando una prueba diagnóstica con receta basada en biomarcadores epigenéticos encontrados en la sangre menstrual que las pacientes pueden realizar en la comodidad de su hogar.</p><p>Con esta tecnología, reduciremos el tiempo de diagnóstico de 7 años a dos consultas: una para realizar tu prueba, y otra para obtener tus resultados.</p>"
+    "title": "Aquí <strong>estamos.</strong> Conoce al <strong>equipo.</strong>",
+    "intro1": "<p>El dolor menstrual no es normal. Pero debido a la endometriosis no diagnosticada, es una realidad para 190 millones de mujeres en todo el mundo. En EndoGene.bio, ayudaremos a las mujeres de todo el mundo a acceder a un diagnóstico temprano a través de la epigenética de vanguardia.</p><p>La endometriosis afecta al 10% de las mujeres, tarda 7 años en diagnosticarse y tiene altos costos sociales y económicos. Solo en la UE y EE. UU., el costo estimado del diagnóstico tardío alcanza los €300 mil millones.</p>",
+    "intro2": "<p>Esto se debe a la falta de pruebas específicas y tempranas. En EndoGene.Bio, estamos desarrollando una prueba diagnóstica por prescripción basada en biomarcadores epigenéticos encontrados en la sangre menstrual que las pacientes pueden realizar en la comodidad de su hogar.</p><p>Con esta tecnología, reduciremos el tiempo de diagnóstico de 7 años a dos consultas: una para realizar la prueba y otra para obtener los resultados.</p>"
   },
   "BLOG": {
-    "title": "Vea lo que está <strong>sucediendo</strong> en <strong>EndoGene.bio</strong>"
+    "title": "Ve lo que está <strong>sucediendo</strong> en <strong>endoGene.bio</strong>",
+    "no-posts": {
+      "title": "Publicaciones no disponibles",
+      "message": "Parece que nuestras últimas actualizaciones aún están en el laboratorio."
+    },
+    "go-back": "Volver a Noticias"
+  },
+  "ARTICLE-PAGE": {
+    "time-to-read": "min de lectura"
   },
   "TECHNOLOGY": {
-    "endometriosis": {
-      "definition": "La endometriosis es una condición ginecológica compleja caracterizada por la presencia de tejido similar al endometrial fuera del útero, lo que induce una respuesta inflamatoria crónica. Este tejido, que se comporta de manera similar al revestimiento del útero, se engrosa, se descompone y sangra con cada ciclo menstrual. Sin embargo, al estar ubicado fuera del útero, no tiene manera de salir del cuerpo, lo que provoca dolor, inflamación y la formación de tejido cicatricial. Los síntomas pueden variar, pero a menudo incluyen calambres menstruales severos, dolor crónico en la parte baja de la espalda y la pelvis, dolor durante o después de las relaciones sexuales, dolor intestinal e infertilidad en algunos casos.",
-      "diagnosis": "El diagnóstico de la endometriosis puede ser notablemente desafiante y, con frecuencia, se retrasa. En promedio, se tarda entre 7 y 10 años desde la aparición de los síntomas para que una mujer reciba un diagnóstico definitivo. Este retraso se debe a una combinación de factores, incluyendo la normalización del dolor menstrual, la variabilidad de los síntomas y la necesidad de un diagnóstico definitivo mediante laparoscopia, un procedimiento quirúrgico que permite al médico observar directamente los órganos pélvicos y tomar muestras de tejido para su examen. La naturaleza compleja de la endometriosis y el amplio espectro de sus manifestaciones contribuyen al prolongado período que muchas mujeres experimentan antes de recibir un diagnóstico preciso."
+    "title": "Llevamos la <strong>medicina de precisión</strong> a la <strong>salud femenina</strong>",
+    "title2": "Contamos con un <strong>equipo dedicado</strong> de expertos en <strong>salud femenina</strong>, especializados en la ciencia uterina y del endometrio.",
+    "introText": "La plataforma de investigación de <strong>endogene.bio</strong> ayuda a descubrir biomarcadores moleculares para mejorar el diagnóstico y la estratificación de pacientes, y mejorar los procesos de descubrimiento de fármacos.<br />Trabajamos con laboratorios analíticos para proporcionar pruebas de diagnóstico y ayudamos a las empresas farmacéuticas a optimizar el desarrollo de medicamentos y la estratificación de pacientes para ensayos clínicos.<br /><br /> Estamos decididos a abordar la subrepresentación histórica de la biología femenina en la investigación médica y llevar la medicina de precisión a la salud femenina.",
+    "AREAS": {
+      "title": "áreas de experiencia del equipo",
+      "endometriosis": "endometriosis",
+      "endometrial-cancer": "cáncer endometrial",
+      "fertility": "fertilidad",
+      "inmunology": "inmunología",
+      "cellular-biology": "biología celular",
+      "molecular-biology": "biología molecular",
+      "ageing": "envejecimiento"
     },
-    "menstrual_blood_diagnosis": {
-      "importance": "La sangre menstrual, a menudo considerada como un desecho, sirve como una excelente herramienta de diagnóstico. Contiene materiales eliminados durante la menstruación, como tejido endometrial, células inmunitarias, proteínas y microorganismos. De hecho, la sangre menstrual posee más de 300 proteínas únicas que no se encuentran en otras partes del cuerpo. Las proporciones de diferentes tipos de células en la sangre menstrual difieren significativamente de las de otras áreas del cuerpo, presentando nuevas metas diagnósticas.",
-      "method": "El uso de sangre menstrual para el diagnóstico es no invasivo y no requiere una aguja. Este método ofrece la posibilidad de identificar enfermedades, determinar la probable respuesta de un paciente a tratamientos específicos y predecir el estado de salud actual. Además, puede prever los riesgos futuros de trastornos ginecológicos o reproductivos en ciclos menstruales posteriores."
-    },
-    "epigenetics": {
-      "definition": "La epigenética explora cómo los factores ambientales y los comportamientos influyen en la expresión génica. A lo largo de nuestro crecimiento y desarrollo, diversos factores actúan sobre nuestro genoma, regulando la activación y desactivación de los genes en momentos y lugares específicos. Estos mecanismos reguladores pueden verse significativamente afectados por nuestro entorno y nuestras elecciones de estilo de vida, como los niveles de estrés o si una persona fuma. En consecuencia, estas influencias pueden llevar a cambios que activan o desactivan genes de manera que se desvían de sus patrones normales.",
-      "importance": "Es crucial señalar que las alteraciones en estos factores reguladores pueden conducir a enfermedades al activar o desactivar genes de manera inapropiada."
+    "CAPABILITIES": {
+      "title": "capacidades",
+      "1": "// <strong>150 m<sup>2</sup></strong> de instalaciones, incluyendo 42 m<sup>2</sup> de espacio de laboratorio P2",
+      "2": "// <strong>Biología molecular:</strong> ADN, ARN, Metilación",
+      "3": "// <strong>Aislamiento de tipos específicos de células, fenotipado</strong> e <strong>inmunoperfilado</strong>",
+      "4": "// <strong>Análisis bioinformático:</strong> epigenética, genética, transcriptómica (bulk y single cell)",
+      "5": "// <strong>Experiencia en muestras:</strong> sangre menstrual, biopsia de endometrio y lesiones de endometriosis"
     }
   },
   "CONTACT": {
     "title": "Hablemos. <strong>Comparte</strong> tu entusiasmo <strong>con nosotros.</strong>",
     "form": {
       "name": "Nombre",
-      "email": "ejemplo@gmail.com",
+      "email": "example@gmail.com",
       "message": "Escribe tu mensaje aquí.",
       "send": "Enviar",
       "sent": "¡Mensaje enviado!",
@@ -56,7 +95,38 @@
     }
   },
   "JOIN-US": {
-    "title": "Únete a nosotros",
-    "intro": "Nuestro equipo está creciendo. Necesitamos personas apasionadas que quieran tener un impacto en el futuro de la salud femenina. Consulta nuestras vacantes y postula ahora."
+    "title": "Construyamos algo <strong>juntos</strong>",
+    "subtitle": "Ven a innovar, colaborar y participa en la innovación contra la endometriosis.",
+    "catch-phrase": "¡Encuentra tu próximo trabajo!",
+    "intro": "Nuestro equipo está creciendo. Ven a innovar, colaborar y contribuir al avance en el tratamiento de la endometriosis. Consulta nuestras vacantes y aplica ahora."
+  },
+  "404": {
+    "title": "Error 404",
+    "text": {
+      "title": "¡Ups!",
+      "message": "Parece que hemos encontrado una anomalía genética."
+    },
+    "go-back": "Volver a la página de inicio"
+  },
+  "THANK-YOU": {
+    "title": "Gracias por tu mensaje",
+    "message": "Nos pondremos en contacto contigo pronto.",
+    "go-back": "Volver a la página de inicio"
+  },
+  "COMMON": {
+    "months": {
+      "january": "Enero",
+      "february": "Febrero",
+      "march": "Marzo",
+      "april": "Abril",
+      "may": "Mayo",
+      "june": "Junio",
+      "july": "Julio",
+      "august": "Agosto",
+      "september": "Septiembre",
+      "october": "Octubre",
+      "november": "Noviembre",
+      "december": "Diciembre"
+    }
   }
 }

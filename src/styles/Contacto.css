@@ -1,6 +1,7 @@
 .contacto {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+  gap: 2rem;
   margin-bottom: 3rem;
 
   .form-section {
@@ -14,19 +15,18 @@
     textarea {
       display: inline-block;
       font-size: 1.1rem;
-
       border: none;
-      width: 90%;
+      width: 100%;
       background-color: var(--input-gray);
       display: inline-block;
       border-radius: 1rem;
-      padding: 1rem;
-
+      padding: 1rem 0;
       resize: none;
     }
 
     input::placeholder,
     textarea::placeholder {
+      padding-left: 1rem;
       color: var(--input-write-gray);
       font-family: var(--font-open-sans);
     }
