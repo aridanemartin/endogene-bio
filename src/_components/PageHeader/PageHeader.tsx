@@ -33,9 +33,6 @@ export const PageHeader = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <Image src={team1Image} alt="Join us" fill />
-            </SwiperSlide>
-            <SwiperSlide>
               <Image src={team2Image} alt="Join us" fill />
             </SwiperSlide>
             <SwiperSlide>
@@ -43,6 +40,9 @@ export const PageHeader = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image src={team4Image} alt="Join us" fill />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={team1Image} alt="Join us" fill />
             </SwiperSlide>
           </Swiper>
         </>

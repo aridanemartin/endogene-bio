@@ -5,20 +5,32 @@ export const CardSection = ({ t }) => {
     <div className="cardSection">
       <article className="card1 card">
         <div className="text-content">
-          <h2>{t('HOME.core-values.made-for-women-title')}</h2>
-          <p>{t('HOME.core-values.made-for-women-text')}</p>
+          <h2>{t('HOME.our-values.humanity.title')}</h2>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t('HOME.our-values.humanity.text'),
+            }}
+          />
         </div>
       </article>
       <article className="card2 card">
         <div className="text-content">
-          <h2>{t('HOME.core-values.investigation-title')}</h2>
-          <p>{t('HOME.core-values.investigation-text')}</p>
+          <h2>{t('HOME.our-values.innovation.title')}</h2>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t('HOME.our-values.innovation.text'),
+            }}
+          />
         </div>
       </article>
       <article className="card3 card">
         <div className="text-content">
-          <h2>{t('HOME.core-values.education-title')}</h2>
-          <p>{t('HOME.core-values.education-text')}</p>
+          <h2>{t('HOME.our-values.determination.title')}</h2>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t('HOME.our-values.determination.text'),
+            }}
+          />
         </div>
       </article>
     </div>

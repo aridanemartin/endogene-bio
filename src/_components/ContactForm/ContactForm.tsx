@@ -7,8 +7,10 @@ import Textarea from '@components/Textarea/Textarea'
 import checkMark from '@assets/icons/check.webp'
 import Image from 'next/image'
 import { useTranslation } from 'src/app/i18n/client'
+import { useRouter } from 'next/navigation'
 
 const ContactForm = ({ lng }) => {
+  const router = useRouter()
   const { t } = useTranslation(lng)
   const [isLoading, setIsLoading] = useState(false)
   const [isEmailSent, setIsEmailSent] = useState(false)
@@ -86,6 +88,10 @@ const ContactForm = ({ lng }) => {
     } finally {
       setIsLoading(false)
     }
+  }
+
+  if (isEmailSent) {
+    router.push('/contact/thank-you')
   }
 
   const renderButton = () => {

@@ -39,7 +39,7 @@ export default async function Home({ params: { lng } }) {
         <Headline titleKey="HOME.slogan" lng={lng} />
         <VideoHero />
         <Headline titleKey="HOME.our-values.title" lng={lng} />
-        <PictureSection
+        {/* <PictureSection
           picturePosition="left"
           pictureSrc={determinationImage}
           translationKey="HOME.our-values.determination"
@@ -56,7 +56,8 @@ export default async function Home({ params: { lng } }) {
           pictureSrc={innovationImage}
           translationKey="HOME.our-values.innovation"
           lng={lng}
-        />
+        /> */}
+        <CardSection t={t} />
         <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
         <PartnerLogos />
         <Headline titleKey="HOME.in-numbers" lng={lng} headlineType="h2" />

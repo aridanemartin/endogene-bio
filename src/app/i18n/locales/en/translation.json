@@ -11,9 +11,18 @@
     "about-us": "About <strong>us</strong>",
     "our-values": {
       "title": "Our <strong>values</strong>",
-      "determination": "<strong>Determination</strong> is a fundamental value in the company. It drives the constant pursuit of solutions and advancements in every field. This firm commitment not only guarantees scientific excellence but also demonstrates a dedicated and proactive approach to women's health.",
-      "humanity": "In the women's health industry, <strong>humanity</strong> is an essential value. It drives a compassionate and needs-centered approach, ensuring that every advancement is made with empathy and consideration. This genuine care reinforces trust and commitment to women's well-being.",
-      "innovation": "<strong>Innovation</strong> holds a prominent place as a brand value in the company. Its constant dedication to finding solutions demonstrates a firm commitment to progress and well-being in women's healthcare."
+      "determination": {
+        "title": "Determination",
+        "text": "<strong>Determination</strong> is a fundamental value in the company. It drives the constant pursuit of solutions and advancements in every field. This firm commitment not only guarantees scientific excellence but also demonstrates a dedicated and proactive approach to women's health."
+      },
+      "humanity": {
+        "title": "Humanity",
+        "text": "In the women's health industry, <strong>humanity</strong> is an essential value. It drives a compassionate and needs-centered approach, ensuring that every advancement is made with empathy and consideration. This genuine care reinforces trust and commitment to women's well-being."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "text": "<strong>Innovation</strong> holds a prominent place as a brand value in the company. Its constant dedication to finding solutions demonstrates a firm commitment to progress and well-being in women's healthcare."
+      }
     },
     "intro": "<p>EndoGene.Bio is dedicated to molecular biomarker discovery in female health.</p> <p>We look at epigenetic markers in menstrual blood. Our first target is the development of non-invasive biomakers for better endometriosis diagnosis and management. </p>",
     "core-values": {
@@ -25,8 +34,8 @@
       "investigation-title": "Investigation",
       "investigation-text": "EndoGene.Bio rigorously investigates menstrual blood to enhance understanding and improve endometriosis management."
     },
-    "trusted-by": "<strong>Funded by companies like</strong>",
-    "in-numbers": "<strong>Endogene.bio in numbers</strong>",
+    "trusted-by": "<strong>Funded by</strong> companies like",
+    "in-numbers": "endogene.bio in <strong>numbers</strong>",
     "counter": {
       "team": "Team",
       "scientists": "Scientists",
@@ -43,8 +52,9 @@
     "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>",
     "no-posts": {
       "title": "Posts not available",
-      "message": "looks like our latest updates are still in the lab?"
-    }
+      "message": "Looks like our latest updates are still in the lab."
+    },
+    "go-back": "Go back to News"
   },
   "ARTICLE-PAGE": {
     "time-to-read": "min read"
@@ -95,7 +105,13 @@
     "text": {
       "title": "Oops!",
       "message": "It looks like we've hit a genetic anomaly."
-    }
+    },
+    "go-back": "Go back to homepage"
+  },
+  "THANK-YOU": {
+    "title": "Thank you for your message",
+    "message": "We will contact you soon.",
+    "go-back": "Go back to homepage"
   },
   "COMMON": {
     "months": {
