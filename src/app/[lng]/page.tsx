@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 
 export default async function Home({ params: { lng } }) {
   const { t } = await useTranslation(lng)
+  const teamMembersInfo = await getTeamMembers()
 
   const counterTranslationsKeys = {
     team: t('HOME.counter.team'),
@@ -59,7 +60,10 @@ export default async function Home({ params: { lng } }) {
         <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
         <PartnerLogos />
         <Headline titleKey="HOME.in-numbers" lng={lng} headlineType="h2" />
-        <Counter translationKeys={counterTranslationsKeys} />
+        <Counter
+          translationKeys={counterTranslationsKeys}
+          teamMembersInfo={teamMembersInfo}
+        />
       </Layout>
     </>
   )

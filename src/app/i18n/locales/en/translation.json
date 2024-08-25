@@ -50,9 +50,9 @@
     "time-to-read": "min read"
   },
   "TECHNOLOGY": {
-    "title": "we bring <strong>precision medicine</strong> to <strong>female health</strong>",
+    "title": "We bring <strong>precision medicine</strong> to <strong>female health</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
-    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and <strong>bring precision medicine to female health",
+    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health",
     "AREAS": {
       "title": "team expertise areas",
       "endometriosis": "endometriosis",
@@ -85,8 +85,10 @@
     }
   },
   "JOIN-US": {
-    "title": "Join us",
-    "intro": "Our team is growing. We need passionate people who want to make an impact on the future of food. Check out our vacancies and apply now."
+    "title": "Let's build something <strong>together</strong>",
+    "subtitle": "Come innovate, collaborate, and take part on the endometriosis innovation.",
+    "catch-phrase": "Find your next job!",
+    "intro": "Our team is growing. Come innovate, collaborate, and take part on the endometriosis innovation. Check out our vacancies and apply now."
   },
   "404": {
     "title": "Error 404",

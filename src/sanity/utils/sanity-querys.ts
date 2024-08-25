@@ -55,7 +55,9 @@ export async function getTeamMembers() {
       email,
       linkedin,
       "profileImage": profileImage.asset->url,
-      priority
+      priority,
+      isFemale,
+      isScientist
     }`,
     undefined,
     { cache: 'no-store' },
@@ -70,6 +72,7 @@ export async function getPositions() {
       positionLocation,
       positionType,
       positionDescription,
+      linkToApply
     }`,
     undefined,
     { cache: 'no-store' },

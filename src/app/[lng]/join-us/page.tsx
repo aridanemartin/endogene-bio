@@ -10,8 +10,9 @@ const Page = async ({ params: { lng } }) => {
 
   return (
     <>
-      <PageHeader />
       <Layout maxWidth="1100px">
+        <Headline titleKey="JOIN-US.title" lng={lng} />
+        <PageHeader />
         <Headline
           lng={lng}
           titleKey="JOIN-US.intro"

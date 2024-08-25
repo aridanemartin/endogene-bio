@@ -4,6 +4,7 @@
 
 .technologyIntroText {
   font-size: 1.5rem;
+  line-height: 1.8rem;
   padding-bottom: 3rem;
   font-family: var(--font-open-sans);
 }

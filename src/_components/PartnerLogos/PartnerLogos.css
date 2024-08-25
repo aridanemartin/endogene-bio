@@ -9,3 +9,17 @@
   gap: 1rem;
   margin-bottom: 3rem;
 }
+
+.partnerLogoWrapper {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width < 768px) {
+  .partnerLogos {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}

@@ -1,13 +1,13 @@
 import Header from '@components/Header/Header'
 import Layout from '@components/Layout/Layout'
-import banner from '@assets/pictures/legal.webp'
+import banner from '@assets/pictures/labTalk.webp'
 import '@styles/TermsOfUse.css'
 
 export default function termsOfUse() {
   return (
-    <div className="legal">
+    <>
       <Header title="Terms of Use" image={banner} />
-      <Layout maxWidth="1450px">
+      <Layout maxWidth="1450px" className="legal">
         <div className="legalText">
           <h2 className="legalTextTitle">Terms of Use</h2>
           <h2>Introduction and definitions</h2>
@@ -104,6 +104,6 @@ export default function termsOfUse() {
           </p>
         </div>
       </Layout>
-    </div>
+    </>
   )
 }

@@ -7,7 +7,6 @@
     margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    color: var(--main-pink);
   }
 
   .position {
@@ -22,10 +21,11 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
+    text-decoration: none;
 
-    h3 {
+    /* h3 {
       color: var(--main-pink);
-    }
+    } */
 
     .positionDescription {
       display: flex;
@@ -36,6 +36,11 @@
     h3 {
       font-size: 1.5rem;
       margin-right: 0.5rem;
+      color: black;
+    }
+
+    p {
+      color: #333;
     }
   }
 

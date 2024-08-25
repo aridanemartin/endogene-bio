@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './PositionsList.css'
 
 export const PositionsList = ({ positions }) => {
@@ -6,11 +7,17 @@ export const PositionsList = ({ positions }) => {
       <ul>
         {positions.map((position, index) => (
           <li className="position" key={index}>
-            <h3>{position.positionName}</h3>
-            <div className="positionDescription">
-              <p>{position.positionLocation}</p>
-              <p>({position.positionType})</p>
-            </div>
+            <Link
+              href={position.linkToApply}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>{position.positionName}</h3>
+              <div className="positionDescription">
+                <p>{position.positionLocation}</p>
+                <p>({position.positionType})</p>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

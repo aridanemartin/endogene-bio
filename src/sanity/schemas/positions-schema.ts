@@ -31,6 +31,18 @@ const positions = {
         },
       ],
     },
+    {
+      name: 'linkToApply',
+      title: 'Link to Apply',
+      type: 'url',
+      required: true,
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['https'],
+          allowRelative: false,
+          message: 'Please enter a URL starting with https://www...',
+        }),
+    },
   ],
 
   preview: {

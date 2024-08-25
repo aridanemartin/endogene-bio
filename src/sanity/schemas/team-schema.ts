@@ -56,6 +56,20 @@ const post = {
       type: 'number',
       required: true,
     },
+    {
+      name: 'isFemale',
+      title: '¿Es mujer?',
+      description: 'Marcar si el miembro del equipo es mujer',
+      type: 'boolean',
+      required: true,
+    },
+    {
+      name: 'isScientist',
+      title: '¿Es científico?',
+      description: 'Marcar si el miembro del equipo es científico',
+      type: 'boolean',
+      required: true,
+    },
   ],
 
   preview: {
