@@ -16,13 +16,14 @@ export async function getPosts(lng: string) {
     groq`*[_type == "post"]{
       _id,
       _createdAt,
+      publishedAt,
       "title": title.${lng},
       "description": description.${lng},
       timeToRead,
       "body": body_${lng},
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
-    } | order(_createdAt desc)`,
+    } | order(publishedAt desc)`,
     undefined,
     { cache: 'no-store' },
   )

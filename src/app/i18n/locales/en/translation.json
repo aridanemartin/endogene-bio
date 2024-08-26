@@ -7,7 +7,7 @@
     "join-us": "Join Us"
   },
   "HOME": {
-    "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
+    "slogan": "Building a <strong>legacy</strong> in <strong>female health.</strong>",
     "about-us": "About <strong>us</strong>",
     "our-values": {
       "title": "Our <strong>values</strong>",
@@ -34,7 +34,7 @@
       "investigation-title": "Investigation",
       "investigation-text": "EndoGene.Bio rigorously investigates menstrual blood to enhance understanding and improve endometriosis management."
     },
-    "trusted-by": "<strong>Funded by</strong> companies like",
+    "trusted-by": "<strong>Funded by</strong> organizations like",
     "in-numbers": "endogene.bio in <strong>numbers</strong>",
     "counter": {
       "team": "Team",
@@ -44,7 +44,7 @@
     }
   },
   "TEAM": {
-    "title": "Here <strong>we are.</strong> Meet <strong>the team.</strong>",
+    "title": "Meet <strong>the team.</strong>",
     "intro1": "<p>Period pain is not normal. But because of undiagnosed endometriosis, it’s a reality for 190 million women globally. At EndoGene.bio, we will be helping women across the world get access to early diagnosis through cutting-edge epigenetics.</p><p>Endometriosis affects 10% of women, takes 7 years to diagnose and has high societal and economic costs. In the EU and US alone, the estimated cost of delayed diagnosis reaches €300B.</p>",
     "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
   },
@@ -60,7 +60,7 @@
     "time-to-read": "min read"
   },
   "TECHNOLOGY": {
-    "title": "We bring <strong>precision medicine</strong> to <strong>female health</strong>",
+    "title": "We bring <strong>precision medicine</strong> to <strong>female health.</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
     "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health",
     "AREAS": {
@@ -75,11 +75,11 @@
     },
     "CAPABILITIES": {
       "title": "capabilities",
-      "1": "// <strong>150 m<sup>2</sup></strong> of facilities, including 42 m<sup>2</sup> of P2 laboratory space",
-      "2": "// <strong>Molecular biology:</strong> DNA, RNA, Methylation",
-      "3": "// <strong>Specific cell type isolation, phenotyping</strong> and <strong>immunoprofiling</strong>",
-      "4": "// <strong>Bioinformatic analysis:</strong> epigenetics, genetics, transcriptomics (bulk & single cell)",
-      "5": "// <strong>Sample expertise:</strong> menstrual blood, endometrial and endometriosis lesion biopsy"
+      "1": "// 150 m<sup>2</sup> of facilities, including 42 m<sup>2</sup> of P2 laboratory space",
+      "2": "// Molecular biology: DNA, RNA, Methylation",
+      "3": "// Specific cell type isolation, phenotyping and immunoprofiling</strong>",
+      "4": "// Bioinformatic analysis: epigenetics, genetics, transcriptomics (bulk & single cell)",
+      "5": "// Sample expertise: menstrual blood, endometrial and endometriosis lesion biopsy"
     }
   },
   "CONTACT": {

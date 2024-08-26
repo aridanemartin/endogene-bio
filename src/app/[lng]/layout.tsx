@@ -32,7 +32,7 @@ const openSans = Open_Sans({
 })
 
 const lexend = Lexend({
-  weight: ['100', '200', '400', '600'],
+  weight: ['300', '500', '600'],
   subsets: ['latin'],
   variable: '--font-lexend',
 })

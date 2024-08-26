@@ -16,7 +16,7 @@ export const BlogPostPreview = async ({ post, index, lng }) => {
   const selectedSvg = svgs[index % svgs.length]
   const isOdd = index % 2 === 0
 
-  const { month, year } = getFormattedDate(post._createdAt)
+  const { month, year } = getFormattedDate(post.publishedAt)
 
   return (
     <Link key={post.slug} href={`blog/${post.slug}`}>

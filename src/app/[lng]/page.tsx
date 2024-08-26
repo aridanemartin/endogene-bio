@@ -1,9 +1,7 @@
-import { getPosts, getTeamMembers } from 'src/sanity/utils/sanity-querys'
+import { getTeamMembers } from 'src/sanity/utils/sanity-querys'
 import Headline from '@components/Headline/Headline'
-import Hero from '@components/Hero/Hero'
 import { CardSection } from '@components/CardSection/CardSection'
 import Layout from '@components/Layout/Layout'
-import PictureSection from '@components/PictureSection/PictureSection'
 import { useTranslation } from '../i18n'
 import { PartnerLogos } from '@components/PartnerLogos/PartnerLogos'
 import type { Metadata } from 'next'
@@ -11,10 +9,6 @@ import { Counter } from '@components/Counter/Counter'
 import '../../styles/HomePage.css'
 import VideoHero from '@components/VideoHero/VideoHero'
 
-import HeroBannerImage from '../../_assets/pictures/endogenePrize.jpg'
-import determinationImage from '@assets/pictures/determination.webp'
-import humanityImage from '@assets/pictures/humanity.webp'
-import innovationImage from '@assets/pictures/innovation.webp'
 
 export const metadata: Metadata = {
   title: 'Endogene.Bio | Building a legacy in female health',
@@ -39,24 +33,6 @@ export default async function Home({ params: { lng } }) {
         <Headline titleKey="HOME.slogan" lng={lng} />
         <VideoHero />
         <Headline titleKey="HOME.our-values.title" lng={lng} />
-        {/* <PictureSection
-          picturePosition="left"
-          pictureSrc={determinationImage}
-          translationKey="HOME.our-values.determination"
-          lng={lng}
-        />
-        <PictureSection
-          picturePosition="left"
-          pictureSrc={humanityImage}
-          translationKey="HOME.our-values.humanity"
-          lng={lng}
-        />
-        <PictureSection
-          picturePosition="left"
-          pictureSrc={innovationImage}
-          translationKey="HOME.our-values.innovation"
-          lng={lng}
-        /> */}
         <CardSection t={t} />
         <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
         <PartnerLogos />

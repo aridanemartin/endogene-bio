@@ -30,7 +30,6 @@ h6 {
 }
 
 p,
-span,
-a {
+span {
   font-family: var(--font-open-sans);
 }
