@@ -17,6 +17,7 @@ export const LanguageSelector = ({ onChangeLanguage, lng }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(lng)
 
   const reorganizeLanguage = (lng) => {
+    if (lng === selectedLanguage) return
     setSelectedLanguage(lng)
     onChangeLanguage(lng)
   }

@@ -28,7 +28,7 @@ export default function Nav({ lng }: { lng: string }) {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng)
     const currentUrl = window.location.href
-    const newUrl = currentUrl.replace(/\/(en|es|fr)\//, `/${lng}/`)
+    const newUrl = currentUrl.replace(/\/(en|es|fr)(\/|$)/, `/${lng}$2`)
     window.location.href = newUrl
   }
 
@@ -156,7 +156,7 @@ export default function Nav({ lng }: { lng: string }) {
                 {t('NAV.contact')}
               </Link>
             </motion.li>
-            <motion.li>
+            <motion.li variants={linkAnimation}>
               <LanguageSelector onChangeLanguage={changeLanguage} lng={lng} />
             </motion.li>
           </motion.ul>
