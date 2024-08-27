@@ -1,6 +1,4 @@
 .partnerLogos {
-  filter: grayscale(1);
-  opacity: 0.6;
   display: flex;
   flex-flow: wrap;
   align-content: stretch;
@@ -11,10 +9,19 @@
 }
 
 .partnerLogoWrapper {
+  filter: grayscale(1);
+  opacity: 0.6;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.partnerLogoWrapper:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media (width < 768px) {

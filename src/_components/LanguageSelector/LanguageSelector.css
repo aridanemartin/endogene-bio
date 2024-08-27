@@ -1,0 +1,46 @@
+.languageSelector {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.languageSelectorContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  border-radius: 1rem;
+  z-index: 1;
+  height: 30px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.languageSelector:hover .languageSelectorContent {
+  height: 100px; /* sumar height de las banderas mas el gap */
+}
+
+.languageFlag {
+  height: 30px;
+  width: 30px;
+
+  img {
+    transform: scale(0.8);
+  }
+}
+
+@media (width < 1100px) {
+  .languageSelector {
+    margin-left: 0;
+  }
+
+  .languageSelectorContent {
+    margin-top: 5rem;
+    flex-direction: row;
+    overflow: visible;
+  }
+}

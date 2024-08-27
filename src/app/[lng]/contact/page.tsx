@@ -14,24 +14,22 @@ export const metadata: Metadata = {
 }
 
 const Contacto = async ({ params: { lng } }) => {
-  const { t } = await useTranslation(lng)
-
   return (
     <Layout maxWidth="1100px" className="contactPage">
       <Headline lng={lng} titleKey="CONTACT.title" />
-      <div className="contacto">
-        <section className="form-section">
+      <section className="contacto">
+        <article className="form-section">
           <ContactForm lng={lng} />
-        </section>
-        <section className="image-section">
+        </article>
+        <div className="image-section">
           <Image
             className="image"
             src={contacto}
             alt="Con Nutrición Saludable - Contacto"
             fill
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </Layout>
   )
 }

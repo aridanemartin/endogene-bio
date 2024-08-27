@@ -35,6 +35,7 @@
     overflow: hidden;
 
     &-img {
+      transform: scale(0.99);
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -162,12 +163,6 @@
     &:hover {
       box-shadow: none;
       transform: none;
-    }
-
-    &__image {
-      &-img {
-        transform: scale(0.99);
-      }
     }
 
     &__titleWrapper {

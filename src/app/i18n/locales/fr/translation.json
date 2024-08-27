@@ -7,7 +7,7 @@
     "join-us": "Rejoignez-nous"
   },
   "HOME": {
-    "slogan": "Construire un <strong>héritage</strong> dans la <strong>santé féminine</strong>",
+    "slogan": "Construire un <strong>héritage</strong> dans la <strong>santé féminine.</strong>",
     "about-us": "À propos de <strong>nous</strong>",
     "our-values": {
       "title": "Nos <strong>valeurs</strong>",
@@ -44,7 +44,7 @@
     }
   },
   "TEAM": {
-    "title": "Ici, <strong>nous sommes.</strong> Rencontrez <strong>l'équipe.</strong>",
+    "title": "Rencontrez <strong>l'équipe.</strong>",
     "intro1": "<p>La douleur menstruelle n'est pas normale. Mais à cause de l'endométriose non diagnostiquée, c'est une réalité pour 190 millions de femmes dans le monde. Chez EndoGene.bio, nous aiderons les femmes du monde entier à accéder à un diagnostic précoce grâce à l'épigénétique de pointe.</p><p>L'endométriose affecte 10% des femmes, prend 7 ans pour être diagnostiquée et a des coûts sociaux et économiques élevés. Rien qu'en Europe et aux États-Unis, le coût estimé du diagnostic tardif atteint 300 milliards d'euros.</p>",
     "intro2": "<p>Cela est dû à l'absence de tests spécifiques et précoces. Chez EndoGene.Bio, nous développons un test diagnostique sur ordonnance basé sur des biomarqueurs épigénétiques trouvés dans le sang menstruel que les patientes peuvent faire dans le confort de leur foyer.</p><p>Grâce à cette technologie, nous réduirons le délai de diagnostic de 7 ans à deux consultations : une pour faire votre test, une pour obtenir vos résultats.</p>"
   },
@@ -60,7 +60,7 @@
     "time-to-read": "min de lecture"
   },
   "TECHNOLOGY": {
-    "title": "Nous apportons la <strong>médecine de précision</strong> à la <strong>santé féminine</strong>",
+    "title": "Nous apportons la <strong>médecine de précision</strong> à la <strong>santé féminine.</strong>",
     "title2": "Nous avons une <strong>équipe dédiée</strong> d'experts en <strong>santé féminine</strong>, spécialisée dans les sciences utérines et de l'endomètre.",
     "introText": "La plateforme de recherche de <strong>endogene.bio</strong> aide à découvrir des biomarqueurs moléculaires pour mieux diagnostiquer et stratifier les patientes, et améliorer les processus de découverte de médicaments.<br />Nous travaillons avec des laboratoires d'analyses pour fournir des tests diagnostiques et nous assistons les entreprises pharmaceutiques dans l'optimisation du développement de médicaments et la stratification des patientes pour les essais cliniques.<br /><br /> Nous sommes déterminés à traiter la sous-représentation historique de la biologie féminine dans la recherche médicale et à apporter la médecine de précision à la santé féminine.",
     "AREAS": {
@@ -95,7 +95,7 @@
     }
   },
   "JOIN-US": {
-    "title": "Construisons quelque chose <strong>ensemble</strong>",
+    "title": "Construisons quelque chose <strong>ensemble.</strong>",
     "subtitle": "Venez innover, collaborer et participer à l'innovation contre l'endométriose.",
     "catch-phrase": "Trouvez votre prochain emploi !",
     "intro": "Notre équipe est en pleine croissance. Venez innover, collaborer et participer à l'innovation contre l'endométriose. Consultez nos offres d'emploi et postulez dès maintenant."

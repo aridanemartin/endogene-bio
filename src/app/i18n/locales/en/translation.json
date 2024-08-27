@@ -49,7 +49,7 @@
     "intro2": "<p>This is caused by a lack of specific and early tests. At EndoGene.Bio, we are developing a prescription diagnostic test based on epigenetic biomarkers found in menstrual blood that patients can take in the comfort of their home</p><p>With this technology, we will reduce time to diagnosis from 7 years to two consultations: one to get your test done, one to get your results.</p>"
   },
   "BLOG": {
-    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio</strong>",
+    "title": "See what's <strong>going on</strong> at <strong>endoGene.bio.</strong>",
     "no-posts": {
       "title": "Posts not available",
       "message": "Looks like our latest updates are still in the lab."
@@ -62,7 +62,7 @@
   "TECHNOLOGY": {
     "title": "We bring <strong>precision medicine</strong> to <strong>female health.</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
-    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes.<br />We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health",
+    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes using <strong>menstrual blood</strong>.<br /><br /> We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinica<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health",
     "AREAS": {
       "title": "team expertise areas",
       "endometriosis": "endometriosis",
@@ -98,7 +98,7 @@
     "title": "Let's build something <strong>together</strong>",
     "subtitle": "Come innovate, collaborate, and take part on the endometriosis innovation.",
     "catch-phrase": "Find your next job!",
-    "intro": "Our team is growing. Come innovate, collaborate, and take part on the endometriosis innovation. Check out our vacancies and apply now."
+    "intro": "Our team is growing.<br /><br /> Come innovate, collaborate, and take part on the endometriosis innovation.<br /><br /> Check out our vacancies and apply now."
   },
   "404": {
     "title": "Error 404",
@@ -112,6 +112,12 @@
     "title": "Thank you for your message",
     "message": "We will contact you soon.",
     "go-back": "Go back to homepage"
+  },
+  "EMAILS": {
+    "thanks-for-reaching-out": {
+      "subject": "Thank you for reaching out to endogene.bio",
+      "message": "Thank you for reaching out to us. We will contact you soon."
+    }
   },
   "COMMON": {
     "months": {

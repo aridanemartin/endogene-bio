@@ -7,7 +7,7 @@
     "join-us": "Trabaja con nosotros"
   },
   "HOME": {
-    "slogan": "Building a <strong>legacy</strong> in <strong>female health</strong>",
+    "slogan": "Building a <strong>legacy</strong> in <strong>female health.</strong>",
     "about-us": "Sobre <strong>nosotros</strong>",
     "our-values": {
       "title": "Nuestros <strong>valores</strong>",
@@ -44,12 +44,12 @@
     }
   },
   "TEAM": {
-    "title": "Aquí <strong>estamos.</strong> Conoce al <strong>equipo.</strong>",
+    "title": "Conoce al <strong>equipo.</strong>",
     "intro1": "<p>El dolor menstrual no es normal. Pero debido a la endometriosis no diagnosticada, es una realidad para 190 millones de mujeres en todo el mundo. En EndoGene.bio, ayudaremos a las mujeres de todo el mundo a acceder a un diagnóstico temprano a través de la epigenética de vanguardia.</p><p>La endometriosis afecta al 10% de las mujeres, tarda 7 años en diagnosticarse y tiene altos costos sociales y económicos. Solo en la UE y EE. UU., el costo estimado del diagnóstico tardío alcanza los €300 mil millones.</p>",
     "intro2": "<p>Esto se debe a la falta de pruebas específicas y tempranas. En EndoGene.Bio, estamos desarrollando una prueba diagnóstica por prescripción basada en biomarcadores epigenéticos encontrados en la sangre menstrual que las pacientes pueden realizar en la comodidad de su hogar.</p><p>Con esta tecnología, reduciremos el tiempo de diagnóstico de 7 años a dos consultas: una para realizar la prueba y otra para obtener los resultados.</p>"
   },
   "BLOG": {
-    "title": "Ve lo que está <strong>sucediendo</strong> en <strong>endoGene.bio</strong>",
+    "title": "Ve lo que está <strong>sucediendo</strong> en <strong>endoGene.bio.</strong>",
     "no-posts": {
       "title": "Publicaciones no disponibles",
       "message": "Parece que nuestras últimas actualizaciones aún están en el laboratorio."
@@ -60,7 +60,7 @@
     "time-to-read": "min de lectura"
   },
   "TECHNOLOGY": {
-    "title": "Llevamos la <strong>medicina de precisión</strong> a la <strong>salud femenina</strong>",
+    "title": "Llevamos la <strong>medicina de precisión</strong> a la <strong>salud femenina.</strong>",
     "title2": "Contamos con un <strong>equipo dedicado</strong> de expertos en <strong>salud femenina</strong>, especializados en la ciencia uterina y del endometrio.",
     "introText": "La plataforma de investigación de <strong>endogene.bio</strong> ayuda a descubrir biomarcadores moleculares para mejorar el diagnóstico y la estratificación de pacientes, y mejorar los procesos de descubrimiento de fármacos.<br />Trabajamos con laboratorios analíticos para proporcionar pruebas de diagnóstico y ayudamos a las empresas farmacéuticas a optimizar el desarrollo de medicamentos y la estratificación de pacientes para ensayos clínicos.<br /><br /> Estamos decididos a abordar la subrepresentación histórica de la biología femenina en la investigación médica y llevar la medicina de precisión a la salud femenina.",
     "AREAS": {
@@ -95,7 +95,7 @@
     }
   },
   "JOIN-US": {
-    "title": "Construyamos algo <strong>juntos</strong>",
+    "title": "Construyamos algo <strong>juntos.</strong>",
     "subtitle": "Ven a innovar, colaborar y participa en la innovación contra la endometriosis.",
     "catch-phrase": "¡Encuentra tu próximo trabajo!",
     "intro": "Nuestro equipo está creciendo. Ven a innovar, colaborar y contribuir al avance en el tratamiento de la endometriosis. Consulta nuestras vacantes y aplica ahora."

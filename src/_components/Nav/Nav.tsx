@@ -13,9 +13,10 @@ import navLogo from '@assets/logos/endogeneLogo.svg'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'src/app/i18n/client'
 import { useMediaQuery } from 'src/_hooks/useMediaQuery'
+import { LanguageSelector } from '@components/LanguageSelector/LanguageSelector'
 
 export default function Nav({ lng }: { lng: string }) {
-  const { t } = useTranslation(lng)
+  const { t, i18n } = useTranslation(lng)
   const [isOpen, setIsOpen] = useState(false)
   const isDesktop = useMediaQuery(1100)
   const toggle = () => setIsOpen(!isOpen)
@@ -23,6 +24,13 @@ export default function Nav({ lng }: { lng: string }) {
   const isBurgerIconWhite =
     (/\/blog\/.+/.test(pathname) || pathname.includes('terms-of-use')) &&
     !isOpen
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng)
+    const currentUrl = window.location.href
+    const newUrl = currentUrl.replace(/\/(en|es|fr)\//, `/${lng}/`)
+    window.location.href = newUrl
+  }
 
   const linkAnimation = {
     open: {
@@ -141,20 +149,17 @@ export default function Nav({ lng }: { lng: string }) {
             </motion.li>
             <motion.li variants={linkAnimation}>
               <Link
-                className={`link specialLink${
-                  pathname === `/${lng}/contact` ? 'active' : ''
-                }`}
+                className={`link specialLink`}
                 href={`/${lng}/contact`}
                 onClick={toggle}
               >
                 {t('NAV.contact')}
               </Link>
             </motion.li>
+            <motion.li>
+              <LanguageSelector onChangeLanguage={changeLanguage} lng={lng} />
+            </motion.li>
           </motion.ul>
-
-          {/* <div className="navContent__social">
-            <SocialIcons socialLinks={socialLinks} />
-          </div> */}
         </div>
       </div>
     </>

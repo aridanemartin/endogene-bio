@@ -28,12 +28,14 @@ export const BlogPostPreview = async ({ post, index, lng }) => {
           <div className="blogPostPreview__shape">
             <Image src={selectedSvg} alt="Blog shape" />
           </div>
-          <Image
-            className="blogPostPreview__image-img"
-            src={post.mainImage}
-            alt={enhanceAltDescription(post.title)}
-            fill
-          />
+          <div className="blogPostPreview__image-img">
+            <Image
+              src={post.mainImage}
+              alt={enhanceAltDescription(post.title)}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
         </div>
         <div className="blogPostPreview__text">
           <div className="blogPostPreview__titleWrapper">

@@ -14,7 +14,7 @@ import {
 } from '@react-email/components'
 import * as React from 'react'
 
-interface mensajeCarolinaEmailProps {
+interface AutomaticResponseEmailProps {
   name?: string
   message?: string
   email?: string
@@ -22,12 +22,11 @@ interface mensajeCarolinaEmailProps {
 
 const domainUrl = 'https://www.endogene.bio'
 
-export const MensajeCarolinaEmail = ({
+export const AutomaticResponseEmail = ({
   name,
   message,
   email,
-}: mensajeCarolinaEmailProps) => {
-  const year = new Date().getFullYear()
+}: AutomaticResponseEmailProps) => {
   const getName = (name: string) => {
     if (!name) return
     const nameSplitted = name.split(' ')
@@ -49,7 +48,7 @@ export const MensajeCarolinaEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/carolinaLogoTransparent.png`}
+              src={`${domainUrl}/static/endogeneLogo.svg`}
               width="100"
               height="100"
             />
@@ -99,8 +98,7 @@ export const MensajeCarolinaEmail = ({
               color: 'rgb(0,0,0, 0.7)',
             }}
           >
-            © {`${year}`} | Carolina Almeida, C. Alonso Alvarado, 15, Oficina
-            4, 35003 Las Palmas de Gran Canaria, Las Palmas |{`${domainUrl}`}
+            © 2024 | endogene.bio |{`${domainUrl}`}
           </Text>
         </Container>
       </Body>
@@ -108,7 +106,7 @@ export const MensajeCarolinaEmail = ({
   )
 }
 
-export default MensajeCarolinaEmail
+export default AutomaticResponseEmail
 
 const main = {
   backgroundColor: '#fff',
@@ -151,18 +149,9 @@ const boxInfos = {
 }
 
 const headerBackground = {
-  backgroundImage: `url(${domainUrl}/static/contacto.webp)`,
+  backgroundImage: `url(${domainUrl}/static/labTalk.webp)`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   height: '200px',
-}
-
-const mapaOficina = {
-  backgroundImage: `url(${domainUrl}/static/mapaOficina.webp)`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  height: '200px',
-  marginBottom: '2rem',
 }

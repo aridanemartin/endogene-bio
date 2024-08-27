@@ -19,6 +19,10 @@ const ContactForm = ({ lng }) => {
     name: '',
     email: '',
     message: '',
+    translation: {
+      title: t('EMAILS.thanks-for-reaching-out.subject'),
+      message: t('EMAILS.thanks-for-reaching-out.message'),
+    },
   })
 
   const [formErrors, setFormErrors] = useState({
@@ -44,7 +48,7 @@ const ContactForm = ({ lng }) => {
 
     // Check if each field is filled
     Object.keys(formData).forEach((field) => {
-      if (formData[field].trim() === '') {
+      if (field !== 'translation' && formData[field].trim() === '') {
         newErrors[
           field
         ] = `Por favor introduzca su ${fieldSpanishNames[field]}.`
@@ -81,6 +85,10 @@ const ContactForm = ({ lng }) => {
         name: '',
         email: '',
         message: '',
+        translation: {
+          title: t('EMAILS.thanks-for-reaching-out.subject'),
+          message: t('EMAILS.thanks-for-reaching-out.message'),
+        },
       })
       setIsEmailSent(true)
     } catch (error) {
