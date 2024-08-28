@@ -113,6 +113,13 @@
     "message": "Nos pondremos en contacto contigo pronto.",
     "go-back": "Volver a la página de inicio"
   },
+  "EMAILS": {
+    "thanks-for-reaching-out": {
+      "dear": "Estimado/a",
+      "subject": "Gracias por contactar con endogene.bio",
+      "message": "Gracias por ponerte en contacto con nosotros. Nos pondremos en contacto contigo pronto."
+    }
+  },
   "COMMON": {
     "months": {
       "january": "Enero",

@@ -1,36 +1,55 @@
-import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 import ThanksForReachingOutEmail from 'src/_emails/thank-you-for-reaching-out'
 import AutomaticResponseEmail from 'src/_emails/message-received'
-// import i18nEmailOnly from './i18n-email-only/i18n-email-only'
-
-const resend = new Resend(process.env.NEXT_RESEND_API_KEY)
+import nodemailer from 'nodemailer'
+import { render } from '@react-email/components'
 
 export async function POST(req) {
   const res = await req.json()
   const { name, email, message, translation } = res
+  const { NEXT_SMTP_EMAIL, NEXT_SMTP_PASSWORD } = process.env
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: NEXT_SMTP_EMAIL,
+      pass: NEXT_SMTP_PASSWORD,
+    },
+  })
+
+  const automaticResponseEmail = render(
+    AutomaticResponseEmail({
+      name,
+      message,
+      email,
+    }),
+  )
+
+  const thanksForReachingOutEmail = render(
+    ThanksForReachingOutEmail({
+      name,
+      translation,
+    }),
+  )
 
   try {
-    await resend.emails.send({
-      from: 'info@endogene.bio',
-      to: 'aridanemartin@gmail.com',
-      subject: `Consulta Web - ${name}`,
-      react: AutomaticResponseEmail({
-        name,
-        message,
-        email,
-      }),
-    })
-
-    await resend.emails.send({
-      from: 'info@endogene.bio',
+    const options = {
+      from: NEXT_SMTP_EMAIL,
       to: email,
       subject: `${name}, ${translation.subject}`,
-      react: ThanksForReachingOutEmail({
-        name,
-        translation,
-      }),
-    })
+      html: thanksForReachingOutEmail,
+    }
+
+    await transporter.sendMail(options)
+
+    const options2 = {
+      from: NEXT_SMTP_EMAIL,
+      to: 'aridanemartin@gmail.com',
+      subject: `Email Web - ${name}`,
+      html: automaticResponseEmail,
+    }
+
+    await transporter.sendMail(options2)
 
     return NextResponse.json({ success: true })
   } catch (error) {

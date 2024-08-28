@@ -115,6 +115,7 @@
   },
   "EMAILS": {
     "thanks-for-reaching-out": {
+      "dear": "Dear",
       "subject": "Thank you for reaching out to endogene.bio",
       "message": "Thank you for reaching out to us. We will contact you soon."
     }

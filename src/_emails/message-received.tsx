@@ -48,7 +48,7 @@ export const AutomaticResponseEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/endogeneLogo.svg`}
+              src={`${domainUrl}/static/horizontalLogo.webp`}
               width="100"
               height="100"
             />

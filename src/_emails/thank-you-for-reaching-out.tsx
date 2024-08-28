@@ -17,6 +17,7 @@ import * as React from 'react'
 interface ThanksForReachingOutEmailProps {
   name?: string
   translation: {
+    dear: string
     subject: string
     message: string
   }
@@ -26,9 +27,13 @@ const domainUrl = 'https://www.endogene.bio'
 
 export const ThanksForReachingOutEmail = ({
   name,
-  translation,
+  translation = {
+    dear: 'Estimado/a',
+    subject: 'Gracias por contactarnos',
+    message:
+      'Hemos recibido tu mensaje y te responderemos lo antes posible. Gracias por tu interés en End',
+  },
 }: ThanksForReachingOutEmailProps) => {
-  const year = new Date().getFullYear()
   const getName = (name: string) => {
     if (!name) return
     const nameSplitted = name.split(' ')
@@ -47,7 +52,7 @@ export const ThanksForReachingOutEmail = ({
         <Container>
           <Section style={logo}>
             <Img
-              src={`${domainUrl}/static/endogeneLogo.svg`}
+              src={`${domainUrl}/static/horizontalLogo.webp`}
               width="100"
               height="100"
             />
@@ -64,7 +69,7 @@ export const ThanksForReachingOutEmail = ({
                     color: '#0e6835',
                   }}
                 >
-                  Estimado/a <b>{getName(name)}</b>,
+                  {translation.dear} <b>{getName(name)}</b>,
                 </Heading>
                 <Heading
                   as="h2"
