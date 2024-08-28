@@ -42,7 +42,8 @@ export const ThanksForReachingOutEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>{translation.subject}</Preview>
+      {/* Preview gris que se ve a la derecha del mensaje */}
+      <Preview>{translation.message}</Preview>
       <Body style={main}>
         <Container>
           <Section style={containerLogo}>

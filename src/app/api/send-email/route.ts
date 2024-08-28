@@ -44,7 +44,7 @@ export async function POST(req) {
 
     const options2 = {
       from: NEXT_SMTP_EMAIL,
-      to: 'aridanemartin@gmail.com',
+      to: 'info@endogene.bio',
       subject: `Email Web - ${name}`,
       html: automaticResponseEmail,
     }

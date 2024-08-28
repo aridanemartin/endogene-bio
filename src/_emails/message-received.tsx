@@ -30,7 +30,7 @@ export const AutomaticResponseEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>Mensaje de: </Preview>
+      <Preview>Mensaje recibido a través de www.endogene.bio</Preview>
       <Body style={main}>
         <Container>
           <Section style={containerLogo}>
