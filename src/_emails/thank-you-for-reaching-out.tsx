@@ -12,7 +12,6 @@ import {
   Section,
   Text,
 } from '@react-email/components'
-import * as React from 'react'
 
 interface ThanksForReachingOutEmailProps {
   name?: string
@@ -27,12 +26,7 @@ const domainUrl = 'https://www.endogene.bio'
 
 export const ThanksForReachingOutEmail = ({
   name,
-  translation = {
-    dear: 'Estimado/a',
-    subject: 'Gracias por contactarnos',
-    message:
-      'Hemos recibido tu mensaje y te responderemos lo antes posible. Gracias por tu interés en End',
-  },
+  translation,
 }: ThanksForReachingOutEmailProps) => {
   const getName = (name: string) => {
     if (!name) return
@@ -50,37 +44,27 @@ export const ThanksForReachingOutEmail = ({
       <Preview>{translation.subject}</Preview>
       <Body style={main}>
         <Container>
-          <Section style={logo}>
+          <Section style={containerLogo}>
             <Img
               src={`${domainUrl}/static/horizontalLogo.webp`}
-              width="100"
-              height="100"
+              width="350"
+              height="50"
             />
           </Section>
           <Section style={content}>
             <Row style={headerBackground}>{null}</Row>
-            <Row style={{ ...boxInfos, paddingBottom: '0' }}>
+            <Row style={{ ...boxInfos }}>
               <Column>
                 <Heading
                   style={{
                     fontSize: 32,
                     textAlign: 'center',
-                    marginBottom: '0',
-                    color: '#0e6835',
+                    marginBottom: '16px',
+                    color: '#79c1c0',
                   }}
                 >
                   {translation.dear} <b>{getName(name)}</b>,
                 </Heading>
-                <Heading
-                  as="h2"
-                  style={{
-                    fontSize: 26,
-                    textAlign: 'center',
-                    margin: 0,
-                    color: '#0e6835',
-                    marginBottom: '2rem',
-                  }}
-                ></Heading>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
                   {translation.message}
                 </Text>
@@ -97,11 +81,11 @@ export const ThanksForReachingOutEmail = ({
           <Text
             style={{
               textAlign: 'center',
-              fontSize: 12,
+              fontSize: 16,
               color: 'rgb(0,0,0, 0.7)',
             }}
           >
-            © 2024 | endogene.bio |{`${domainUrl}`}
+            © 2024 | endogene.bio | {`${domainUrl}`}
           </Text>
         </Container>
       </Body>
@@ -119,9 +103,11 @@ const paragraph = {
   fontSize: 16,
 }
 
-const logo = {
-  height: '100px',
-  padding: '30px 20px',
+const containerLogo = {
+  display: 'flex',
+  justifyContent: 'center',
+  padding: '48px 0px',
+  transform: 'scale(0.8)',
 }
 
 const containerButton = {
@@ -131,7 +117,7 @@ const containerButton = {
 }
 
 const button = {
-  backgroundColor: '#0e6835',
+  backgroundColor: '#e25574',
   padding: '12px 30px',
   borderRadius: 3,
   color: '#FFF',
@@ -147,7 +133,8 @@ const content = {
 }
 
 const boxInfos = {
-  padding: '20px 40px',
+  padding: '0 32px',
+  paddingBottom: '32px',
 }
 
 const headerBackground = {

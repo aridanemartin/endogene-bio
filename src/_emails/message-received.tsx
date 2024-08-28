@@ -27,66 +27,54 @@ export const AutomaticResponseEmail = ({
   message,
   email,
 }: AutomaticResponseEmailProps) => {
-  const getName = (name: string) => {
-    if (!name) return
-    const nameSplitted = name.split(' ')
-    if (nameSplitted.length > 3) {
-      return `${nameSplitted[0]} ${nameSplitted[1]}`
-    } else {
-      return nameSplitted[0]
-    }
-  }
-
   return (
     <Html>
       <Head />
-      <Preview>
-        Apreciamos tu interés en cuidar de tu salud y bienestar, y estamos
-        comprometidos a brindarte el mejor servicio posible.
-      </Preview>
+      <Preview>Mensaje de: </Preview>
       <Body style={main}>
         <Container>
-          <Section style={logo}>
+          <Section style={containerLogo}>
             <Img
               src={`${domainUrl}/static/horizontalLogo.webp`}
-              width="100"
-              height="100"
+              width="350"
+              height="50"
             />
           </Section>
-
           <Section style={content}>
             <Row style={headerBackground}>{null}</Row>
-            <Row style={{ ...boxInfos, paddingBottom: '0' }}>
+            <Row style={{ ...boxInfos }}>
               <Column>
                 <Heading
                   style={{
                     fontSize: 32,
                     textAlign: 'center',
-                    marginBottom: '0',
-                    color: '#0e6835',
+                    color: '#79c1c0',
                   }}
                 >
-                  Mensaje de <b>{getName(name)}</b>,
+                  Message from <br />
                 </Heading>
                 <Heading
-                  as="h2"
                   style={{
-                    fontSize: 18,
+                    fontSize: 32,
                     textAlign: 'center',
-                    margin: 0,
-                    color: '#0e6835',
-                    marginBottom: '2rem',
+                    marginBottom: '16px',
+                    marginTop: -20,
                   }}
                 >
-                  {email}
+                  <b>{name}</b>,
                 </Heading>
+                <Text
+                  style={{ ...paragraph, marginTop: -5, textAlign: 'center' }}
+                >
+                  ({email})
+                </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>{message}</Text>
               </Column>
             </Row>
             <Row style={{ ...boxInfos, paddingTop: '0' }}>
               <Column style={containerButton} colSpan={2}>
                 <Button style={button} href={domainUrl}>
-                  Ir a la web
+                  Volver a la web
                 </Button>
               </Column>
             </Row>
@@ -94,11 +82,11 @@ export const AutomaticResponseEmail = ({
           <Text
             style={{
               textAlign: 'center',
-              fontSize: 12,
+              fontSize: 16,
               color: 'rgb(0,0,0, 0.7)',
             }}
           >
-            © 2024 | endogene.bio |{`${domainUrl}`}
+            © 2024 | endogene.bio | {`${domainUrl}`}
           </Text>
         </Container>
       </Body>
@@ -110,16 +98,17 @@ export default AutomaticResponseEmail
 
 const main = {
   backgroundColor: '#fff',
-  fontFamily: 'forum',
 }
 
 const paragraph = {
   fontSize: 16,
 }
 
-const logo = {
-  height: '100px',
-  padding: '30px 20px',
+const containerLogo = {
+  display: 'flex',
+  justifyContent: 'center',
+  padding: '48px 0px',
+  transform: 'scale(0.8)',
 }
 
 const containerButton = {
@@ -129,7 +118,7 @@ const containerButton = {
 }
 
 const button = {
-  backgroundColor: '#0e6835',
+  backgroundColor: '#e25574',
   padding: '12px 30px',
   borderRadius: 3,
   color: '#FFF',
@@ -145,7 +134,8 @@ const content = {
 }
 
 const boxInfos = {
-  padding: '20px 40px',
+  padding: '0 32px',
+  paddingBottom: '32px',
 }
 
 const headerBackground = {
