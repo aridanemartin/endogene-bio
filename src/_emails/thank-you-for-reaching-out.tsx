@@ -46,7 +46,7 @@ export const ThanksForReachingOutEmail = ({
         <Container>
           <Section style={containerLogo}>
             <Img
-              src={`${domainUrl}/static/horizontalLogo.webp`}
+              src={`${domainUrl}/static/horizontalLogo.png`}
               width="350"
               height="50"
             />
