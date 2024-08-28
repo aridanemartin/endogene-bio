@@ -62,7 +62,7 @@
   "TECHNOLOGY": {
     "title": "We bring <strong>precision medicine</strong> to <strong>female health.</strong>",
     "title2": "We have a dedicated <strong>team of experts</strong> in <strong>female health</strong>, specialised in uterine and endometrium science.",
-    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes using <strong>menstrual blood</strong>.<br /><br /> We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinica<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health",
+    "introText": "<strong>endogene.bio</strong>’s research platform helps discover molecular biomarkers to better diagnose and stratify patients, and to improve drug discovery processes using <strong>menstrual blood</strong>.<br /><br /> We work with analytical laboratories to provide diagnostic tests and we assist pharmaceutical companies in optimizing drug development and patient stratification for clinical trials.<br /><br /> We are determined to address the historical underrepresentation of female biology in medical research and bring precision medicine to female health.",
     "AREAS": {
       "title": "team expertise areas",
       "endometriosis": "endometriosis",
@@ -95,10 +95,10 @@
     }
   },
   "JOIN-US": {
-    "title": "Let's build something <strong>together</strong>",
+    "title": " let’s build a legacy <strong>together!</strong>",
     "subtitle": "Come innovate, collaborate, and take part on the endometriosis innovation.",
     "catch-phrase": "Find your next job!",
-    "intro": "Our team is growing.<br /><br /> Come innovate, collaborate, and take part on the endometriosis innovation.<br /><br /> Check out our vacancies and apply now."
+    "intro": "Our team is growing.<br /><br /> Come and help us build a legacy in female health!<br /><br /> Check out our vacancies and apply now."
   },
   "404": {
     "title": "Error 404",

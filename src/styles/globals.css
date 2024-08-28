@@ -27,9 +27,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-lexend);
+  line-height: normal;
 }
 
 p,
 span {
   font-family: var(--font-open-sans);
+  line-height: normal;
 }

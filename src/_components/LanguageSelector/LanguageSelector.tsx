@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState, useMemo } from 'react'
-import englishFlag from '@assets/flags/english.png'
-import spanishFlag from '@assets/flags/spanish.png'
-import frenchFlag from '@assets/flags/french.png'
+import englishFlag from '@assets/flags/english.webp'
+import spanishFlag from '@assets/flags/spanish.webp'
+import frenchFlag from '@assets/flags/french.webp'
 import Image from 'next/image'
 import './LanguageSelector.css'
 

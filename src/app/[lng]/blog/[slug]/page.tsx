@@ -9,31 +9,46 @@ import timeToReadIcon from '@assets/icons/time-to-read.webp'
 import Layout from '@components/Layout/Layout'
 import { getFormattedDate } from '@utils/getFormattedDate'
 import { useTranslation } from 'src/app/i18n'
+import { redirect } from 'next/navigation'
 
 type Props = {
   params: { slug: string; lng: string }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { title, description, mainImage } = await getPost(
-    params.slug,
-    params.lng,
-  )
+  try {
+    const {
+      title = '',
+      description = '',
+      mainImage = '',
+    } = (await getPost(params.slug, params.lng)) || {}
 
-  return {
-    title: title,
-    description: description,
-    openGraph: {
-      images: [mainImage],
-    },
+    return {
+      title: title,
+      description: description,
+      openGraph: {
+        images: [mainImage],
+      },
+    }
+  } catch (error) {
+    console.error(error)
+    return {}
   }
 }
 
 export default async function Post({ params }: Props) {
-  const { title, body, mainImage, timeToRead, _createdAt } = await getPost(
-    params.slug,
-    params.lng,
-  )
+  const {
+    title = '',
+    body = '',
+    mainImage = '',
+    timeToRead = 0,
+    _createdAt = '',
+  } = (await getPost(params.slug, params.lng)) || {}
+
+  if (!title && !body && !mainImage && !timeToRead && !_createdAt) {
+    redirect('/post-not-available')
+  }
+
   const { t } = await useTranslation(params.lng)
   const { month, year } = getFormattedDate(_createdAt)
 

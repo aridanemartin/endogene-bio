@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
-import notFoundIconContainer from '@assets/icons/notFound.svg'
 import Image from 'next/image'
 import { useTranslation } from 'src/app/i18n/client'
 import './NotFoundComponent.css'
 import Link from 'next/link'
+import notFoundIconContainer from '@assets/illustrations/notFoundError.svg'
+import notFoundPostContainer from '@assets/illustrations/notFoundPost.svg'
 
 export const NotFoundComponent = ({ locale, isBlogPage = false }) => {
   const { t } = useTranslation(locale)
@@ -32,7 +33,7 @@ export const NotFoundComponent = ({ locale, isBlogPage = false }) => {
       <>
         <h1>{t('BLOG.no-posts.title')}</h1>
         <div className="errorImage">
-          <Image src={notFoundIconContainer} alt="Not found ivon" fill />
+          <Image src={notFoundPostContainer} alt="Not found ivon" fill />
         </div>
         <p>{t('BLOG.no-posts.message')}</p>
         <Link className="goBackButton" href="/blog">
