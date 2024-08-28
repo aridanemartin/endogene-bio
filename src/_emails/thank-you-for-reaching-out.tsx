@@ -19,6 +19,7 @@ interface ThanksForReachingOutEmailProps {
     dear: string
     subject: string
     message: string
+    comeBack: string
   }
 }
 
@@ -73,7 +74,7 @@ export const ThanksForReachingOutEmail = ({
             <Row style={{ ...boxInfos, paddingTop: '0' }}>
               <Column style={containerButton} colSpan={2}>
                 <Button style={button} href={domainUrl}>
-                  Volver a la web
+                  {translation.comeBack}
                 </Button>
               </Column>
             </Row>

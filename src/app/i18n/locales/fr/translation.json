@@ -116,8 +116,9 @@
   "EMAILS": {
     "thanks-for-reaching-out": {
       "dear": "Cher/Chère",
-      "subject": "Merci de nous avoir contactés chez endogene.bio",
-      "message": "Merci de nous avoir contactés. Nous vous répondrons bientôt."
+      "subject": "merci de nous avoir contactés chez endogene.bio",
+      "message": "Merci de nous avoir contactés. Nous vous répondrons bientôt.",
+      "come-back": "Revenez sur notre site web"
     }
   },
   "COMMON": {

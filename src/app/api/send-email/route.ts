@@ -5,8 +5,8 @@ import nodemailer from 'nodemailer'
 import { render } from '@react-email/components'
 
 export async function POST(req) {
-  const res = await req.json()
-  const { name, email, message, translation } = res
+  const data = await req.json()
+  const { name, email, message, translation } = data
   const { NEXT_SMTP_EMAIL, NEXT_SMTP_PASSWORD } = process.env
 
   const transporter = nodemailer.createTransport({

@@ -116,8 +116,9 @@
   "EMAILS": {
     "thanks-for-reaching-out": {
       "dear": "Dear",
-      "subject": "Thank you for reaching out to endogene.bio",
-      "message": "Thank you for reaching out to us. We will contact you soon."
+      "subject": "thank you for reaching out to endogene.bio",
+      "message": "Thank you for reaching out to us. We will contact you soon.",
+      "come-back": "Come back to our website"
     }
   },
   "COMMON": {

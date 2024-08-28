@@ -20,8 +20,10 @@ const ContactForm = ({ lng }) => {
     email: '',
     message: '',
     translation: {
-      title: t('EMAILS.thanks-for-reaching-out.subject'),
+      dear: t('EMAILS.thanks-for-reaching-out.dear'),
+      subject: t('EMAILS.thanks-for-reaching-out.subject'),
       message: t('EMAILS.thanks-for-reaching-out.message'),
+      comeBack: t('EMAILS.thanks-for-reaching-out.come-back'),
     },
   })
 
@@ -86,8 +88,10 @@ const ContactForm = ({ lng }) => {
         email: '',
         message: '',
         translation: {
-          title: t('EMAILS.thanks-for-reaching-out.subject'),
+          dear: t('EMAILS.thanks-for-reaching-out.dear'),
+          subject: t('EMAILS.thanks-for-reaching-out.subject'),
           message: t('EMAILS.thanks-for-reaching-out.message'),
+          comeBack: t('EMAILS.thanks-for-reaching-out.come-back'),
         },
       })
       setIsEmailSent(true)
