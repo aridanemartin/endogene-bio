@@ -7,7 +7,7 @@
     "join-us": "Rejoignez-nous"
   },
   "HOME": {
-    "slogan": "Construire un <strong>héritage</strong> dans la <strong>santé féminine.</strong>",
+    "slogan": "Building a <strong>legacy</strong> in <strong>female health.</strong>",
     "about-us": "À propos de <strong>nous</strong>",
     "our-values": {
       "title": "Nos <strong>valeurs</strong>",
@@ -17,7 +17,7 @@
       },
       "humanity": {
         "title": "Humanité",
-        "text": "Dans le domaine de la santé des femmes, l'<strong>humanité</strong> est une valeur essentielle. Elle encourage une approche compassionnelle et centrée sur les besoins, garantissant que chaque avancée est réalisée avec empathie et considération. Ce soin authentique renforce la confiance et l'engagement envers le bien-être des femmes."
+        "text": "Dans la santé des femmes, l'<strong>humanité</strong> est essentielle. Elle favorise une approche compassionnelle et centrée sur les besoins, assurant que chaque progrès se fait avec empathie. Ce soin authentique renforce la confiance et l'engagement pour le bien-être des femmes."
       },
       "innovation": {
         "title": "Innovation",
@@ -98,7 +98,7 @@
     "title": "Construisons quelque chose <strong>ensemble.</strong>",
     "subtitle": "Venez innover, collaborer et participer à l'innovation contre l'endométriose.",
     "catch-phrase": "Trouvez votre prochain emploi !",
-    "intro": "Notre équipe est en pleine croissance. Venez innover, collaborer et participer à l'innovation contre l'endométriose. Consultez nos offres d'emploi et postulez dès maintenant."
+    "intro": "Notre équipe est en pleine croissance.<br /><br/> Venez innover, collaborer et participer à l'innovation contre l'endométriose.<br /><br/> Consultez nos offres d'emploi et postulez dès maintenant."
   },
   "404": {
     "title": "Erreur 404",

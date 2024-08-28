@@ -70,7 +70,6 @@ const post = {
       type: 'datetime',
     },
   ],
-
   preview: {
     select: {
       title: 'refTitle',

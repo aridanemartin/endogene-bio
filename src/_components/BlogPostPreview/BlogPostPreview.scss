@@ -38,8 +38,11 @@
       transform: scale(0.99);
       height: 100%;
       width: 100%;
-      object-fit: cover;
       transition: all 0.3s ease-in-out;
+
+      img {
+        object-fit: cover;
+      }
     }
 
     &:hover &-img {

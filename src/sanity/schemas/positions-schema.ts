@@ -22,16 +22,6 @@ const positions = {
       required: true,
     },
     {
-      name: 'positionDescription',
-      title: 'Position Description',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
-    },
-    {
       name: 'linkToApply',
       title: 'Link to Apply',
       type: 'url',
@@ -48,7 +38,6 @@ const positions = {
   preview: {
     select: {
       title: 'positionName',
-      //   media: 'profileImage',
     },
   },
 }
