@@ -10,7 +10,7 @@ import { NotFoundComponent } from '@components/NotFoundComponent/NotFoundCompone
 
 export const metadata: Metadata = {
   title: 'Blog | Endogene.Bio',
-  description: "See what's going on at endoGene.bio",
+  description: "See what's going on at endogene.bio",
 }
 
 const Blog = async ({ params }) => {
