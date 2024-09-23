@@ -11,14 +11,6 @@ const post = {
   }),
   fields: [
     {
-      name: 'refTitle',
-      title: 'Título de la url',
-      type: 'string',
-      description:
-        'Este campo no se mostrará en la página principal ni en la sección de blog sirve como referencia para generar la url (Debe estar en inglés)',
-      required: true,
-    },
-    {
       name: 'title',
       title: 'Título del post',
       type: 'i18n.string',
@@ -48,16 +40,19 @@ const post = {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      description:
+        'Haz "click" en el botón "Generate" para que se cree la url del artículo (Si ya lo has generado intenta no volver ha hacerlo ya que puede perjudicar al SEO de la página)',
       required: true,
       options: {
-        source: 'refTitle',
+        source: 'title.en',
         maxLength: 96,
       },
     },
     {
       name: 'mainImage',
       title: 'Imagen de portada',
-      description: 'CAMPO OBLIGATORIO',
+      description:
+        'CAMPO OBLIGATORIO - Recuerda que las imágenes deben estar en formato webp. Puedes utilizar esta web para transformarlas https://towebp.io/',
       type: 'image',
       required: true,
       options: {
@@ -66,13 +61,15 @@ const post = {
     },
     {
       name: 'publishedAt',
+      description:
+        'Fecha de publicación. Recuerda que los artículos se ordenan por fecha de publicación (Los más recientes primero)',
       title: 'Published at',
       type: 'datetime',
     },
   ],
   preview: {
     select: {
-      title: 'refTitle',
+      title: 'title.en',
       media: 'mainImage',
     },
   },
