@@ -26,13 +26,16 @@
 }
 
 .text-content .description {
-  margin: 0rem 2rem 2rem 1rem;
-  margin-bottom: 1rem;
+  margin: 0rem 2rem 0rem 1rem;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.text-content .sanityBlock__block {
+  padding-top: 0;
 }
 
 .text-content .description span {
@@ -88,8 +91,23 @@
   filter: grayscale(100%);
 }
 
+.readMoreButton {
+  background: none;
+  border: none;
+  margin: 0.75rem;
+  padding-right: 3rem;
+  text-align: right;
+  color: white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--input-write-gray);
+  }
+}
+
 .team-member-card:hover .text-content {
-  transform: translateY(0%);
+  transform: translateY(5%);
 }
 
 .team-member-card:hover .team-shape {
