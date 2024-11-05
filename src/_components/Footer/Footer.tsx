@@ -31,7 +31,7 @@ export default function Footer({ lng }) {
               </div>
             </Link>
             <Link
-              href="https://twitter.com/EndoGene_Bio"
+              href="https://www.linkedin.com/company/endogene-bio/"
               target="_blank"
               rel="noreferrer"
             >
