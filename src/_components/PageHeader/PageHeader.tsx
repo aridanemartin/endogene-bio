@@ -8,6 +8,8 @@ import team1Image from '../../_assets/pictures/joinUs/team1.webp'
 import team2Image from '../../_assets/pictures/joinUs/team2.webp'
 import team3Image from '../../_assets/pictures/joinUs/team3.webp'
 import team4Image from '../../_assets/pictures/joinUs/team4.webp'
+import team5Image from '../../_assets/pictures/joinUs/team5.webp'
+import team6Image from '../../_assets/pictures/joinUs/team6.webp'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -43,6 +45,12 @@ export const PageHeader = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image src={team1Image} alt="Join us" fill />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={team5Image} alt="Join us" fill />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={team6Image} alt="Join us" fill />
             </SwiperSlide>
           </Swiper>
         </>
