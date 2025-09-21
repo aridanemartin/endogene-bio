@@ -25,7 +25,7 @@ const Contacto = async ({ params: { lng } }) => {
           <Image
             className="image"
             src={contacto}
-            alt="Con Nutrición Saludable - Contacto"
+            alt="endogene.bio - Contacto"
             fill
           />
         </div>
