@@ -62,7 +62,7 @@ export const PartnerLogos = () => {
         <Image src={inpiLogo} alt="Partner Logos" width={50} height={40} />
       </Link>
       <Link className="partnerLogoWrapper" href="https://hello-tomorrow.org/">
-        <Image src={deeptech} alt="Partner Logos" width={50} height={40} />
+        <Image src={deeptech} alt="Partner Logos" width={50} height={50} />
       </Link>
     </section>
   )
