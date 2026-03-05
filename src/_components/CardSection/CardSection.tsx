@@ -5,11 +5,9 @@ export const CardSection = ({ t }) => {
     <div className="cardSection">
       <article className="card1 card">
         <div className="text-content">
-          {/*<h2>{t('HOME.our-values.humanity.title')}</h2>*/}
           <h2>{t(' ')}</h2>
           <p
             dangerouslySetInnerHTML={{
-            {/*  __html: t('HOME.our-values.humanity.text'),*/}
               __html: t(' '),
             }}
           />
