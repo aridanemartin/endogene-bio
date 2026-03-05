@@ -28,7 +28,7 @@ export default async function Home({ params: { lng } }) {
 
   return (
     <Layout maxWidth="1000px" className="homePageLayout">
-      <Headline titleKey="HOME.slogan" lng={lng} />±
+      <Headline titleKey="HOME.slogan" lng={lng} />
       <VideoHero />
       {/*<Headline titleKey="HOME.our-values.title" lng={lng} />*/}
       <CardSection />
