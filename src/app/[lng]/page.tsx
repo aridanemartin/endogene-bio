@@ -9,7 +9,6 @@ import { Counter } from '@components/Counter/Counter'
 import '../../styles/HomePage.css'
 import VideoHero from '@components/VideoHero/VideoHero'
 
-
 export const metadata: Metadata = {
   title: 'Endogene.Bio | Building a legacy in female health',
   description:
@@ -28,20 +27,18 @@ export default async function Home({ params: { lng } }) {
   }
 
   return (
-    <>
-      <Layout maxWidth="1000px" className="homePageLayout">
-        <Headline titleKey="HOME.slogan" lng={lng} />
-        <VideoHero />
-        <Headline titleKey="HOME.our-values.title" lng={lng} />
-        <CardSection t={t} />
-        <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
-        <PartnerLogos />
-        <Headline titleKey="HOME.in-numbers" lng={lng} headlineType="h2" />
-        <Counter
-          translationKeys={counterTranslationsKeys}
-          teamMembersInfo={teamMembersInfo}
-        />
-      </Layout>
-    </>
+    <Layout maxWidth="1000px" className="homePageLayout">
+      <Headline titleKey="HOME.slogan" lng={lng} />±
+      <VideoHero />
+      <Headline titleKey="HOME.our-values.title" lng={lng} />
+      <CardSection />
+      <Headline titleKey="HOME.trusted-by" lng={lng} headlineType="h2" />
+      <PartnerLogos />
+      <Headline titleKey="HOME.in-numbers" lng={lng} headlineType="h2" />
+      <Counter
+        translationKeys={counterTranslationsKeys}
+        teamMembersInfo={teamMembersInfo}
+      />
+    </Layout>
   )
 }
