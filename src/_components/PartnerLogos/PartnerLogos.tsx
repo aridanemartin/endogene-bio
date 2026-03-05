@@ -6,6 +6,7 @@ import genopoleLogo from '@assets/logos/genopoleLogo.svg'
 import stationFLogo from '@assets/logos/stationfLogo.svg'
 import bpiLogo from '@assets/logos/bpi.webp'
 import inpiLogo from '@assets/logos/inpi.webp'
+import deeptech from '@assets/logos/Deep-Tech-Pioneers_Blue.webp'
 import entrepreneurFirstLogo from '@assets/logos/entrepreneur-first.webp'
 import './PartnerLogos.css'
 import Link from 'next/link'
@@ -58,6 +59,9 @@ export const PartnerLogos = () => {
         />
       </Link>
       <Link className="partnerLogoWrapper" href="https://www.inpi.fr/">
+        <Image src={inpiLogo} alt="Partner Logos" width={50} height={40} />
+      </Link>
+      <Link className="deeptech" href="https://hello-tomorrow.org/">
         <Image src={inpiLogo} alt="Partner Logos" width={50} height={40} />
       </Link>
     </section>
