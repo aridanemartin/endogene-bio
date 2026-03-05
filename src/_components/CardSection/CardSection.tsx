@@ -15,20 +15,20 @@ export const CardSection = ({ t }) => {
       </article>
       <article className="card2 card">
         <div className="text-content">
-          <h2>{t('HOME.our-values.innovation.title')}</h2>
+          <h2> </h2>
           <p
             dangerouslySetInnerHTML={{
-              __html: t('HOME.our-values.innovation.text'),
+              __html:  ,
             }}
           />
         </div>
       </article>
       <article className="card3 card">
         <div className="text-content">
-          <h2>{t('HOME.our-values.determination.title')}</h2>
+          <h2> </h2>
           <p
             dangerouslySetInnerHTML={{
-              __html: t('HOME.our-values.determination.text'),
+              __html:  ,
             }}
           />
         </div>
