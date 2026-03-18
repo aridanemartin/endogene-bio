@@ -1,6 +1,6 @@
 import './CardSection.css'
 
-export const CardSection = () => {
+export const CardSection = ({t}) => {
   return (
     <div className="cardSection">
       <article className="card1 card">
